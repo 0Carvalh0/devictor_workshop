@@ -1,0 +1,19 @@
+{
+  "name": "portfoliojoao",
+  "version": "1.0.0",
+  "description": "Meu portfolio 2024 usando HTML, CSS e JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0Carvalh0/portfoliojoao.git"
+  },
+  "author": "João Victor Carvalho de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0Carvalh0/portfoliojoao/issues"
+  },
+  "homepage": "https://github.com/0Carvalh0/portfoliojoao#readme"
+}
