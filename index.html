@@ -19,13 +19,34 @@
 
   <body>
     <!-- Cabeçalho, menu/nav -->
-    <header></header>
+    <header>
+      <h1>Titulo</h1>
+      <nav>
+        <a href="#">Página Inicial</a>
+        <a href="#">Sobre Mim</a>
+        <a href="#">Portfólio</a>
+        <a href="#">Habilidades</a>
+        <a href="#">Contatos</a>
+      </nav>
+    </header>
 
     <!-- Conteúdo e seções -->
     <main></main>
-    
+
     <!-- Mais informações para contato -->
-    <footer></footer>
+    <footer>
+      <section id="form__falecomigo">
+        <h2>FALE COMIGO</h2>
+        <form action="#">
+          <label for="usunome">Seu nome: <input type="text" name="usunome" id="inome"></label>
+          <label for="usumail">Seu E-mail: <input type="email" name="usumail" id="imail"></label>
+          <label for="usutel">Seu telefone: <input type="tel" name="usutel" id="itel"></label>
+          <label for="usuassunto">Assunto: <input type="text" name="usuassunto" id="iassunto"></label>
+          <label for="usumensagem">Mensagem: <textarea name="usumensagem" id="imensagem" cols="30" rows="10"></textarea></label>
+          <input type="submit" value="Enviar">
+        </form>
+      </section>
+    </footer>
 
     <script
       src="https://kit.fontawesome.com/9bfb2428d0.js"
