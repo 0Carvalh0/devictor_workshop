@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 20px;
+    font-size: 1.3rem;
+}
+
+header > h1 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header > nav {
+
+}
+
+header > nav > a {
+    margin: 0px 20px;
+}
