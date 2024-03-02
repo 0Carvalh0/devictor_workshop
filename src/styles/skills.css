@@ -20,6 +20,11 @@ main section#skills .skill {
   border-radius: 20px;
 }
 
+main section#skills .skill:hover {
+  transform: scale(1.03);
+  transition-duration: 0.3s;
+}
+
 main section#skills .skill img {
   height: 100px;
   pointer-events: none;

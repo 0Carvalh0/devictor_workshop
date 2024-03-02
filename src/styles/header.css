@@ -23,8 +23,9 @@ header > nav > a {
   padding: 20px 20px 6px 20px;
 }
 
-header > nav > a:hover {
-  transform: scale(1.03);
+header nav a:hover {
+  font-size: 1.05em;
+  transition-duration: 0.3s;
   color: #666;
 }
 

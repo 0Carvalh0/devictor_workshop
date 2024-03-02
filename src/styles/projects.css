@@ -23,6 +23,11 @@ main section#projects .projeto {
   border-radius: 20px;
 }
 
+main section#projects .projeto:hover {
+  transform: scale(1.03);
+  transition-duration: 0.5s;
+}
+
 main section#projects .projeto img {
   width: 100%;
   pointer-events: none;
