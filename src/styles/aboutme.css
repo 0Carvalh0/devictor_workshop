@@ -1,19 +1,18 @@
 main section#aboutme {
   display: flex;
   justify-content: center;
+  align-items: center;
 
-  padding: 50px 50px 0px 50px;
+  padding: 50px;
+
+  background-color: #ddd;
 }
 
 main section#aboutme div {
-  padding-top: 200px;
-  margin-right: 50px;
-  width: 700px;
-  text-align: start;
-}
+  width: 400px;
+  margin-right: 100px;
 
-main section#aboutme div p strong {
-  font-weight: 600;
+  text-align: start;
 }
 
 main section#aboutme div h2 {

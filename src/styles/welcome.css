@@ -1,0 +1,24 @@
+main section#welcome {
+  display: flex;
+  justify-content: center;
+
+  padding: 50px 50px 0px 50px;
+}
+
+main section#welcome div {
+  padding-top: 200px;
+  margin-right: 50px;
+  width: 700px;
+  text-align: start;
+}
+
+main section#welcome div p strong {
+  font-weight: 600;
+}
+
+main section#welcome div h2 {
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin: 20px 0px;
+}

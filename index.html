@@ -12,6 +12,7 @@
     <!-- HEADER ESTILO -->
     <link rel="stylesheet" href="./src/styles/header.css" />
     <!-- MAIN CONTEÚDO -->
+    <link rel="stylesheet" href="./src/styles/welcome.css" />
     <link rel="stylesheet" href="./src/styles/aboutme.css" />
     <!-- FOOTER -->
     <!-- Formulário para contato -->
@@ -41,7 +42,7 @@
 
     <!-- Conteúdo e seções -->
     <main>
-      <section id="aboutme">
+      <section id="welcome">
         <div>
           <p>Olá, meu nome é</p>
           <h2>João Victor</h2>
@@ -59,13 +60,37 @@
           height="600px"
         />
       </section>
+      <section id="aboutme">
+        <div>
+          <p>
+            Eu sou um desenvolvedor web front end capaz de tornar o seu site dos
+            sonhos realizadade
+          </p>
+          <p>Vivo em São Paulo, SP</p>
+          <hr />
+          <h2>O que eu faço?</h2>
+          <p>
+            Eu desenvolvo e modelo o seu site web dos sonhos, replico com
+            perfeição a sua página web desejada.
+          </p>
+        </div>
+        <img
+          src="src/assets/images/ideia001.png"
+          alt="Imagem de exemplo"
+          width="500px"
+          height="500px"
+        />
+      </section>
     </main>
 
     <!-- Mais informações para contato -->
     <footer>
       <section id="form__falecomigo">
         <h2>FALE COMIGO</h2>
-        <form action="#">
+        <form
+          action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com"
+          method="post"
+        >
           <div>
             <label for="usunome"
               >Seu nome:
@@ -117,7 +142,16 @@
               required
             ></textarea>
           </label>
-          <input type="submit" id="btn__Enviar" value="Enviar" />
+          <button type="submit" id="btn__Enviar">
+            <i class="fa-solid fa-paper-plane"></i>Enviar
+          </button>
+          <input
+            type="hidden"
+            name="_subject"
+            value="Alguém entrou em contato!"
+          />
+          <input type="hidden" name="_honey" style="display: none" />
+          <input type="hidden" name="_captcha" value="false" />
         </form>
       </section>
       <section id="contatos">
