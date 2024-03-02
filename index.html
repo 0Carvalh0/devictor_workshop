@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./src/styles/welcome.css" />
     <link rel="stylesheet" href="./src/styles/aboutme.css" />
     <link rel="stylesheet" href="./src/styles/projects.css" />
+    <link rel="stylesheet" href="./src/styles/skills.css" />
     <!-- FOOTER -->
     <!-- Formulário para contato -->
     <link rel="stylesheet" href="./src/styles/form.css" />
@@ -36,8 +37,8 @@
         <a href="#"><i class="fa-solid fa-house"></i>Página Inicial</a>
         <a href="#aboutme"><i class="fa-solid fa-user"></i>Sobre Mim</a>
         <a href="#projects"><i class="fa-solid fa-file"></i>Projetos</a>
-        <a href="#"><i class="fa-solid fa-star"></i>Habilidades</a>
-        <a href="#"><i class="fa-solid fa-phone"></i>Contatos</a>
+        <a href="#skills"><i class="fa-solid fa-star"></i>Habilidades</a>
+        <a href="#contatos"><i class="fa-solid fa-phone"></i>Contatos</a>
       </nav>
     </header>
 
@@ -61,6 +62,7 @@
           height="600px"
         />
       </section>
+
       <section id="aboutme">
         <div>
           <p>
@@ -75,14 +77,14 @@
             perfeição a sua página web desejada.
           </p>
         </div>
-        <img
-          src="src/assets/images/ideia001.png"
-          alt="Imagem de exemplo"
-          width="500px"
-          height="500px"
-        />
       </section>
-      <section id="projects" class="naoSelecionavel" onmousedown="startDrag(event)" onmouseup="stopDrag()">
+
+      <section
+        id="projects"
+        class="naoSelecionavel"
+        onmousedown="startDrag(event)"
+        onmouseup="stopDrag()"
+      >
         <section class="projeto">
           <img src="./src/assets/images/ideia003.jpg" alt="Imagem projeto" />
           <h2>Nome do projeto</h2>
@@ -137,12 +139,63 @@
             aspernatur voluptas placeat! Deleniti quidem repellat quos dolore!
           </p>
           <a href="#">Ver Projeto</a>
+        </section>
+      </section>
+
+      <section
+        id="skills"
+        class="naoSelecionavel"
+      >
+        <section class="skill">
+          <img src="./src/assets/images/ideia003.jpg" alt="Imagem habilidade" />
+          <h2>Nome da Habilidade</h2>
+          <p>
+            Descrição da habilidade Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Repellendus non inventore officiis facere expedita
+            alias, culpa voluptates dignissimos explicabo excepturi amet, qui
+            aspernatur voluptas placeat! Deleniti quidem repellat quos dolore!
+          </p>
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+        </section>
+        <section class="skill">
+          <img src="./src/assets/images/ideia003.jpg" alt="Imagem habilidade" />
+          <h2>Nome da Habilidade</h2>
+          <p>
+            Descrição da habilidade Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Repellendus non inventore officiis facere expedita
+            alias, culpa voluptates dignissimos explicabo excepturi amet, qui
+            aspernatur voluptas placeat! Deleniti quidem repellat quos dolore!
+          </p>
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
+        </section>
+        <section class="skill">
+          <img src="./src/assets/images/ideia003.jpg" alt="Imagem habilidade" />
+          <h2>Nome da Habilidade</h2>
+          <p>
+            Descrição da habilidade Lorem ipsum dolor, sit amet consectetur
+            adipisicing elit. Repellendus non inventore officiis facere expedita
+            alias, culpa voluptates dignissimos explicabo excepturi amet, qui
+            aspernatur voluptas placeat! Deleniti quidem repellat quos dolore!
+          </p>
+          <div>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i
+            ><i class="fa-regular fa-star"></i>
+          </div>
         </section>
       </section>
     </main>
 
     <!-- Mais informações para contato -->
-    <footer>
+    <footer id="contatos">
       <section id="form__falecomigo">
         <h2>FALE COMIGO</h2>
         <form

@@ -5,14 +5,21 @@ main section#aboutme {
 
   padding: 50px;
 
-  background-color: #ddd;
+  background: #000 url("../assets/images/programador.jpg") no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
 }
 
 main section#aboutme div {
   width: 400px;
-  margin-right: 100px;
+  transform: translate(100%, 0px);
+  padding: 20px;
 
   text-align: start;
+  border-radius: 20px;
+
+  background-color: #ffffff80;
 }
 
 main section#aboutme div h2 {
