@@ -20,4 +20,14 @@ header > h1 {
 
 header > nav > a {
   margin: 0px 20px;
+  padding: 20px 20px 6px 20px;
+}
+
+header > nav > a:hover {
+  transform: scale(1.03);
+  color: #666;
+}
+
+header i:hover {
+  color: #666;
 }

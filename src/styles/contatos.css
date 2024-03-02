@@ -32,3 +32,13 @@ footer section#contatos a {
   margin: 10px;
   border-radius: 0px 10px 0px 10px;
 }
+
+footer section#contatos a#github:hover {
+  background-color: #9400ff;
+  color: #fff;
+}
+
+footer section#contatos a#linkedin:hover {
+  background-color: #0366c3;
+  color: #fff;
+}
