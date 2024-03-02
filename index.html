@@ -82,7 +82,7 @@
           height="500px"
         />
       </section>
-      <section id="projects">
+      <section id="projects" class="naoSelecionavel" onmousedown="startDrag(event)" onmouseup="stopDrag()">
         <section class="projeto">
           <img src="./src/assets/images/ideia003.jpg" alt="Imagem projeto" />
           <h2>Nome do projeto</h2>
@@ -239,5 +239,7 @@
       src="https://kit.fontawesome.com/9bfb2428d0.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Efeito de carrossel com GRAB horizontal -->
+    <script src="./src/scripts/dragscroll.js"></script>
   </body>
 </html>

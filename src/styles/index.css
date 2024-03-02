@@ -50,3 +50,10 @@ footer h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+.naoSelecionavel {
+    -webkit-touch-callout: none; /* iPhone OS, Safari */
+    -webkit-user-select: none; /* Chrome, Safari 3 */
+    -khtml-user-select: none; /* Safari 2 */
+    user-select: none; /* Padrão */
+}

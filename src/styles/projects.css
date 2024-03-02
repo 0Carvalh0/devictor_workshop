@@ -1,6 +1,7 @@
 main section#projects {
   display: flex;
   overflow-x: auto;
+  cursor: grab;
 
   padding: 50px;
 }
@@ -24,6 +25,7 @@ main section#projects .projeto {
 
 main section#projects .projeto img {
   width: 100%;
+  pointer-events: none;
 
   border-radius: 20px;
 }
