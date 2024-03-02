@@ -32,6 +32,12 @@ footer section#form__falecomigo form label {
   margin: 10px 10px;
 }
 
+footer section#form__falecomigo input {
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+}
+
 footer section#form__falecomigo form #imensagem {
   resize: vertical;
   max-height: 200px;

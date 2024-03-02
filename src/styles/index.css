@@ -32,6 +32,8 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+
+  background-color: #d3d3d3;
 }
 
 footer h2 {
