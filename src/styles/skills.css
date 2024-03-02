@@ -8,9 +8,10 @@ main section#skills {
 main section#skills .skill {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  height: 300px;
 
-  width: 400px;
   padding: 10px;
   margin: 10px 10px;
 
