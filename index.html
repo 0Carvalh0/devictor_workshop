@@ -33,8 +33,8 @@
     <!-- Cabeçalho, menu/nav -->
     <header>
       <h1>João Victor</h1>
-      <nav>
-        <a href="#"><i class="fa-solid fa-house"></i>Página Inicial</a>
+      <nav class="menu">
+        <a href="#welcome"><i class="fa-solid fa-house"></i>Página Inicial</a>
         <a href="#aboutme"><i class="fa-solid fa-user"></i>Sobre Mim</a>
         <a href="#projects"><i class="fa-solid fa-file"></i>Projetos</a>
         <a href="#skills"><i class="fa-solid fa-star"></i>Habilidades</a>
@@ -142,13 +142,14 @@
         </section>
       </section>
 
-      <section
-        id="skills"
-        class="naoSelecionavel"
-      >
+      <section id="skills" class="naoSelecionavel">
         <section class="skill">
-          <img src="./src/assets/images/ideia003.jpg" alt="Imagem habilidade" />
-          <h2>Nome da Habilidade</h2>
+          <img
+            src="./src/assets/icons/HTML5.png"
+            class="icon"
+            alt="Imagem habilidade"
+          />
+          <h2>HTML5</h2>
           <p>
             Descrição da habilidade Lorem ipsum dolor, sit amet consectetur
             adipisicing elit. Repellendus non inventore officiis facere expedita
@@ -162,8 +163,12 @@
           </div>
         </section>
         <section class="skill">
-          <img src="./src/assets/images/ideia003.jpg" alt="Imagem habilidade" />
-          <h2>Nome da Habilidade</h2>
+          <img
+            src="./src/assets/icons/CSS3.png"
+            class="icon"
+            alt="Imagem habilidade"
+          />
+          <h2>CSS3</h2>
           <p>
             Descrição da habilidade Lorem ipsum dolor, sit amet consectetur
             adipisicing elit. Repellendus non inventore officiis facere expedita
@@ -177,8 +182,12 @@
           </div>
         </section>
         <section class="skill">
-          <img src="./src/assets/images/ideia003.jpg" alt="Imagem habilidade" />
-          <h2>Nome da Habilidade</h2>
+          <img
+            src="./src/assets/icons/javascript.png"
+            class="icon"
+            alt="Imagem habilidade"
+          />
+          <h2>JavaScript</h2>
           <p>
             Descrição da habilidade Lorem ipsum dolor, sit amet consectetur
             adipisicing elit. Repellendus non inventore officiis facere expedita
@@ -294,5 +303,6 @@
     ></script>
     <!-- Efeito de carrossel com GRAB horizontal -->
     <script src="./src/scripts/dragscroll.js"></script>
+    <script src="./src/scripts/smoothscroll.js"></script>
   </body>
 </html>

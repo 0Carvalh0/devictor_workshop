@@ -23,7 +23,7 @@ html {
   background-color: #fff;
   text-align: center;
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 
   font-size: 20px;
   font-family: var(--default);
@@ -52,8 +52,8 @@ footer h2 {
 }
 
 .naoSelecionavel {
-    -webkit-touch-callout: none; /* iPhone OS, Safari */
-    -webkit-user-select: none; /* Chrome, Safari 3 */
-    -khtml-user-select: none; /* Safari 2 */
-    user-select: none; /* Padrão */
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  user-select: none; /* Padrão */
 }
