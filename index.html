@@ -10,7 +10,12 @@
     <!-- CONFIGURAÇÕES GERAIS DA CSS -->
     <link rel="stylesheet" href="./src/styles/index.css" />
     <!-- HEADER ESTILO -->
-    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/header.css" />
+    <!-- FOOTER -->
+    <!-- Formulário para contato -->
+    <link rel="stylesheet" href="./src/styles/form.css" />
+    <!-- Contatos -->
+    <link rel="stylesheet" href="./src/styles/contatos.css" />
 
     <link
       rel="shortcut icon"
@@ -40,18 +45,46 @@
       <section id="form__falecomigo">
         <h2>FALE COMIGO</h2>
         <form action="#">
-          <label for="usunome"
-            >Seu nome: <input type="text" name="usunome" id="inome"
-          /></label>
-          <label for="usumail"
-            >Seu E-mail: <input type="email" name="usumail" id="imail"
-          /></label>
-          <label for="usutel"
-            >Seu telefone: <input type="tel" name="usutel" id="itel"
-          /></label>
-          <label for="usuassunto"
-            >Assunto: <input type="text" name="usuassunto" id="iassunto"
-          /></label>
+          <div>
+            <label for="usunome"
+              >Seu nome:
+              <input
+                type="text"
+                name="usunome"
+                id="inome"
+                placeholder="Digite aqui..."
+                required
+            /></label>
+            <label for="usumail"
+              >Seu E-mail:
+              <input
+                type="email"
+                name="usumail"
+                id="imail"
+                placeholder="email@exemplo.com.br"
+                required
+            /></label>
+          </div>
+          <div>
+            <label for="usutel"
+              >Seu telefone:
+              <input
+                type="tel"
+                name="usutel"
+                id="itel"
+                placeholder="(__)_____-____"
+                required
+            /></label>
+            <label for="usuassunto"
+              >Assunto:
+              <input
+                type="text"
+                name="usuassunto"
+                id="iassunto"
+                placeholder="Digite aqui..."
+                required
+            /></label>
+          </div>
           <label for="usumensagem"
             >Mensagem:
             <textarea
@@ -59,9 +92,11 @@
               id="imensagem"
               cols="30"
               rows="10"
+              placeholder="Escreva sua mensagem aqui..."
+              required
             ></textarea>
           </label>
-          <input type="submit" value="Enviar" />
+          <input type="submit" id="btn__Enviar" value="Enviar" />
         </form>
       </section>
       <section>
