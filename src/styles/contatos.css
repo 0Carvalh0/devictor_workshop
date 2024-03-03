@@ -12,8 +12,11 @@ footer section#contatos h2 {
 }
 
 footer section#contatos div {
+  width: 100%;
+
   display: flex;
-  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
 }
 
 hr {
@@ -22,6 +25,13 @@ hr {
 }
 
 footer section#contatos div h3 {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-align: end;
+  margin-right: 10px;
+}
+
+footer section#contatos div p {
   font-weight: 600;
 }
 

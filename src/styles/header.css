@@ -24,7 +24,6 @@ header > nav > a {
 }
 
 header nav a:hover {
-  font-size: 1.05em;
   transition-duration: 0.3s;
   color: #666;
 }
