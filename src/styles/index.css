@@ -4,15 +4,11 @@
   /* PALETA DE CORES */
   --colorwhite: #eee;
   --colorblack: #222;
-
-  /* 
-  #3A6F5C
-  #2F443D
-  #369875
-  #DBFFF3
-  #C5FFEB
-  #9BFFDC
-  */
+  --color00: #082432;
+  --color01: #389ED1;
+  --color02: #2bb7fd;
+  --color03: #7fd3fd;
+  --color04: #aae2fe;
 
   /* FONTES */
   --default: Arial, Helvetica, sans-serif;
@@ -20,7 +16,9 @@
 
 body,
 html {
-  background-color: #fff;
+  background-color: #092a3a;
+  background-image: linear-gradient(to bottom, #082432, #010405);
+  color: var(--colorwhite);
   text-align: center;
   box-sizing: border-box;
   scroll-padding-top: 50px;
@@ -49,7 +47,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 
-  background-color: #d3d3d3;
+  background-color: var(--colorblack);
 }
 
 footer h2 {
