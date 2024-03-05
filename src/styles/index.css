@@ -47,7 +47,7 @@ footer {
   justify-content: space-evenly;
   align-items: center;
 
-  background-color: var(--colorblack);
+  background-color: var(--color00);
 }
 
 footer h2 {

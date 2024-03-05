@@ -37,6 +37,7 @@ footer section#form__falecomigo input {
   padding: 10px;
   border-radius: 50px;
   border: 2px solid var(--color01);
+  color: #fff;
   background-color: transparent;
 }
 
@@ -47,7 +48,9 @@ footer section#form__falecomigo form #imensagem {
   padding: 10px;
   border-radius: 20px;
   border: 2px solid var(--color01);
-    background-color: transparent;
+  color: #fff;
+
+  background-color: transparent;
 }
 
 footer section#form__falecomigo form #btn__Enviar {
