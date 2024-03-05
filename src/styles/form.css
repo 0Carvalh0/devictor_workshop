@@ -30,12 +30,14 @@ footer section#form__falecomigo form label {
 
   width: 100%;
   margin: 10px 10px;
+  text-indent: 15px;
 }
 
 footer section#form__falecomigo input {
   padding: 10px;
   border-radius: 50px;
-  border: none;
+  border: 2px solid var(--color01);
+  background-color: transparent;
 }
 
 footer section#form__falecomigo form #imensagem {
@@ -44,12 +46,23 @@ footer section#form__falecomigo form #imensagem {
 
   padding: 10px;
   border-radius: 20px;
-  border: none;
+  border: 2px solid var(--color01);
+    background-color: transparent;
 }
 
 footer section#form__falecomigo form #btn__Enviar {
-  width: 100px;
-  padding: 10px;
+  width: fit-content;
+  padding: 10px 20px;
+  background-color: transparent;
 
+  font-size: 1.1rem;
+
+  border: 2px solid var(--color01);
+  color: var(--color01);
   border-radius: 0px 10px 0px 10px;
+}
+
+footer section#form__falecomigo form #btn__Enviar:hover {
+  box-shadow: 0px 0px 10px var(--color01);
+  transform: scale(1.03);
 }

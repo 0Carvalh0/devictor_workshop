@@ -13,6 +13,7 @@ footer section#contatos h2 {
 
 footer section#contatos div {
   width: 100%;
+  padding-bottom: 20px;
 
   display: flex;
   align-items: center;
@@ -24,10 +25,8 @@ hr {
   margin: 20px 0px;
 }
 
-footer section#contatos div h3 {
+footer section#contatos div i {
   font-weight: 600;
-  font-size: 0.8rem;
-  text-align: end;
   margin-right: 10px;
 }
 
