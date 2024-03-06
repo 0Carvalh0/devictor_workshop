@@ -10,7 +10,6 @@ header {
   font-size: 1.3rem;
 
   background-color: var(--color00);
-  box-shadow: 0px 2px 5px var(--color01);
 }
 
 header > h1 {
