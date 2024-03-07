@@ -93,12 +93,12 @@
       <h1>Projetos</h1>
 
       <section
-      id="projects"
-      class="naoSelecionavel"
-      onmousedown="startDrag(event)"
-      onmouseup="stopDrag()"
+        id="projects"
+        class="naoSelecionavel"
+        onmousedown="startDrag(event)"
+        onmouseup="stopDrag()"
       >
-      <div class="arrow left"><i class="fa-solid fa-chevron-left"></i></div>
+        <div class="arrow left"><i class="fa-solid fa-chevron-left"></i></div>
         <div class="carrosel">
           <section class="projeto">
             <img
@@ -108,9 +108,9 @@
             <h2>Blink</h2>
             <p>
               Blink é uma rede social que funciona de maneira rápida, seus posts
-              só são visíveis para você e partir do momento em que você sai todas
-              suas informações serão perdidas e você tera que começar tudo de
-              novo.
+              só são visíveis para você e partir do momento em que você sai
+              todas suas informações serão perdidas e você tera que começar tudo
+              de novo.
             </p>
             <a href="https://blink-social.netlify.app/" target="_blank"
               >Ver Projeto</a
@@ -124,8 +124,8 @@
             <h2>Te Salvando</h2>
             <p>
               Site para ajuda nos estudos para vestibulares. Com esse site você
-              poderá: Ver conteúdos que precisam ser estudados, Ver dicas de como
-              ir bem na prova, Ver datas de provas, Ler um jornal sobre as
+              poderá: Ver conteúdos que precisam ser estudados, Ver dicas de
+              como ir bem na prova, Ver datas de provas, Ler um jornal sobre as
               notícias que podem cair.
             </p>
             <a
@@ -157,8 +157,8 @@
             />
             <h2>Spotify Clone</h2>
             <p>
-              Projeto criado na imersão front-end da Alura, replicando um clone do
-              Spotify usando o React
+              Projeto criado na imersão front-end da Alura, replicando um clone
+              do Spotify usando o React
             </p>
             <a
               href="https://spotifywithreactcarvalho.netlify.app/"
@@ -352,59 +352,62 @@
         <h2>Fale Comigo</h2>
         <form
           action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com"
-          method="post"
+          method="POST"
         >
           <div>
-            <label for="usunome"
-              >Seu nome:
+            <div>
+              <label for="usunome">Seu nome:</label>
               <input
                 type="text"
                 name="usunome"
                 id="inome"
                 placeholder="Digite aqui..."
                 required
-            /></label>
-            <label for="usumail"
-              >Seu E-mail:
+              />
+            </div>
+            <div>
+              <label for="usumail">Seu E-mail:</label>
               <input
                 type="email"
                 name="usumail"
                 id="imail"
                 placeholder="email@exemplo.com.br"
                 required
-            /></label>
+              />
+            </div>
           </div>
           <div>
-            <label for="usutel"
-              >Seu telefone:
+            <div>
+              <label for="usutel">Seu telefone:</label>
               <input
                 type="tel"
                 name="usutel"
                 id="itel"
                 placeholder="(__)_____-____"
                 required
-            /></label>
-            <label for="usuassunto"
-              >Assunto:
+              />
+            </div>
+            <div>
+              <label for="usuassunto">Assunto:</label>
               <input
                 type="text"
                 name="usuassunto"
                 id="iassunto"
                 placeholder="Digite aqui..."
                 required
-            /></label>
+              />
+            </div>
           </div>
-          <label for="usumensagem"
-            >Mensagem:
-            <textarea
-              name="usumensagem"
-              id="imensagem"
-              cols="30"
-              rows="10"
-              placeholder="Escreva sua mensagem aqui..."
-              required
-            ></textarea>
-          </label>
+          <label for="usumensagem">Mensagem:</label>
+          <textarea
+            name="usumensagem"
+            id="imensagem"
+            cols="30"
+            rows="10"
+            placeholder="Escreva sua mensagem aqui..."
+            required
+          ></textarea>
+
           <button type="submit" id="btn__Enviar">
             <i class="fa-solid fa-paper-plane"></i>Enviar
           </button>
