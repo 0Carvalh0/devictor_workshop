@@ -13,7 +13,7 @@ function stopDrag() {
 document.addEventListener("mousemove", (event) => {
   if (isDragging) {
     const deltaX = event.clientX - initialX;
-    document.querySelector("#projects").scrollLeft -= deltaX;
+    document.querySelector(".carrosel").scrollLeft -= deltaX;
     initialX = event.clientX;
   }
 });

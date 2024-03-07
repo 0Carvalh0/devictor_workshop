@@ -24,6 +24,5 @@ main section#welcome div h2 {
 }
 
 main section#welcome #minhaft {
-  /* border-radius: 50% 50% 0px 0px; */
-  border-radius: 50%;
+  border-radius: 50% 50% 0px 0px;
 }
