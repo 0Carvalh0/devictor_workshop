@@ -16,6 +16,7 @@ footer section#contatos div {
   padding-bottom: 20px;
 
   display: flex;
+  justify-content: center;
   align-items: center;
   font-size: 1.3rem;
 }
