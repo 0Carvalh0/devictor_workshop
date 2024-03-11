@@ -59,6 +59,12 @@ footer h2 {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1115px) {
+  footer {
+    flex-direction: column;
+  }
+}
+
 .naoSelecionavel {
   -webkit-touch-callout: none; /* iPhone OS, Safari */
   -webkit-user-select: none; /* Chrome, Safari 3 */
