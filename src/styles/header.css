@@ -12,21 +12,45 @@ header {
   background-color: var(--color00);
 }
 
-header > h1 {
+header h1 {
   font-size: 1.8rem;
   font-weight: 600;
   font-family: var(--default);
   color: var(--color04);
 }
 
-header > nav > a {
+header nav a {
   margin: 0px 20px;
   padding: 20px 20px 6px 20px;
   color: var(--color02);
 }
 
+/* header div::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 70%;
+  background-color: var(--color02);
+} */
+
 header i {
   color: var(--color02);
+}
+
+header i.fa-bars {
+  display: none;
+  background-color: var(--color02);
+  color: #fff;
+  width: 46px;
+  height: 46px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+}
+
+header i:hover {
+  color: var(--color03);
 }
 
 header nav a:hover {
@@ -34,6 +58,36 @@ header nav a:hover {
   color: var(--color03);
 }
 
-header i:hover {
-  color: var(--color03);
+@media screen and (max-width: 1440px) {
+  header i.fa-bars {
+    display: flex;
+    z-index: 11;
+  }
+
+  header nav {
+    margin: 0;
+    padding: 60px 0px 0px 0px;
+    top: -300px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color00);
+    transition-duration: 0.5s;
+  }
+
+  header nav a {
+    margin: 0;
+    padding: 10px;
+  }
+
+  header nav a:hover {
+    background-color: var(--color02);
+    color: var(--color00);
+  }
+
+  header nav a > i.fa-solid {
+    display: none;
+  }
 }

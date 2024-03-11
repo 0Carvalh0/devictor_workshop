@@ -1,8 +1,6 @@
 main section#aboutme {
   display: flex;
-  justify-content: center;
-  align-items: center;
-
+  justify-content: flex-end;
   padding: 50px;
 
   background: #000 url("../assets/images/programador.jpg") no-repeat;
@@ -13,7 +11,6 @@ main section#aboutme {
 
 main section#aboutme div {
   width: 400px;
-  transform: translate(100%, 0px);
   padding: 20px;
 
   text-align: start;

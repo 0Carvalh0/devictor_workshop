@@ -33,12 +33,13 @@
     <!-- Cabeçalho, menu/nav -->
     <header>
       <h1>DEVictor</h1>
-      <nav class="menu">
-        <a href="#welcome"><i class="fa-solid fa-house"></i>Página Inicial</a>
-        <a href="#aboutme"><i class="fa-solid fa-user"></i>Sobre Mim</a>
-        <a href="#projects"><i class="fa-solid fa-file"></i>Projetos</a>
-        <a href="#skills"><i class="fa-solid fa-star"></i>Habilidades</a>
-        <a href="#contatos"><i class="fa-solid fa-phone"></i>Contatos</a>
+      <i class="fa-solid fa-bars" id="btn__menu"></i>
+      <nav class="menu" id="navbar">
+        <a href="#welcome"><i class="fa-solid fa-house" href="#welcome"></i>Página Inicial</a>
+        <a href="#aboutme"><i class="fa-solid fa-user" href="#aboutme"></i>Sobre Mim</a>
+        <a href="#projects"><i class="fa-solid fa-file" href="#projects"></i>Projetos</a>
+        <a href="#skills"><i class="fa-solid fa-star" href="#skills"></i>Habilidades</a>
+        <a href="#contatos"><i class="fa-solid fa-phone" href="#contatos"></i>Contatos</a>
       </nav>
 
       <div>
@@ -447,5 +448,6 @@
     <!-- Efeito de carrossel com GRAB horizontal -->
     <script src="./src/scripts/dragscroll.js"></script>
     <script src="./src/scripts/smoothscroll.js"></script>
+    <script src="./src/scripts/hamburguerbutton.js"></script>
   </body>
 </html>
