@@ -1,23 +1,5 @@
-main section#aboutme {
-  display: flex;
-  justify-content: flex-end;
-  padding: 50px;
-
-  background: #000 url("../assets/images/programador.jpg") no-repeat;
-  background-size: cover;
-  background-position: center top;
-  background-attachment: fixed;
-}
-
 main section#aboutme div {
-  width: 400px;
-  padding: 20px;
-
-  text-align: start;
-  border-radius: 20px;
-
-  background-color: #ffffff80;
-  color: var(--colorblack);
+  color: var(--colorwhite);
 }
 
 main section#aboutme div h2 {

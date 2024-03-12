@@ -4,8 +4,8 @@
   /* PALETA DE CORES */
   --colorwhite: #eee;
   --colorblack: #222;
-  --color00: #082432;
-  --color01: #389ed1;
+  --color00: #092a3a;
+  --color01: #15638a;
   --color02: #2bb7fd;
   --color03: #7fd3fd;
   --color04: #aae2fe;
@@ -21,7 +21,7 @@ html {
   color: var(--colorwhite);
   text-align: center;
   box-sizing: border-box;
-  scroll-padding-top: 50px;
+  scroll-padding-top: 40px;
 
   font-size: 20px;
   font-family: var(--default);
@@ -37,7 +37,7 @@ i {
 }
 
 main {
-  padding-top: 20px;
+  padding-top: 100px;
 }
 
 main h1 {
