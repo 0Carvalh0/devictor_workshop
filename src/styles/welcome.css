@@ -26,9 +26,21 @@ main section#welcome #minhaft {
   background: #fff url("../assets/images/minhaft001.jpeg") no-repeat;
   background-size: cover;
   background-position: top center;
+
   width: 400px;
   height: 400px;
   margin: 50px;
+}
+
+main section#aboutme div {
+  color: var(--colorwhite);
+}
+
+main section#aboutme div h2 {
+  font-size: 2rem;
+  font-weight: 600;
+
+  margin: 20px 0px;
 }
 
 @media screen and (max-width: 1080px) {
