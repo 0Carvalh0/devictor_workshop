@@ -72,6 +72,11 @@ main section#projects .projeto p {
   margin-bottom: 20px;
 }
 
+main section#projects .projeto div {
+  display: flex;
+  gap: 10px;
+}
+
 main section#projects .projeto a {
   display: block;
   width: 150px;
