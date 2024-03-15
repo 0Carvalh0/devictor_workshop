@@ -11,10 +11,6 @@ main section#welcome__aboutme section.welcome__aboutme-text {
   text-align: start;
 }
 
-main section#welcome__aboutme section.welcome__aboutme-text p strong {
-  font-weight: 600;
-}
-
 main section#welcome__aboutme section.welcome__aboutme-text h2 {
   font-size: 3rem;
   font-weight: 600;

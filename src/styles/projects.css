@@ -1,21 +1,31 @@
 main section#projects {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
-main section#projects div.carrosel {
+main section#projects section.carrosel {
   display: flex;
   overflow-x: auto;
-  cursor: grab;
 
   padding: 50px;
 }
 
+main section.carrosel::-webkit-scrollbar {
+  width: 1;
+}
+
 main .arrow {
   position: absolute;
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   font-size: 1.5rem;
   background-color: #00000070;
-  padding: 10px;
   border-radius: 50%;
   z-index: 10;
 }
@@ -26,10 +36,6 @@ main .left {
 
 main .right {
   right: 20px;
-}
-
-main div.carrosel::-webkit-scrollbar {
-  width: 0;
 }
 
 main section#projects .projeto {
