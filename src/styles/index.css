@@ -53,6 +53,12 @@ main h1 {
   margin-top: 20px;
 }
 
+h1,
+h2,
+h3 {
+  letter-spacing: 2px;
+}
+
 footer {
   display: flex;
   justify-content: space-evenly;
