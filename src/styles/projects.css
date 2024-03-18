@@ -7,8 +7,7 @@ main section#projects {
 main section#projects section.carrosel {
   display: flex;
   overflow-x: auto;
-
-  padding: 50px;
+  padding: 10px 0px;
 }
 
 main section.carrosel::-webkit-scrollbar {
@@ -36,6 +35,10 @@ main .left {
 
 main .right {
   right: 20px;
+}
+
+main .arrow i {
+  margin: 0;
 }
 
 main section#projects .projeto {
@@ -67,6 +70,7 @@ main section#projects .projeto img {
 }
 
 main section#projects .projeto h2 {
+  font-family: var(--title);
   font-size: 1.5rem;
   font-weight: 600;
 

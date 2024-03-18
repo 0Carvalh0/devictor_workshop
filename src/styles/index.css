@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: Codefont;
+  src: url(../assets/fonts/CODE\ Bold.otf);
+}
+
 :root {
   /* PALETA DE CORES */
   --colorwhite: #eee;
@@ -12,6 +17,7 @@
 
   /* FONTES */
   --default: Arial, Helvetica, sans-serif;
+  --title: Codefont;
 }
 
 body,
@@ -37,10 +43,11 @@ i {
 }
 
 main {
-  padding-top: 125px;
+  padding-top: 78px;
 }
 
 main h1 {
+  font-family: var(--title);
   font-size: 1.5rem;
   font-weight: 600;
   margin-top: 20px;
@@ -55,6 +62,7 @@ footer {
 }
 
 footer h2 {
+  font-family: var(--title);
   font-size: 1.5rem;
   font-weight: 600;
 }

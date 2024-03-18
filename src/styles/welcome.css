@@ -14,7 +14,8 @@ main section#welcome__aboutme section.welcome__aboutme-text {
 main section#welcome__aboutme section.welcome__aboutme-text h2 {
   font-size: 3rem;
   font-weight: 600;
-
+  font-family: var(--title);
+  
   margin: 20px 0px;
 }
 

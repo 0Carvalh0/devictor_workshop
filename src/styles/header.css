@@ -15,7 +15,7 @@ header {
 header h1 {
   font-size: 1.8rem;
   font-weight: 600;
-  font-family: var(--default);
+  font-family: var(--title);
   color: var(--color04);
 }
 
@@ -43,9 +43,9 @@ header nav a:hover {
 }
 
 @media screen and (max-width: 1440px) {
-header {
-  justify-content: space-between;
-}
+  header {
+    justify-content: space-between;
+  }
 
   header i.fa-bars {
     display: flex;
