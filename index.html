@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
     <title>DEVictor</title>
 
     <!-- RESETAR A CSS -->
@@ -21,11 +26,14 @@
     <!-- Contatos -->
     <link rel="stylesheet" href="./src/styles/contatos.css" />
 
-    <link
-      rel="shortcut icon"
-      href="./src/assets/icons/favicon.ico"
-      type="image/x-icon"
-    />
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
+    <!-- Efeito de carrossel com GRAB horizontal -->
+    <script src="./src/scripts/smoothscroll.js" defer></script>
+    <!-- Menu Hambúrguer -->
+    <script src="./src/scripts/hamburguerbutton.js" defer></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal" defer></script>
   </head>
 
   <body>
@@ -420,6 +428,7 @@
           <button type="submit" id="btn__Enviar">
             <i class="fa-solid fa-paper-plane"></i>Enviar
           </button>
+
           <input type="hidden" name="c" value="Alguém entrou em contato!" />
           <input type="hidden" name="_honey" style="display: none" />
           <input type="hidden" name="_captcha" value="false" />
@@ -443,13 +452,5 @@
         >
       </section>
     </footer>
-
-    <script
-      src="https://kit.fontawesome.com/9bfb2428d0.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Efeito de carrossel com GRAB horizontal -->
-    <script src="./src/scripts/smoothscroll.js"></script>
-    <script src="./src/scripts/hamburguerbutton.js"></script>
   </body>
 </html>
