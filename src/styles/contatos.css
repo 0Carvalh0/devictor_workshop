@@ -1,6 +1,4 @@
 footer section#contatos {
-  height: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -12,35 +10,24 @@ footer section#contatos h2 {
 }
 
 footer section#contatos div {
-  width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
 }
 
 hr {
   width: 100%;
-  margin: 20px 0px;
-}
-
-footer section#contatos div i {
-  font-weight: 600;
-  margin-right: 10px;
-}
-
-footer section#contatos div p {
-  font-weight: 600;
+  margin: 10px 0px;
 }
 
 footer section#contatos a {
   background-color: #fff;
-  width: 150px;
+  width: 300px;
   padding: 10px;
   margin: 10px;
-  border-radius: 0px 10px 0px 10px;
+  border-radius: 10px;
 }
 
 footer section#contatos a#github:hover {

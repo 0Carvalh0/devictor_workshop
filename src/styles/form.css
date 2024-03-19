@@ -1,26 +1,20 @@
 footer section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
-
-  width: 50%;
-  padding: 50px;
 }
 
 footer section#form__falecomigo form {
   display: flex;
   flex-flow: row wrap;
   flex-direction: column;
-  text-align: start;
   align-items: center;
 
-  width: 100%;
-  padding: 10px;
+  text-align: start;
 }
 
 footer section#form__falecomigo form div {
   display: flex;
-  width: 100%;
   column-gap: 10px;
 }
 
@@ -34,14 +28,13 @@ footer section#form__falecomigo form label {
   flex-direction: column;
   font-weight: 600;
 
-  width: 100%;
-  margin: 10px 10px;
+  margin-top: 10px;
   text-indent: 15px;
 }
 
 footer section#form__falecomigo input {
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 10px;
   border: 2px solid var(--color01);
   color: #fff;
   background-color: transparent;
@@ -53,7 +46,7 @@ footer section#form__falecomigo form #imensagem {
   width: 100%;
 
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 2px solid var(--color01);
   color: #fff;
 
@@ -61,19 +54,19 @@ footer section#form__falecomigo form #imensagem {
 }
 
 footer section#form__falecomigo form #btn__Enviar {
-  width: fit-content;
-  padding: 10px 20px;
+  padding: 10px;
   background-color: transparent;
-  margin-top: 20px;
+  margin-top: 10px;
 
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   border: 2px solid var(--color01);
   color: var(--color01);
-  border-radius: 0px 10px 0px 10px;
+  border-radius: 10px;
 }
 
 footer section#form__falecomigo form #btn__Enviar:hover {
   box-shadow: 0px 0px 10px var(--color01);
-  transform: scale(1.03);
+  transform: scale(1.02);
+  transition-duration: 0.3s;
 }
