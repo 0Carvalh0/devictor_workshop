@@ -20,14 +20,16 @@
   --title: Codefont;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
   background-color: #092a3a;
   background-image: linear-gradient(to bottom, #082432, #010405);
   color: var(--colorwhite);
   text-align: center;
-  box-sizing: border-box;
-  scroll-padding-top: 40px;
 
   font-size: 20px;
   font-family: var(--default);
@@ -43,20 +45,15 @@ i {
 }
 
 main {
-  padding-top: 78px;
-}
-
-main h1 {
-  font-family: var(--title);
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-top: 20px;
+  padding-top: 90px;
 }
 
 h1,
 h2,
 h3 {
+  font-family: var(--title);
   letter-spacing: 2px;
+  font-size: 1.5rem;
 }
 
 footer {
@@ -65,12 +62,6 @@ footer {
   align-items: center;
 
   background-color: var(--color00);
-}
-
-footer h2 {
-  font-family: var(--title);
-  font-size: 1.5rem;
-  font-weight: 600;
 }
 
 @media screen and (max-width: 1115px) {

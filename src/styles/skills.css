@@ -2,6 +2,7 @@ main section#skills section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+  height: calc(100vh - 80px);
   padding: 50px;
 }
 

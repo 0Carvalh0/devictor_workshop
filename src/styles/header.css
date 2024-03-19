@@ -14,13 +14,11 @@ header {
 
 header h1 {
   font-size: 1.8rem;
-  font-weight: 600;
-  font-family: var(--title);
   color: var(--color04);
 }
 
 header nav a {
-  margin: 0px 20px;
+  margin: 0px 10px;
   padding: 20px 20px 6px 20px;
   color: var(--color02);
 }
@@ -29,17 +27,18 @@ header i {
   color: var(--color02);
 }
 
-i.fa-bars {
+i#btn__menu {
   display: none;
 }
 
-header i:hover {
+header a:hover i {
   color: var(--color03);
+  transition-duration: 0.3s;
 }
 
 header nav a:hover {
-  transition-duration: 0.3s;
   color: var(--color03);
+  transition-duration: 0.3s;
 }
 
 @media screen and (max-width: 1440px) {
@@ -47,8 +46,10 @@ header nav a:hover {
     justify-content: space-between;
   }
 
-  header i.fa-bars {
+  header i#btn__menu {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: var(--color02);
     color: #fff;
@@ -56,11 +57,14 @@ header nav a:hover {
     width: 46px;
     height: 46px;
 
-    justify-content: center;
-    align-items: center;
-
     border-radius: 50%;
     z-index: 1000;
+  }
+
+  header i#btn__menu:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 3px 0px #000;
+    transition-duration: 0.3s;
   }
 
   header nav {
@@ -74,9 +78,9 @@ header nav a:hover {
     justify-content: center;
     flex-direction: column;
 
-    padding: 70px 0px 0px 0px;
+    padding-top: 70px;
     background-color: var(--color00);
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
   }
 
   header nav a:hover {
