@@ -68,6 +68,7 @@ footer {
 @media screen and (max-width: 1115px) {
   footer {
     flex-direction: column;
+    gap: 40px;
   }
 }
 

@@ -2,7 +2,7 @@ main section#projects {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
 }
 
 main section#projects section.carrosel {

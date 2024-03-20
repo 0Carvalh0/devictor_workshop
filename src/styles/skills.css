@@ -1,8 +1,15 @@
+main section#skills {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 main section#skills section {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  height: calc(100vh - 80px);
   padding: 10px;
 }
 
@@ -14,6 +21,7 @@ main section#skills .skill {
   height: 300px;
   width: 280px;
 
+  margin: 10px;
   padding: 10px;
 
   background-image: linear-gradient(125deg, var(--color00) 10%, #030c11);
@@ -33,7 +41,8 @@ main section#skills .skill img {
 }
 
 main section#skills .skill h2 {
-  font-size: 1.5rem;
+  font-family: var(--default);
+  font-size: 1.4rem;
 
   margin: 10px 0px;
 }
