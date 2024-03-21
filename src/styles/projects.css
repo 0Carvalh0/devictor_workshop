@@ -8,11 +8,11 @@ main section#projects {
 main section#projects section.carrosel {
   display: flex;
   overflow-x: auto;
-  padding: 10px 0px;
+  padding: 20px;
 }
 
 main section.carrosel::-webkit-scrollbar {
-  width: 0;
+  width: 1;
 }
 
 main .arrow {
@@ -31,11 +31,11 @@ main .arrow {
 }
 
 main .left {
-  left: 20px;
+  left: 40px;
 }
 
 main .right {
-  right: 20px;
+  right: 40px;
 }
 
 main .arrow i {
@@ -48,6 +48,7 @@ main section#projects .projeto {
   align-items: center;
   justify-content: space-around;
 
+  min-width: 40vw;
   padding: 10px;
   margin: 0px 10px;
 
