@@ -34,7 +34,7 @@
     <script src="./src/scripts/hamburguerbutton.js" defer></script>
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal" defer></script>
-    <script src="./src/scripts/revealonscroll.js"></script>
+    <script src="./src/scripts/revealonscroll.js" defer></script>
   </head>
 
   <body>
@@ -72,7 +72,7 @@
     <!-- Conteúdo e seções -->
     <main>
       <section id="welcome__aboutme">
-        <section class="welcome__aboutme-text">
+        <section class="welcome__aboutme-text welcome__efeito-texto">
           <p>Olá, meu nome é <h2>João Victor</h2> Eu sou um desenvolvedor web front-end.<br />Apaixonado por
             transformar ideias em realidade a mais de 6 meses, atualmente estudando Análise e Desenvolvimento de Sistemas na UNIP - Universidade Paulista.</p>
             <hr />
@@ -81,12 +81,12 @@
               Como desenvolvedor front-end, crio interfaces de usuário intuitivas, responsivas e acessíveis. Utilizo tecnologias como HTML5, CSS3 e JavaScript para garantir que seu site seja bem estruturado, bonito, interativo e funcione perfeitamente em qualquer dispositivo.
             </p>
           </section>
-          <img id="minhaft"></img>
+          <img id="minhaft" class="welcome__efeito-imagem"></img>
       </section>
 
       <!-- Projetos -->
       <section id="projects" class="naoSelecionavel">
-          <h1>Projetos:</h1>
+          <h1 class="title">Projetos:</h1>
           <div class="arrow left"><i class="fa-solid fa-chevron-left"></i></div>
         <section>
           <section class="carrosel">
@@ -202,9 +202,9 @@
 
       <!-- Habilidades -->
       <section id="skills" class="naoSelecionavel">
-        <h1>Habilidades:</h1>
+        <h1 class="title">Habilidades:</h1>
         <section>
-          <section class="skill">
+          <section class="skill skill1">
             <img
               src="./src/assets/icons/Windows.png"
               class="icon"
@@ -217,7 +217,7 @@
               ><i class="fa-solid fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill2">
             <img
               src="./src/assets/icons/vscode.png"
               class="icon"
@@ -230,7 +230,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill3">
             <img
               src="./src/assets/icons/HTML5.png"
               class="icon"
@@ -243,7 +243,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill4">
             <img
               src="./src/assets/icons/CSS3.png"
               class="icon"
@@ -256,7 +256,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill5">
             <img
               src="./src/assets/icons/GitHub.png"
               class="icon"
@@ -269,7 +269,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill6">
             <img
               src="./src/assets/icons/javascript.png"
               class="icon"
@@ -282,7 +282,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill7">
             <img
               src="./src/assets/icons/git.png"
               class="icon"
@@ -295,7 +295,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill8">
             <img
               src="./src/assets/icons/linux.png"
               class="icon"
@@ -308,7 +308,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill9">
             <img
               src="./src/assets/icons/React.png"
               class="icon"
@@ -321,7 +321,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill10">
             <img
               src="./src/assets/icons/npm.png"
               class="icon"
@@ -334,7 +334,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill11">
             <img
               src="./src/assets/icons/gimp.png"
               class="icon"
@@ -347,7 +347,7 @@
               ><i class="fa-regular fa-star"></i>
             </div>
           </section>
-          <section class="skill">
+          <section class="skill skill12">
             <img
               src="./src/assets/icons/Typescript.png"
               class="icon"
@@ -367,7 +367,7 @@
     <!-- Mais informações para contato -->
     <footer id="contatos">
       <section id="form__falecomigo">
-        <h2>Fale Comigo:</h2>
+        <h2 class="title">Fale Comigo:</h2>
         <form
           action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com"
           method="POST"
@@ -436,7 +436,7 @@
         </form>
       </section>
       <section id="contatos">
-        <h2>Contato:</h2>
+        <h2 class="title">Contato:</h2>
         <div>
           <i class="fa-solid fa-envelope"></i>
           <p>trabalho.joaovictor2004@gmail.com</p>
