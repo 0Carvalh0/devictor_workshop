@@ -8,7 +8,7 @@ main section#projects {
 main section#projects section.carrosel {
   display: flex;
   overflow-x: auto;
-  padding: 20px;
+  padding: 20px 20px 70px 20px;
 }
 
 main section.carrosel::-webkit-scrollbar {

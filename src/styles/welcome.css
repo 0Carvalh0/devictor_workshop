@@ -23,6 +23,7 @@ main section#welcome__aboutme #minhaft {
   background: #fff url("../assets/images/minhaft001.jpeg") no-repeat;
   background-size: cover;
   background-position: top center;
+  border-radius: 10px;
 
   width: 400px;
   height: 400px;

@@ -72,7 +72,32 @@ footer {
   }
 }
 
-.welcome__efeito-texto, .welcome__efeito-imagem, .title, #projects, .skill1, .skill2, .skill3, .skill4, .skill5, .skill6, .skill7, .skill8, .skill9, .skill10, .skill11, .skill12, #inome, #imail, #itel, #iassunto, #imensagem {
+.welcome__efeito-texto,
+.welcome__efeito-imagem,
+.title,
+.arrow,
+.projeto1,
+.projeto2,
+.projeto3,
+.projeto4,
+.projeto5,
+.skill1,
+.skill2,
+.skill3,
+.skill4,
+.skill5,
+.skill6,
+.skill7,
+.skill8,
+.skill9,
+.skill10,
+.skill11,
+.skill12,
+#inome,
+#imail,
+#itel,
+#iassunto,
+#imensagem {
   visibility: hidden;
 }
 
