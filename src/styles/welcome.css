@@ -6,11 +6,19 @@ main section#welcome__aboutme {
 }
 
 main section#welcome__aboutme section.welcome__aboutme-text {
-  width: 500px;
+  width: 800px;
+  margin-left: 60px;
+  font-size: 1.3rem;
+  gap: 10px;
 
   display: flex;
   flex-direction: column;
   text-align: justify;
+}
+
+main section#welcome__aboutme section.welcome__aboutme-text hr {
+  border: 1px solid var(--color02);
+  /* box-shadow: 0px 0px 8px var(--color02); */
 }
 
 main section#welcome__aboutme section.welcome__aboutme-text h2 {
@@ -38,6 +46,7 @@ main section#welcome__aboutme #minhaft {
 
   main section#welcome__aboutme section.welcome__aboutme-text {
     text-align: center;
+    margin: 0;
   }
 
   main section#welcome__aboutme #minhaft {

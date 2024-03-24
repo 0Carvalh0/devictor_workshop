@@ -31,6 +31,10 @@ revelar.reveal(".projeto1", {
   distance: "50px",
   delay: 500,
   easing: "ease",
+  // viewOffset: {
+  //   left: 1000,
+  //   right: 1000,
+  // },
 });
 
 revelar.reveal(".projeto2", {
@@ -38,6 +42,10 @@ revelar.reveal(".projeto2", {
   distance: "50px",
   delay: 1000,
   easing: "ease",
+  // viewOffset: {
+  //   left: 1000,
+  //   right: 1000,
+  // },
 });
 
 revelar.reveal(".projeto3", {
@@ -45,6 +53,10 @@ revelar.reveal(".projeto3", {
   distance: "50px",
   delay: 1500,
   easing: "ease",
+  // viewOffset: {
+  //   left: 1000,
+  //   right: 1000,
+  // },
 });
 
 revelar.reveal(".projeto4", {
@@ -52,6 +64,10 @@ revelar.reveal(".projeto4", {
   distance: "50px",
   delay: 2000,
   easing: "ease",
+  // viewOffset: {
+  //   left: 1000,
+  //   right: 1000,
+  // },
 });
 
 revelar.reveal(".projeto5", {
@@ -59,6 +75,10 @@ revelar.reveal(".projeto5", {
   distance: "50px",
   delay: 2500,
   easing: "ease",
+  // viewOffset: {
+  //   left: 1000,
+  //   right: 1000,
+  // },
 });
 
 // HABILIDADES
