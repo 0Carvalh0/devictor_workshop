@@ -27,15 +27,28 @@ main section#welcome__aboutme section.welcome__aboutme-text h2 {
   margin: 10px 0px;
 }
 
+main section#welcome__aboutme section.welcome__aboutme-text h2#meu-nome {
+  width: fit-content;
+  border-right: 2px solid var(--color02);
+  animation: cursor 1s infinite alternate;
+}
+
 main section#welcome__aboutme #minhaft {
   background: #fff url("../assets/images/minhaft001.jpeg") no-repeat;
   background-size: cover;
   background-position: top center;
   border-radius: 10px;
+  box-shadow: 20px 20px 0px var(--color01);
 
   width: 400px;
   height: 400px;
   margin: 50px;
+}
+
+@keyframes cursor {
+  50% {
+    border-right: 2px solid transparent;
+  }
 }
 
 @media screen and (max-width: 1080px) {

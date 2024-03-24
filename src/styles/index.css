@@ -27,7 +27,6 @@
 body,
 html {
   background-color: #092a3a;
-  background-image: linear-gradient(to bottom, #082432, #010405);
   color: var(--colorwhite);
   text-align: center;
 
@@ -72,9 +71,9 @@ footer {
   }
 
   footer section#form__falecomigo form div {
-  flex-direction: column;
-  width: 100%;
-}
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .welcome__efeito-texto,
