@@ -21,88 +21,14 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-}
-
-body,
-html {
-  background-color: #092a3a;
-  color: var(--colorwhite);
-  text-align: center;
-
-  font-size: 20px;
-  font-family: var(--default);
 }
 
 a {
   color: var(--colorblack);
   text-decoration: none;
-}
-
-i {
-  margin-right: 5px;
-}
-
-main {
-  padding-top: 90px;
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--title);
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-}
-
-footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 20px 0px;
-
-  background-color: var(--color00);
-}
-
-@media screen and (max-width: 1115px) {
-  footer {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  footer section#form__falecomigo form div {
-    flex-direction: column;
-    width: 100%;
-  }
-}
-
-.welcome__efeito-texto,
-.welcome__efeito-imagem,
-.title,
-.arrow,
-.projeto1,
-.projeto2,
-.projeto3,
-.projeto4,
-.projeto5,
-.skill1,
-.skill2,
-.skill3,
-.skill4,
-.skill5,
-.skill6,
-.skill7,
-.skill8,
-.skill9,
-.skill10,
-.skill11,
-.skill12,
-#inome,
-#imail,
-#itel,
-#iassunto,
-#imensagem {
-  visibility: hidden;
 }
 
 .naoSelecionavel {
