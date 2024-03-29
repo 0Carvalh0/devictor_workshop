@@ -45,20 +45,22 @@ function automaticProjectGenerator(dataList) {
   const sectionInsert = document.getElementById("listInsertProjects");
 
   dataList.forEach((projectData, indexProject) => {
-    const projectStructure = `<section class="main-projects__project" id="project${indexProject}">
+    const projectStructure = `
+    <section class="main-projects__project" id="project${indexProject + 1}">
       <img
         src=${projectData.thumbnailSrc}
         alt="Imagem projeto"
         class="main-projects__project-img"/>
-      <h2>${projectData.name}</h2>
+      <h2 class="title">${projectData.name}</h2>
       <p>
         ${projectData.description}
       </p>
       <section class="main-projects__ViewMore">
-        <a href=${projectData.urlProject} target="_blank">Ver Projeto</a>
-        <a href=${projectData.urlRepository} target="_blank">Ver Repositório</a>
+        <a href=${projectData.urlProject} target="_blank" class="main-projects__Button">Ver Projeto</a>
+        <a href=${projectData.urlRepository} target="_blank" class="main-projects__Button">Ver Repositório</a>
       </section>
-    </section>`;
+    </section>
+    `;
 
     sectionInsert.innerHTML += projectStructure;
   });

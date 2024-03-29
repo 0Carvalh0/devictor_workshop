@@ -9,10 +9,35 @@
   text-align: center;
 }
 
+.main-skills__content {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+
+  gap: 1rem;
+}
+
+.main-skills__skill {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  border: 1px dashed red;
+  padding: 10px;
+  width: 10rem;
+  border-radius: 1rem;
+
+  row-gap: 1rem;
+}
+
 .main-skills__level {
   display: flex;
+  justify-content: center;
+
+  font-size: 1.5rem;
 }
 
 .icon {
-  width: 25vw;
+  width: 6rem;
+  height: 6rem;
 }

@@ -9,6 +9,23 @@
   text-align: center;
 }
 
+.main-projects__project {
+  border: 1px dashed blue;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 1rem;
+  gap: 1rem;
+}
+
 .main-projects__project-img {
-  width: 100vw;
+  width: 90vw;
+  height: 10rem;
+}
+
+.main-projects__Button {
+  border: 1px dashed green;
+  padding: .5rem;
 }
