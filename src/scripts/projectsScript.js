@@ -40,3 +40,28 @@ const projectsList = [
     urlRepository: "https://github.com/0Carvalh0/projeto-login",
   },
 ];
+
+function automaticProjectGenerator(dataList) {
+  const sectionInsert = document.getElementById("listInsertProjects");
+
+  dataList.forEach((projectData, indexProject) => {
+    const projectStructure = `<section class="main-projects__project" id="project${indexProject}">
+      <img
+        src=${projectData.thumbnailSrc}
+        alt="Imagem projeto"
+        class="main-projects__project-img"/>
+      <h2>${projectData.name}</h2>
+      <p>
+        ${projectData.description}
+      </p>
+      <section class="main-projects__ViewMore">
+        <a href=${projectData.urlProject} target="_blank">Ver Projeto</a>
+        <a href=${projectData.urlRepository} target="_blank">Ver Repositório</a>
+      </section>
+    </section>`;
+
+    sectionInsert.innerHTML += projectStructure;
+  });
+}
+
+automaticProjectGenerator(projectsList);
