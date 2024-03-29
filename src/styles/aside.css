@@ -1,0 +1,78 @@
+#sideBar {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  z-index: 998;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 10px 30px 10px;
+
+  background-color: #b3b3b3;
+  transition: all ease 0.5s;
+}
+
+#sideBar-btnHamburguer {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-top {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sideBar-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sideBar-body {
+  width: 100%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.btnMenu-sideBar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sideBar-footer {
+  display: flex;
+
+  gap: 1rem;
+}
+
+.fa-solid,
+.fa-brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 2.4rem;
+  width: 40px;
+  height: 40px;
+}

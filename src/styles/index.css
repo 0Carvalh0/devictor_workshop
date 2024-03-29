@@ -26,9 +26,23 @@
   box-sizing: border-box;
 }
 
+body,
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
 a {
   color: var(--colorblack);
   text-decoration: none;
+}
+
+#main {
+  display: none;
+}
+
+.title {
+  font-size: 1.5rem;
 }
 
 .naoSelecionavel {

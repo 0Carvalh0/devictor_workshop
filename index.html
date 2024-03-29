@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
 
     <!-- HEADER ESTILO -->
-    <link rel="stylesheet" href="./src/styles/header.css" />
+    <link rel="stylesheet" href="./src/styles/aside.css" />
 
     <!-- MAIN CONTEÚDO -->
-    <link rel="stylesheet" href="./src/styles/welcome.css" />
+    <link rel="stylesheet" href="./src/styles/aboutme.css" />
     <link rel="stylesheet" href="./src/styles/projects.css" />
     <link rel="stylesheet" href="./src/styles/skills.css" />
 
@@ -30,35 +30,37 @@
     <link rel="stylesheet" href="./src/styles/form.css" />
 
     <!-- Contatos -->
-    <link rel="stylesheet" href="./src/styles/contatos.css" />
+    <link rel="stylesheet" href="./src/styles/contacts.css" />
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
 
     <!-- Animação de Digitação -->
-    <script src="./src/scripts/typinganimation.js" defer></script>
+    <script src="./src/scripts/typingAnimation.js" defer></script>
   </head>
 
   <body>
     <!-- SideBar -->
     <aside id="sideBar">
-      <section class="sideBar-header">
-        <h1 class="title">DEVictor</h1>
+      <section class="sidebar-top">
+        <section class="sideBar-header">
+          <h1 class="title">DEVictor</h1>
+        </section>
+        <menu class="menu sideBar-body">
+            <a href="#" class="btnMenu-sideBar"
+              ><i class="fa-solid fa-user"></i>Sobre mim</a
+            >
+            <a href="#" class="btnMenu-sideBar"
+              ><i class="fa-solid fa-file"></i>Projetos</a
+            >
+            <a href="#" class="btnMenu-sideBar"
+              ><i class="fa-solid fa-star"></i>Habilidades</a
+            >
+            <a href="#" class="btnMenu-sideBar"
+              ><i class="fa-solid fa-phone"></i>Contatos</a
+            >
+          </menu>
       </section>
-      <menu class="menu sideBar-body">
-          <a href="#" class="btnMenu-sideBar"
-            ><i class="fa-solid fa-user"></i>Sobre Mim</a
-          >
-          <a href="#" class="btnMenu-sideBar"
-            ><i class="fa-solid fa-file"></i>Projetos</a
-          >
-          <a href="#" class="btnMenu-sideBar"
-            ><i class="fa-solid fa-star"></i>Habilidades</a
-          >
-          <a href="#" class="btnMenu-sideBar"
-            ><i class="fa-solid fa-phone"></i>Contatos</a
-          >
-        </menu>
 
       <section class="sideBar-footer">
         <a href="https://github.com/0Carvalh0" target="_blank"
@@ -71,7 +73,7 @@
         ></a>
       </section>
     </aside>
-
+    <i class="fa-solid fa-bars" id="sideBar-btnHamburguer"></i>
     <!-- Conteúdo e seções -->
     <main id="main">
       <section class="section main-aboutme">
@@ -202,6 +204,5 @@
         </section>
       </footer>
     </main>
-
   </body>
 </html>
