@@ -1,0 +1,11 @@
+.footer-contacts {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+.footer-contacts i {
+  margin-right: 0.5rem;
+}

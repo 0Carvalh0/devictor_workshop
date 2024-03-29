@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./src/styles/skills.css" />
 
     <!-- FOOTER -->
+    <link rel="stylesheet" href="./src/styles/footer.css" />
     <!-- Formulário para contato -->
     <link rel="stylesheet" href="./src/styles/form.css" />
 
@@ -78,10 +79,10 @@
     <main id="main">
       <section class="section main-aboutme">
         <section class="main-aboutme__text ">
-          <p>Olá, meu nome é <h2 id="meu-nome">João Victor</h2> Eu sou um desenvolvedor web front-end.<br />
+            <p>Olá, meu nome é <h2 class="title" id="meu-nome">João Victor</h2> Eu sou um desenvolvedor web front-end.<br />
             Apaixonado por transformar ideias em realidade a mais de 6 meses, atualmente estudando Análise e Desenvolvimento de Sistemas na UNIP - Universidade Paulista.<br>
-              <h2 class="title">O que eu faço?</h2>
-              Como desenvolvedor front-end, crio interfaces de usuário intuitivas, responsivas e acessíveis. Utilizo tecnologias como HTML5, CSS3 e JavaScript para garantir que seu site seja bem estruturado, bonito, interativo e funcione perfeitamente em qualquer dispositivo.
+            <h2 class="title">O que eu faço?</h2>
+            Como desenvolvedor front-end, crio interfaces de usuário intuitivas, responsivas e acessíveis. Utilizo tecnologias como HTML5, CSS3 e JavaScript para garantir que seu site seja bem estruturado, bonito, interativo e funcione perfeitamente em qualquer dispositivo.
             </p>
           </section>
           <img class="main-aboutme__image"></img>
@@ -89,12 +90,13 @@
 
       <!-- Projetos -->
       <section class="section main-projects">
-        <h1 class="title">Projetos:</h1>
+        <h1 class="title">&lt;Projetos&gt;</h1>
         <section class="main-projects__carousel">
             <section class="main-projects__project" id="project1">
               <img
                 src="./src/assets/images/projetos/Blink.jpg"
                 alt="Imagem projeto"
+                class="main-projects__project-img"
               />
               <h2>Blink</h2>
               <p>
@@ -113,11 +115,12 @@
               </section>
             </section>
           </section>
+          <h1 class="title">&lt;/Projetos&gt;</h1>
       </section>
 
       <!-- Habilidades -->
       <section class="section main-skills">
-        <h1 class="title">Habilidades:</h1>
+        <h1 class="title">&lt;Habilidades&gt;</h1>
         <section class="main-skills__content">
           <section class="main-skills__skill" id="skill1">
             <img
@@ -133,53 +136,62 @@
             </section>
           </section>
         </section>
+        <h1 class="title">&lt;/Habilidades&gt;</h1>
       </section>
       
       <!-- Mais informações para contato -->
       <footer class="section main-footer">
         <form class="footer-form__talkToMe" action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com" method="POST">
           <h2 class="title">Fale Comigo:</h2>
-              <label for="inome">Seu nome:</label>
-              <input
-                type="text"
-                name="usunome"
-                id="inome"
-                placeholder="Digite aqui..."
-                required
-              />
-              <label for="imail">Seu E-mail:</label>
-              <input
-                type="email"
-                name="usumail"
-                id="imail"
-                placeholder="email@exemplo.com.br"
-                required
-              />
-              <label for="itel">Seu telefone:</label>
-              <input
-                type="tel"
-                name="usutel"
-                id="itel"
-                placeholder="(__)_____-____"
-                required
-              />
-              <label for="iassunto">Assunto:</label>
-              <input
-                type="text"
-                name="usuassunto"
-                id="iassunto"
-                placeholder="Digite aqui..."
-                required
-              />
-          <label for="imensagem">Mensagem:</label>
-          <textarea
-            name="usumensagem"
-            id="imensagem"
-            cols="30"
-            rows="10"
-            placeholder="Escreva sua mensagem aqui..."
-            required
-          ></textarea>
+              <section class="footer-form__input">
+                <label for="inome">Seu nome:</label>
+                <input
+                  type="text"
+                  name="usunome"
+                  id="inome"
+                  placeholder="Digite aqui..."
+                  required
+                />
+              </section>
+              <section class="footer-form__input">
+                <label for="imail">Seu E-mail:</label>
+                <input
+                  type="email"
+                  name="usumail"
+                  id="imail"
+                  placeholder="email@exemplo.com.br"
+                  required
+                />
+              </section>
+              <section class="footer-form__input">
+                <label for="itel">Seu telefone:</label>
+                <input
+                  type="tel"
+                  name="usutel"
+                  id="itel"
+                  placeholder="(__)_____-____"
+                  required
+                />
+              </section>
+              <section class="footer-form__input">
+                <label for="iassunto">Assunto:</label>
+                <input
+                  type="text"
+                  name="usuassunto"
+                  id="iassunto"
+                  placeholder="Digite aqui..."
+                  required
+                />
+              </section>
+            <label for="imensagem">Mensagem:</label>
+            <textarea
+              name="usumensagem"
+              id="imensagem"
+              cols="30"
+              rows="10"
+              placeholder="Escreva sua mensagem aqui..."
+              required
+            ></textarea>
           <button type="submit" id="btn__Enviar">
             <i class="fa-solid fa-paper-plane"></i>Enviar
           </button>
@@ -190,8 +202,7 @@
         </form>
         <section class="footer-contacts">
           <h2 class="title">Contato:</h2>
-            <i class="fa-solid fa-envelope"></i>
-            <p>trabalho.joaovictor2004@gmail.com</p>
+            <p><i class="fa-solid fa-envelope"></i>trabalho.joaovictor2004@gmail.com</p>
           <a href="https://github.com/0Carvalh0" id="github" target="_blank"
             ><i class="fa-brands fa-github"></i>GitHub</a
           >

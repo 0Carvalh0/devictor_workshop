@@ -1,0 +1,17 @@
+.main-aboutme {
+  width: 100vw;
+  min-height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-aboutme__image {
+  width: 100vw;
+  height: 20rem;
+
+  background: url("../assets/images/minhaft001.jpeg") no-repeat center / cover;
+}

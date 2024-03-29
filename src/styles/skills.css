@@ -1,0 +1,18 @@
+.main-skills {
+  min-height: 100vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.main-skills__level {
+  display: flex;
+}
+
+.icon {
+  width: 25vw;
+}

@@ -1,9 +1,8 @@
-.footer-form__talkToMe {
-  width: 100%;
+.main-footer {
+  min-height: 50vh;
 
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-
-  gap: 0.5rem;
+  justify-content: center;
 }

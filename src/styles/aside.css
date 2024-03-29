@@ -1,6 +1,6 @@
 #sideBar {
   position: absolute;
-  top: 0px;
+  top: -2000px;
   left: 0;
   z-index: 998;
 
@@ -27,6 +27,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  font-size: 2rem;
 }
 
 .sidebar-top {
@@ -66,8 +68,8 @@
   gap: 1rem;
 }
 
-.fa-solid,
-.fa-brands {
+#sideBar .fa-solid,
+#sideBar .fa-brands {
   display: flex;
   justify-content: center;
   align-items: center;
