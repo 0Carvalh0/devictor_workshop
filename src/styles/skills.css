@@ -21,10 +21,11 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: space-around;
 
   border: 1px dashed red;
-  padding: 10px;
-  width: 10rem;
+  padding: 5px;
+  width: 9rem;
   border-radius: 1rem;
 
   row-gap: 1rem;
@@ -34,10 +35,10 @@
   display: flex;
   justify-content: center;
 
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .icon {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
 }

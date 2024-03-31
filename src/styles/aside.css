@@ -23,12 +23,13 @@
   top: 1rem;
   left: 1rem;
   z-index: 999;
-
+  
   display: flex;
   justify-content: center;
   align-items: center;
-
-  font-size: 2rem;
+  
+  font-size: 1.5rem;
+  transition: all ease 0.5s;
 }
 
 .sidebar-top {
