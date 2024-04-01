@@ -34,6 +34,9 @@
   align-items: center;
 
   color: var(--color05);
+  background-color: var(--colorblack);
+  border-radius: 50%;
+  padding: var(--defaultPadding);
   font-size: 1.5rem;
   transition: all ease 0.5s;
 }

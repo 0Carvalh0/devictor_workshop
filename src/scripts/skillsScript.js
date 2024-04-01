@@ -66,7 +66,7 @@ function automaticSkillGenerator(dataList) {
 
   dataList.forEach((skillData, indexSkill) => {
     const skillStructure = `
-    <section class="main-skills__skill" id="skill${indexSkill + 1}">
+    <section class="main-skills__skill main__card" id="skill${indexSkill + 1}">
       <img
         src=${skillData.iconSrc}
         class="icon"

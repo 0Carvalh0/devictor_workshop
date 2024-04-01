@@ -18,6 +18,13 @@
   /* FONTES */
   --default: "Montserrat", sans-serif;
   --title: Codefont;
+
+  /* PADDING, MARGIN, BORDER, BORDER-RADIUS */
+  --defaultPadding: 1rem;
+  --defaultPaddingButton: 6px 20px;
+  --defaultMargin: 5px;
+  --defaultBorder: 2px solid var(--color05);
+  --defaultBorderRadius: 10px;
 }
 
 * {
@@ -36,9 +43,28 @@ html {
 }
 
 #main {
-  padding: 0px 1rem;
+  padding: 0 1rem;
 
-  background-image: linear-gradient(175deg, var(--colorblack) 44rem, var(--color02) 44rem 170rem, var(--colorblack) 170rem 234rem, var(--color02) 234rem);
+  background-image: linear-gradient(
+    175deg,
+    var(--colorblack) 44rem,
+    var(--color02) 44rem 170rem,
+    var(--colorblack) 170rem 234rem,
+    var(--color02) 234rem
+  );
+}
+
+.main__card {
+  background-image: radial-gradient(var(--color02), var(--color01));
+  border: var(--defaultBorder);
+  border-radius: var(--defaultBorderRadius);
+  padding: var(--defaultPadding);
+}
+
+.main__button {
+  border: 2px solid var(--color05);
+  padding: var(--defaultPaddingButton);
+  border-radius: var(--defaultBorderRadius);
 }
 
 a {
