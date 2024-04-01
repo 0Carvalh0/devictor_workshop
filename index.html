@@ -14,6 +14,9 @@
     <!-- RESETAR A CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
 
+    <!-- Animações de CSS -->
+    <link rel="stylesheet" href="./src/styles/animations.css">
+
     <!-- CONFIGURAÇÕES GERAIS DA CSS -->
     <link rel="stylesheet" href="./src/styles/index.css" />
 
@@ -41,8 +44,6 @@
     
     <script src="./src/scripts/skillsScript.js" defer></script>
     
-    <script src="./src/scripts/typingAnimation.js" defer></script>
-
     <script src="./src/scripts/sideBarMobile.js" defer></script>
   </head>
   
@@ -55,16 +56,16 @@
           <h1 class="title">DEVictor</h1>
         </section>
         <menu class="menu sideBar-body">
-            <a href="#" class="btnMenu-sideBar"
+            <a href="#main-aboutme" class="btnMenu-sideBar"
               ><i class="fa-solid fa-user"></i>Sobre mim</a
             >
-            <a href="#" class="btnMenu-sideBar"
+            <a href="#main-projects" class="btnMenu-sideBar"
               ><i class="fa-solid fa-file"></i>Projetos</a
             >
-            <a href="#" class="btnMenu-sideBar"
+            <a href="#main-skills" class="btnMenu-sideBar"
               ><i class="fa-solid fa-star"></i>Habilidades</a
             >
-            <a href="#" class="btnMenu-sideBar"
+            <a href="#main-footer" class="btnMenu-sideBar"
               ><i class="fa-solid fa-phone"></i>Contatos</a
             >
           </menu>
@@ -83,7 +84,7 @@
     </aside>
     <!-- Conteúdo e seções -->
     <main id="main">
-      <section class="section main-aboutme">
+      <section class="section main-aboutme" id="main-aboutme">
         <section class="main-aboutme__text ">
             <p>Olá, meu nome é <h2 class="title" id="meu-nome">João Victor</h2> Eu sou um desenvolvedor web front-end.<br />
             Apaixonado por transformar ideias em realidade a mais de 6 meses, atualmente estudando Análise e Desenvolvimento de Sistemas na UNIP - Universidade Paulista.<br>
@@ -95,7 +96,7 @@
       </section>
 
       <!-- Projetos -->
-      <section class="section main-projects">
+      <section class="section main-projects" id="main-projects">
         <h1 class="title">&lt;Projetos&gt;</h1>
         <section class="main-projects__carousel" id="listInsertProjects">
         </section>
@@ -103,7 +104,7 @@
       </section>
 
       <!-- Habilidades -->
-      <section class="section main-skills">
+      <section class="section main-skills" id="main-skills">
         <h1 class="title">&lt;Habilidades&gt;</h1>
         <section class="main-skills__content" id="listInsertSkills">
         </section>
@@ -111,7 +112,7 @@
       </section>
       
       <!-- Mais informações para contato -->
-      <footer class="section main-footer">
+      <footer class="section main-footer" id="main-footer">
         <form class="footer-form__talkToMe" action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com" method="POST">
           <h2 class="title">Fale Comigo:</h2>
               <section class="footer-form__input">
@@ -120,6 +121,7 @@
                   type="text"
                   name="usunome"
                   id="inome"
+                  class="inputForm"
                   placeholder="Digite aqui..."
                   required
                 />
@@ -130,6 +132,7 @@
                   type="email"
                   name="usumail"
                   id="imail"
+                  class="inputForm"
                   placeholder="email@exemplo.com.br"
                   required
                 />
@@ -140,6 +143,7 @@
                   type="tel"
                   name="usutel"
                   id="itel"
+                  class="inputForm"
                   placeholder="(__)_____-____"
                   required
                 />
@@ -150,6 +154,7 @@
                   type="text"
                   name="usuassunto"
                   id="iassunto"
+                  class="inputForm"
                   placeholder="Digite aqui..."
                   required
                 />
@@ -158,6 +163,7 @@
             <textarea
               name="usumensagem"
               id="imensagem"
+              class="inputForm"
               cols="30"
               rows="10"
               placeholder="Escreva sua mensagem aqui..."

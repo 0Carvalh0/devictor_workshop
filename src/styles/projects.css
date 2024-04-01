@@ -18,6 +18,10 @@
 
   padding: 1rem;
   gap: 1rem;
+
+  animation: revealBottomToUp 1ms ease-in-out both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 40%;
 }
 
 .main-projects__project-img {
@@ -27,5 +31,5 @@
 
 .main-projects__Button {
   border: 1px dashed green;
-  padding: .5rem;
+  padding: 0.5rem;
 }

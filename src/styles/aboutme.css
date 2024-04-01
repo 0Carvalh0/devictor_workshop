@@ -9,9 +9,27 @@
   text-align: center;
 }
 
+.main-aboutme__text {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
 .main-aboutme__image {
   width: 100%;
   height: 20rem;
 
   background: url("../assets/images/minhaft001.jpeg") no-repeat center / cover;
+}
+
+h2#meu-nome {
+  width: 180px;
+  letter-spacing: 2px;
+
+  animation: typing 2s steps(22) infinite,
+    blink 0.5s step-end infinite alternate;
+  animation-delay: 3s;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #000;
 }

@@ -29,6 +29,10 @@
   border-radius: 1rem;
 
   row-gap: 1rem;
+
+  animation: revealBottomToUp 1ms ease both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 40%;
 }
 
 .main-skills__level {

@@ -21,5 +21,3 @@ linkSection.forEach((link) => {
     btnSideBar.click();
   });
 });
-
-console.log(linkSection)

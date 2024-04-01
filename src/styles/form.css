@@ -7,3 +7,15 @@
 
   gap: 0.5rem;
 }
+
+.footer-form__input {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.inputForm {
+  animation: revealBottomToUp 1ms ease both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 40%;
+}

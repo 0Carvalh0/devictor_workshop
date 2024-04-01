@@ -31,6 +31,7 @@ html {
   width: 100vw;
 
   font-family: var(--default);
+  scroll-behavior: smooth;
 }
 
 #main {
