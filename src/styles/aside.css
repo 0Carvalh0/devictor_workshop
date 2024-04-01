@@ -14,20 +14,26 @@
 
   padding: 20px 10px 30px 10px;
 
-  background-color: #b3b3b3;
+  background-color: var(--color01);
+  color: var(--color05);
   transition: all ease 0.5s;
+}
+
+#sideBar * {
+  color: var(--colorwhite);
 }
 
 #sideBar-btnHamburguer {
   position: fixed;
-  top: 1rem;
-  left: 1rem;
+  top: 15px;
+  left: 15px;
   z-index: 999;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
+  color: var(--color05);
   font-size: 1.5rem;
   transition: all ease 0.5s;
 }
@@ -75,7 +81,7 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   width: 40px;
   height: 40px;
 }

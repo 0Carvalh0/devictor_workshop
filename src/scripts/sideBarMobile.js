@@ -7,10 +7,12 @@ const linkSection = document.querySelectorAll(".btnMenu-sideBar");
 btnSideBar.addEventListener("click", () => {
   if (sideBarMenu.classList.contains("activeHamburguer")) {
     sideBarMenu.style.top = "-2000px";
+    btnSideBar.style.color = "var(--color05)";
     btnSideBar.classList.replace("fa-xmark", "fa-bars");
     sideBarMenu.classList.remove("activeHamburguer");
   } else {
     sideBarMenu.style.top = "0px";
+    btnSideBar.style.color = "var(--colorwhite)";
     btnSideBar.classList.replace("fa-bars", "fa-xmark");
     sideBarMenu.classList.add("activeHamburguer");
   }

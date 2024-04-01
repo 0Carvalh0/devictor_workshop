@@ -1,3 +1,8 @@
+.main-footer {
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
 .footer-form__talkToMe {
   width: 100%;
 
@@ -9,13 +14,28 @@
 }
 
 .footer-form__input {
+  width: 100%;
+
   display: flex;
   flex-flow: column wrap;
   align-items: center;
 }
 
 .inputForm {
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid var(--color05);
+  border-radius: 12px;
+  padding: 6px;
+  
   animation: revealBottomToUp 1ms ease both;
   animation-timeline: view();
   animation-range: cover 0% cover 40%;
+}
+
+#btn__Enviar {
+  padding: 6px 10px;
+  background-color: transparent;
+  border: 2px solid var(--color05);
+  border-radius: 12px;
 }

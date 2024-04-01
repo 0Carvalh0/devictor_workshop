@@ -7,16 +7,16 @@
 
 :root {
   /* PALETA DE CORES */
-  --colorwhite: #eee;
-  --colorblack: #222;
-  --color00: #092a3a;
-  --color01: #15638a;
-  --color02: #2bb7fd;
-  --color03: #7fd3fd;
-  --color04: #aae2fe;
+  --colorwhite: #e8f1f2;
+  --colorblack: #171219;
+  --color01: #13293d;
+  --color02: #006494;
+  --color03: #247ba0;
+  --color04: #1b98e0;
+  --color05: #aae2fe;
 
   /* FONTES */
-  --default: Arial, Helvetica, sans-serif;
+  --default: "Montserrat", sans-serif;
   --title: Codefont;
 }
 
@@ -24,6 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--colorwhite);
 }
 
 body,
@@ -36,10 +37,12 @@ html {
 
 #main {
   padding: 0px 1rem;
+
+  background-image: linear-gradient(175deg, var(--colorblack) 44rem, var(--color02) 44rem 170rem, var(--colorblack) 170rem 234rem, var(--color02) 234rem);
 }
 
 a {
-  color: var(--colorblack);
+  color: var(--colorwhite);
   text-decoration: none;
 }
 

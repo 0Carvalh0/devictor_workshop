@@ -26,10 +26,8 @@ h2#meu-nome {
   width: 180px;
   letter-spacing: 2px;
 
-  animation: typing 2s steps(22) infinite,
-    blink 0.5s step-end infinite alternate;
-  animation-delay: 3s;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #000;
+  border-right: 3px solid var(--colorwhite);
 }
