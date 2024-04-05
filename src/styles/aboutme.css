@@ -17,6 +17,7 @@
 
 .main-aboutme__image {
   width: 100%;
+  max-width: 25rem;
   height: 20rem;
 
   border-radius: var(--defaultBorderRadius);
@@ -31,5 +32,8 @@ h2#meu-nome {
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid var(--colorwhite);
+  border-right: 2px solid var(--colorwhite);
+}
+
+@media screen and (min-width: 1024px) {
 }
