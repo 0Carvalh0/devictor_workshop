@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="./src/styles/contacts.css" />
 
     <!-- Externo -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
@@ -87,7 +88,9 @@
     <main id="main">
       <section class="section main-aboutme" id="main-aboutme">
         <section class="main-aboutme__text ">
-            <p>Olá, meu nome é <h2 class="title" id="meu-nome">João Victor</h2> Eu sou um desenvolvedor web front-end.<br />
+            <p>Olá, meu nome é <div style="display: flex;">
+              <h2 class="title" id="meu -nome"></h2>
+            </div> Eu sou um desenvolvedor web front-end.<br />
             Apaixonado por transformar ideias em realidade a mais de 6 meses, atualmente estudando Análise e Desenvolvimento de Sistemas na UNIP - Universidade Paulista.<br>
             <h2 class="title">O que eu faço?</h2>
             Como desenvolvedor front-end, crio interfaces de usuário intuitivas, responsivas e acessíveis. Utilizo tecnologias como HTML5, CSS3 e JavaScript para garantir que seu site seja bem estruturado, bonito, interativo e funcione perfeitamente em qualquer dispositivo.
@@ -194,5 +197,14 @@
         </section>
       </footer>
     </main>
+    <script>
+      var typed = new Typed("#meu-nome", {
+        strings: ['João Victor'],
+        typeSpeed: 80,
+        backSpeed: 60,
+        backDelay: 1000,
+        loop: true,
+      })
+    </script>
   </body>
 </html>

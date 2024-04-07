@@ -26,14 +26,5 @@
 }
 
 h2#meu-nome {
-  width: 180px;
   letter-spacing: 2px;
-
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid var(--colorwhite);
-}
-
-@media screen and (min-width: 1024px) {
 }
