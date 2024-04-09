@@ -37,9 +37,9 @@
     <link rel="stylesheet" href="./src/styles/contacts.css" />
 
     <!-- Externo -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Animação de Digitação -->
     <script src="./src/scripts/projectsScript.js" defer></script>
@@ -89,7 +89,7 @@
       <section class="section main-aboutme" id="main-aboutme">
         <section class="main-aboutme__text ">
             <p>Olá, meu nome é <div style="display: flex;">
-              <h2 class="title" id="meu -nome"></h2>
+              <h2 class="title" id="meu-nome"></h2>
             </div> Eu sou um desenvolvedor web front-end.<br />
             Apaixonado por transformar ideias em realidade a mais de 6 meses, atualmente estudando Análise e Desenvolvimento de Sistemas na UNIP - Universidade Paulista.<br>
             <h2 class="title">O que eu faço?</h2>
@@ -98,6 +98,7 @@
           </section>
           <img class="main-aboutme__image"></img>
       </section>
+      <hr>
 
       <!-- Projetos -->
       <section class="section main-projects" id="main-projects">
@@ -106,6 +107,7 @@
         </section>
         <h1 class="title">&lt;/Projetos&gt;</h1>
       </section>
+      <hr>
 
       <!-- Habilidades -->
       <section class="section main-skills" id="main-skills">
@@ -114,56 +116,42 @@
         </section>
         <h1 class="title">&lt;/Habilidades&gt;</h1>
       </section>
+      <hr>
       
       <!-- Mais informações para contato -->
       <footer class="section main-footer" id="main-footer">
         <form class="footer-form__talkToMe" action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com" method="POST">
           <h2 class="title">Fale Comigo:</h2>
               <section class="footer-form__input">
-                <label for="inome">Seu nome:</label>
                 <input
                   type="text"
                   name="usunome"
                   id="inome"
                   class="inputForm"
-                  placeholder="Digite aqui..."
+                  placeholder="Seu nome..."
                   required
                 />
               </section>
               <section class="footer-form__input">
-                <label for="imail">Seu E-mail:</label>
                 <input
                   type="email"
                   name="usumail"
                   id="imail"
                   class="inputForm"
-                  placeholder="email@exemplo.com.br"
+                  placeholder="Seu E-mail..."
                   required
                 />
               </section>
               <section class="footer-form__input">
-                <label for="itel">Seu telefone:</label>
                 <input
                   type="tel"
                   name="usutel"
                   id="itel"
                   class="inputForm"
-                  placeholder="(__)_____-____"
+                  placeholder="Seu telefone..."
                   required
                 />
               </section>
-              <section class="footer-form__input">
-                <label for="iassunto">Assunto:</label>
-                <input
-                  type="text"
-                  name="usuassunto"
-                  id="iassunto"
-                  class="inputForm"
-                  placeholder="Digite aqui..."
-                  required
-                />
-              </section>
-            <label for="imensagem">Mensagem:</label>
             <textarea
               name="usumensagem"
               id="imensagem"
@@ -174,7 +162,7 @@
               required
             ></textarea>
           <button type="submit" class="main__Button" id="btn__Enviar">
-            <i class="fa-solid fa-paper-plane"></i>Enviar
+            <i class="fa-solid fa-paper-plane"></i> Enviar
           </button>
 
           <input type="hidden" name="_next" value="./index.html">

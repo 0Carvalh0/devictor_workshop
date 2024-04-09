@@ -24,8 +24,8 @@
 .inputForm {
   width: 100%;
   background-color: transparent;
-  border: 2px solid var(--color05);
-  border-radius: 12px;
+  border: none;
+  border-bottom: 2px solid var(--color05);
   padding: 6px;
   
   animation: revealBottomToUp 1ms ease both;
@@ -33,9 +33,15 @@
   animation-range: cover 0% cover 40%;
 }
 
+.inputForm::placeholder {
+  color: #aae2fe90;
+}
+
 #btn__Enviar {
   padding: 6px 10px;
   background-color: transparent;
   border: 2px solid var(--color05);
   border-radius: 12px;
+
+  gap: 2rem;
 }
