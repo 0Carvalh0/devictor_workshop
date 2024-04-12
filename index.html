@@ -32,14 +32,15 @@
     <link rel="stylesheet" href="./src/styles/footer.css" />
     <!-- Formulário para contato -->
     <link rel="stylesheet" href="./src/styles/form.css" />
-
     <!-- Contatos -->
     <link rel="stylesheet" href="./src/styles/contacts.css" />
 
     <!-- Externo -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
     <!-- Animação de Digitação -->
     <script src="./src/scripts/projectsScript.js" defer></script>
@@ -122,40 +123,34 @@
       <footer class="section main-footer" id="main-footer">
         <form class="footer-form__talkToMe" action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com" method="POST">
           <h2 class="title">Fale Comigo:</h2>
-              <section class="footer-form__input">
                 <input
                   type="text"
                   name="usunome"
                   id="inome"
-                  class="inputForm"
+                  class="inputForm footer-form__input"
                   placeholder="Seu nome..."
                   required
                 />
-              </section>
-              <section class="footer-form__input">
                 <input
                   type="email"
                   name="usumail"
                   id="imail"
-                  class="inputForm"
+                  class="inputForm footer-form__input"
                   placeholder="Seu E-mail..."
                   required
                 />
-              </section>
-              <section class="footer-form__input">
                 <input
                   type="tel"
                   name="usutel"
                   id="itel"
-                  class="inputForm"
+                  class="inputForm footer-form__input"
                   placeholder="Seu telefone..."
                   required
                 />
-              </section>
             <textarea
               name="usumensagem"
               id="imensagem"
-              class="inputForm"
+              class="inputForm footer-form__input"
               cols="30"
               rows="10"
               placeholder="Escreva sua mensagem aqui..."
@@ -192,6 +187,10 @@
         backSpeed: 60,
         backDelay: 1000,
         loop: true,
+      });
+      
+      $(document).ready(function(){
+        $('#itel').mask('(00) 00000-0000');
       })
     </script>
   </body>

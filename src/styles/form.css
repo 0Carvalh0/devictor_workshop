@@ -23,7 +23,7 @@
 
 .inputForm {
   width: 100%;
-  background-color: transparent;
+  background-color: var(--color01);
   border: none;
   border-bottom: 2px solid var(--color05);
   padding: 6px;
