@@ -25,7 +25,7 @@
 
     <!-- MAIN CONTEÚDO -->
     <link rel="stylesheet" href="./src/styles/aboutme.css" />
-    <link rel="stylesheet" href="./src/styles/projects.css" />
+    <link rel="stylesheet" href="./src/styles/projects.css" />  
     <link rel="stylesheet" href="./src/styles/skills.css" />
 
     <!-- FOOTER -->
@@ -39,8 +39,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <script src="./src/scripts/index.js" defer></script>
 
     <!-- Animação de Digitação -->
     <script src="./src/scripts/projectsScript.js" defer></script>
@@ -145,6 +145,7 @@
                   id="itel"
                   class="inputForm footer-form__input"
                   placeholder="Seu telefone..."
+                  maxlength="15"
                   required
                 />
             <textarea
@@ -180,18 +181,5 @@
         </section>
       </footer>
     </main>
-    <script>
-      var typed = new Typed("#meu-nome", {
-        strings: ['João Victor'],
-        typeSpeed: 80,
-        backSpeed: 60,
-        backDelay: 1000,
-        loop: true,
-      });
-      
-      $(document).ready(function(){
-        $('#itel').mask('(00) 00000-0000');
-      })
-    </script>
   </body>
 </html>

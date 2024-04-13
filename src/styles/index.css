@@ -17,7 +17,7 @@
 
   /* FONTES */
   --default: "Montserrat", sans-serif;
-  --title: Codefont;
+  --title: Codefont, monospace;
 
   /* PADDING, MARGIN, BORDER, BORDER-RADIUS */
   --defaultPadding: 1rem;
@@ -82,7 +82,7 @@ h1.title {
 
 .title {
   font-size: 1.5rem;
-  font-family: Codefont, monospace;
+  font-family: var(--title);
 }
 
 .naoSelecionavel {
