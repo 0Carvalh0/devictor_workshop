@@ -1,23 +1,18 @@
 @charset "UTF-8";
 
-@font-face {
-  font-family: Codefont;
-  src: url(../assets/fonts/CODE\ Bold.otf);
-}
-
 :root {
-  /* PALETA DE CORES */
-  --colorwhite: #e8f1f2;
-  --colorblack: #171219;
-  --color01: #13293d;
-  --color02: #006494;
-  --color03: #247ba0;
-  --color04: #1b98e0;
-  --color05: #aae2fe;
+  /* COLORS */
+  --colorwhite: #FCFCFC;
+  --colorblack: #171614;
+  --color01: #0300E6;
+  --color02: #2624B3;
+  --color03: #343380;
+  --color04: #2E2E4C;
+  --color05: #292933;
 
-  /* FONTES */
+  /* FONTS */
   --default: "Montserrat", sans-serif;
-  --title: Codefont, monospace;
+  --title: "Cutive Mono", monospace;
 
   /* PADDING, MARGIN, BORDER, BORDER-RADIUS */
   --defaultPadding: 1rem;
@@ -25,33 +20,17 @@
   --defaultMargin: 5px;
   --defaultBorder: 2px solid var(--color05);
   --defaultBorderRadius: 10px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  color: var(--colorwhite);
+  --defaultButtonBorderRadius: 5rem;
 }
 
 body,
 html {
   width: 100vw;
-
+  
   font-family: var(--default);
+  font-size: 20px;
+
   scroll-behavior: smooth;
-}
-
-#main {
-  padding: 0 1rem;
-
-  background-image: linear-gradient(
-    175deg,
-    var(--colorblack) 44rem,
-    var(--color02) 44rem 170rem,
-    var(--colorblack) 170rem 234rem,
-    var(--color02) 234rem
-  );
 }
 
 .naoSelecionavel {
@@ -60,97 +39,3 @@ html {
   -khtml-user-select: none; /* Safari 2 */
   user-select: none; /* Padrão */
 }
-
-/* ASIDE */
-
-#sideBar {
-  position: fixed;
-  top: -2000px;
-  left: 0;
-  z-index: 998;
-
-  width: 100vw;
-  height: 100vh;
-
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 20px 10px 30px 10px;
-
-  background-color: var(--color01);
-  color: var(--color05);
-  transition: all ease 0.5s;
-}
-
-#sideBar * {
-  color: var(--colorwhite);
-}
-
-#sideBar-btnHamburguer {
-  position: fixed;
-  top: 15px;
-  left: 15px;
-  z-index: 999;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: var(--color05);
-  background-color: var(--colorblack);
-  border-radius: 50%;
-  padding: var(--defaultPadding);
-  font-size: 1.5rem;
-  transition: all ease 0.5s;
-}
-
-.sidebar-top {
-  width: 100%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sideBar-header {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.sideBar-body {
-  width: 100%;
-
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-
-  margin-top: 2rem;
-  gap: 1rem;
-}
-
-.btnMenu-sideBar {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.sideBar-footer {
-  display: flex;
-
-  gap: 1rem;
-}
-
-#sideBar .fa-solid,
-#sideBar .fa-brands {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  font-size: 1.8rem;
-  width: 40px;
-  height: 40px;
-}
-

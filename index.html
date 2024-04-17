@@ -9,164 +9,151 @@
       type="image/x-icon"
     />
 
-    <title>DEVictor</title>
+    <title>João Victor</title>
+
+    <!-- EXTERNAL -->
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
 
     <!-- CSS -->
-    <!-- RESETAR A CSS -->
+    <!-- RESET CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
-    <!-- ANIMAÇÕES CSS -->
-    <link rel="stylesheet" href="./src/styles/animations.css">
-    <!-- CONFIGURAÇÕES GERAIS DA CSS -->
+    <!-- ANIMATIONS CSS -->
+    <link rel="stylesheet" href="./src/styles/animations.css" />
+    <!-- GENERAL DA CSS -->
     <link rel="stylesheet" href="./src/styles/index.css" />
-    <!-- ASIDE -->
-    <link rel="stylesheet" href="./src/styles/aside.css" />
-    <!-- MAIN CONTEÚDO -->
+    <!-- MAIN CONTENT -->
     <link rel="stylesheet" href="./src/styles/main-Content.css" />
     <!-- FOOTER -->
     <link rel="stylesheet" href="./src/styles/footer.css" />
 
     <!-- SCRIPTS -->
-    <script src="./src/scripts/index.js" defer></script>
+    <script src="./src/scripts/general.js" defer></script>
     <!-- PROJECTS GENERATE -->
     <script src="./src/scripts/projectsScript.js" defer></script>
     <!-- SKILLS GENERATE -->
     <script src="./src/scripts/skillsScript.js" defer></script>
     <!-- MENU HAMBURGER -->
     <script src="./src/scripts/menuHamburguer.js" defer></script>
-
-    <!-- EXTERNAL -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
   </head>
-  
+
   <body>
-    <!-- Aside -->
-    <aside id="sideBar">
-      <i class="fa-solid fa-bars" id="sideBar-btnHamburguer"></i>
-      <section class="sidebar-top">
-        <section class="sideBar-header">
-          <h1 class="title">DEVictor</h1>
-        </section>
-        <menu class="menu sideBar-body">
-            <a href="#main-aboutme" class="btnMenu-sideBar"
+    <section class="sideBar">
+      <span class="fa-solid fa-bars" id="sideBar__MenuHamburguer"></span>
+      <main class="sideBar__Main">
+          <h1 class="sideBar__Title">João Victor</h1>
+          <nav class="sideBar__Nav">
+            <a href="#section__AboutMe" class="sideBar__ButtonSection"
               ><i class="fa-solid fa-user"></i>Sobre mim</a
             >
-            <a href="#main-projects" class="btnMenu-sideBar"
+            <a href="#section__Projects" class="sideBar__ButtonSection"
               ><i class="fa-solid fa-file"></i>Projetos</a
             >
-            <a href="#main-skills" class="btnMenu-sideBar"
+            <a href="#section__Skills" class="sideBar__ButtonSection"
               ><i class="fa-solid fa-star"></i>Habilidades</a
             >
-            <a href="#main-footer" class="btnMenu-sideBar"
+            <a href="#sectionr__Footer" class="sideBar__ButtonSection"
               ><i class="fa-solid fa-phone"></i>Contatos</a
             >
-          </menu>
-      </section>
+          </nav>
+      </main>
 
-      <section class="sideBar-footer">
-        <a href="https://github.com/0Carvalh0" target="_blank"
-          ><i class="fa-brands fa-github"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/"
-          target="_blank"
-          ><i class="fa-brands fa-linkedin"></i
-        ></a>
-      </section>
-    </aside>
-    <!-- Conteúdo e seções -->
-    <main id="main">
-      <section class="section main-aboutme" id="main-aboutme">
-        <section class="main-aboutme__text ">
-            <p>Olá, meu nome é <div style="display: flex;">
-              <h2 class="title" id="meu-nome"></h2>
-            </div> Eu sou um desenvolvedor web front-end.<br />
-            Apaixonado por transformar ideias em realidade a mais de 6 meses, atualmente estudando Análise e Desenvolvimento de Sistemas na UNIP - Universidade Paulista.<br>
-            <h2 class="title">O que eu faço?</h2>
-            Como desenvolvedor front-end, crio interfaces de usuário intuitivas, responsivas e acessíveis. Utilizo tecnologias como HTML5, CSS3 e JavaScript para garantir que seu site seja bem estruturado, bonito, interativo e funcione perfeitamente em qualquer dispositivo.
+      <footer class="sideBar__Footer">
+        <a href="https://github.com/0Carvalh0" target="_blank" class="fa-brands fa-github sideBar__SocialMedia"></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/" target="_blank" class="fa-brands fa-linkedin sideBar__SocialMedia"></a>
+      </footer>
+    </section>
+    
+    <!-- Main content -->
+    <main class="mainContainer">
+      <section class="mainContainer__Section" id="section__AboutMe">
+        <section class="aboutMe__Text">
+            <p>
+              Olá, meu nome é <div style="display: flex;">
+              <h1 class="aboutMe__Title" id="myNameTyping"></h1>
+            </div> Eu sou um desenvolvedor web front-end.
+            Apaixonado por transformar ideias em realidade a mais de 6 meses, atualmente estudando Análise e Desenvolvimento de Sistemas na UNIP - Universidade Paulista.
+            <h1 class="aboutMe__Title">O que eu faço?</h1>
+            Como desenvolvedor front-end, crio interfaces de usuário intuitivas, responsivas e acessíveis. Garantindo que seu site seja bem estruturado, bonito, interativo e funcione perfeitamente em qualquer dispositivo.
             </p>
           </section>
-          <img class="main-aboutme__image"></img>
+          <img src="./src/assets/images/minhaft001.jpeg" class="aboutMe__myPicture" alt="Foto do João Victor"></img>
       </section>
-      <hr>
 
-      <!-- Projetos -->
-      <section class="section main-projects" id="main-projects">
-        <h1 class="title">&lt;Projetos&gt;</h1>
-        <section class="main-projects__carousel" id="listInsertProjects">
+      <!-- Projects -->
+      <section class="mainContainer__Section" id="section__Projects">
+        <h1 class="projects__Title mainSection__Title">&lt;Projetos&gt;</h1>
+        <section class="section__ProjectsList" id="section__InsertProjects">
         </section>
-        <h1 class="title">&lt;/Projetos&gt;</h1>
+        <h1 class="projects__Title mainSection__Title">&lt;/Projetos&gt;</h1>
       </section>
-      <hr>
 
-      <!-- Habilidades -->
-      <section class="section main-skills" id="main-skills">
-        <h1 class="title">&lt;Habilidades&gt;</h1>
-        <section class="main-skills__content" id="listInsertSkills">
+      <!-- Skills -->
+      <section class="mainContainer__Section" id="section__Skills">
+        <h1 class="skills__Title mainSection__Title">&lt;Habilidades&gt;</h1>
+        <section class="section__SkillsList" id="section__InsertSkills">
         </section>
-        <h1 class="title">&lt;/Habilidades&gt;</h1>
+        <h1 class="skills__Title mainSection__Title">&lt;/Habilidades&gt;</h1>
       </section>
-      <hr>
       
       <!-- Footer -->
-      <footer class="section main-footer" id="main-footer">
-        <form class="footer-form__talkToMe" action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com" method="POST">
-          <h2 class="title">Fale Comigo:</h2>
+      <footer class="mainContainer__Section" id="section__Footer">
+        <form class="sectionFooter__Form" action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com" method="POST">
+          <h1 class="footer__Title mainSection__Title">Fale Comigo:</h1>
                 <input
                   type="text"
-                  name="usunome"
-                  id="inome"
-                  class="inputForm footer-form__input"
+                  name="userName"
+                  id="inputName"
+                  class="sectionFooter__Input"
                   placeholder="Seu nome..."
                   required
                 />
                 <input
                   type="email"
-                  name="usumail"
-                  id="imail"
-                  class="inputForm footer-form__input"
+                  name="userEmail"
+                  id="inputEmail"
+                  class="sectionFooter__Input"
                   placeholder="Seu E-mail..."
                   required
                 />
                 <input
                   type="tel"
-                  name="usutel"
-                  id="itel"
-                  class="inputForm footer-form__input"
+                  name="userPhone"
+                  id="inputPhone"
+                  class="sectionFooter__Input"
                   placeholder="Seu telefone..."
                   maxlength="15"
                   required
                 />
             <textarea
-              name="usumensagem"
-              id="imensagem"
-              class="inputForm footer-form__input"
+              name="userMessage"
+              id="inputMessage"
+              class="sectionFooter__Input"
               cols="30"
               rows="10"
               placeholder="Escreva sua mensagem aqui..."
               required
             ></textarea>
-          <button type="submit" class="main__Button" id="btn__Enviar">
+          <button type="submit" class="sectionFooter__Button" id="sectionFooter__SubmitButton">
             <i class="fa-solid fa-paper-plane"></i> Enviar
           </button>
 
-          <input type="hidden" name="_next" value="./index.html">
+          <input type="hidden" name="_next" value="./thank.html">
           <input type="hidden" name="c" value="Alguém entrou em contato!" />
           <input type="hidden" name="_honey" style="display: none" />
           <input type="hidden" name="_captcha" value="false" />
         </form>
-        <section class="footer-contacts">
-          <h2 class="title">Contato:</h2>
+        <section class="sectionFooter__Contacts">
+          <h1 class="footer__Title mainSection__Title">Contato:</h1>
             <p><i class="fa-solid fa-envelope"></i>trabalho.joaovictor2004@gmail.com</p>
-          <a href="https://github.com/0Carvalh0" id="github" target="_blank"
-            ><i class="fa-brands fa-github"></i>GitHub</a
+          <a href="https://github.com/0Carvalh0" target="_blank"
+            ><i class="fa-brands fa-github sectionFooter__SocialMedia"></i>GitHub</a
           >
           <a
             href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/"
-            id="linkedin"
             target="_blank"
-            ><i class="fa-brands fa-linkedin"></i>LinkedIn</a
+            ><i class="fa-brands fa-linkedin sectionFooter__SocialMedia"></i>LinkedIn</a
           >
         </section>
       </footer>

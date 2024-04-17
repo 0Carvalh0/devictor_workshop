@@ -1,25 +1,23 @@
-const sideBarMenu = document.getElementById("sideBar");
-const btnSideBar = document.getElementById("sideBar-btnHamburguer");
-const linkSection = document.querySelectorAll(".btnMenu-sideBar");
+const sideBarMenu = document.querySelector(".sideBar");
+const sideBarButton = document.querySelector("#sideBar-MenuHamburguer");
+const buttonsSection = document.querySelectorAll(".sideBar__ButtonSection");
 
-// Abrir SideBar com botão
-
-btnSideBar.addEventListener("click", () => {
-  if (sideBarMenu.classList.contains("activeHamburguer")) {
+sideBarButton.addEventListener("click", () => {
+  if (sideBarMenu.classList.contains("sideBarActive")) {
     sideBarMenu.style.top = "-2000px";
-    btnSideBar.style.color = "var(--color05)";
-    btnSideBar.classList.replace("fa-xmark", "fa-bars");
-    sideBarMenu.classList.remove("activeHamburguer");
+    sideBarButton.style.color = "var(--color05)";
+    sideBarButton.classList.replace("fa-xmark", "fa-bars");
+    sideBarMenu.classList.remove("sideBarActive");
   } else {
     sideBarMenu.style.top = "0px";
-    btnSideBar.style.color = "var(--colorwhite)";
-    btnSideBar.classList.replace("fa-bars", "fa-xmark");
-    sideBarMenu.classList.add("activeHamburguer");
+    sideBarButton.style.color = "var(--colorwhite)";
+    sideBarButton.classList.replace("fa-bars", "fa-xmark");
+    sideBarMenu.classList.add("sideBarActive");
   }
 });
 
-linkSection.forEach((link) => {
-  link.addEventListener("click", () => {
-    btnSideBar.click();
+buttonsSection.forEach((button) => {
+  button.addEventListener("click", () => {
+    sideBarButton.click();
   });
 });

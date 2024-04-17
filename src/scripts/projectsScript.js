@@ -41,29 +41,29 @@ const projectsList = [
   },
 ];
 
-function automaticProjectGenerator(dataList) {
-  const sectionInsert = document.getElementById("listInsertProjects");
+function automaticProjectGenerator() {
+  const sectionInsert = document.querySelector("#section__InsertProjects");
 
-  dataList.forEach((projectData, indexProject) => {
+  projectsList.forEach((projectData, indexProject) => {
     const projectStructure = `
-    <section class="main-projects__project main__card" id="project${
+    <section class="projectsList__Project projectCard" id="project${
       indexProject + 1
     }">
       <img
         src=${projectData.thumbnailSrc}
-        alt="Imagem projeto"
-        class="main-projects__project-img"/>
-      <h2 class="title">${projectData.name}</h2>
-      <p>
+        alt="Thumbnail do projeto"
+        class="projectsList__ProjectThumbnail"/>
+      <h2 class="mainSection__ProjectTitle">${projectData.name}</h2>
+      <p class="mainSection__ProjectDescription">
         ${projectData.description}
       </p>
-      <section class="main-projects__ViewMore">
+      <section class="mainSection__ProjectForMore">
         <a href=${
           projectData.urlProject
-        } target="_blank" class="main-projects__Button main__button">Ver Projeto</a>
+        } target="_blank" class="mainSection__ProjectButton">Ver Projeto</a>
         <a href=${
           projectData.urlRepository
-        } target="_blank" class="main-projects__Button main__button">Ver Repositório</a>
+        } target="_blank" class="mainSection__ProjectButton">Ver Repositório</a>
       </section>
     </section>
     `;
@@ -72,4 +72,4 @@ function automaticProjectGenerator(dataList) {
   });
 }
 
-automaticProjectGenerator(projectsList);
+automaticProjectGenerator();

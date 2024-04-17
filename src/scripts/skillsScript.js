@@ -61,19 +61,19 @@ const skillsList = [
   },
 ];
 
-function automaticSkillGenerator(dataList) {
-  const sectionInsert = document.getElementById("listInsertSkills");
+function automaticSkillGenerator() {
+  const sectionInsert = document.querySelector("#section__InsertSkills");
 
-  dataList.forEach((skillData, indexSkill) => {
+  skillsList.forEach((skillData, indexSkill) => {
     const skillStructure = `
-    <section class="main-skills__skill main__card" id="skill${indexSkill + 1}">
+    <section class="skillsList__Skill skillCard" id="skill${indexSkill + 1}">
       <img
         src=${skillData.iconSrc}
-        class="icon"
-        alt="Imagem habilidade"
+        class="skillsList__SkillIcon"
+        alt="Ícone da habilidade"
       />
-      <h2 class="title">${skillData.name}</h2>
-      <section class="main-skills__level" id="skillsLevelInsert">
+      <h2 class="mainSection__SkillTitle">${skillData.name}</h2>
+      <section class="mainSection__SkillRating" id="section__InsertSkillRating">
         ${countStars(skillData.starCount)}
       </section>
     </section>
@@ -98,4 +98,4 @@ function countStars(numberOfStars) {
   return starsInHtml;
 }
 
-automaticSkillGenerator(skillsList);
+automaticSkillGenerator();
