@@ -5,7 +5,7 @@ const skillsList = [
     starCount: 5,
   },
   {
-    name: "Visual Studio Code",
+    name: "VS Code",
     iconSrc: "./src/assets/icons/vscode.png",
     starCount: 4,
   },

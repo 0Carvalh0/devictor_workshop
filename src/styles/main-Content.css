@@ -1,8 +1,90 @@
 /* MAIN CONTENT */
+.mainContainer {
+    padding: 0 .5rem;
 
-/* SIDEBAR */
+    background: var(--colorwhite);
+}
+
+.mainContainer__Section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    
+    padding: 1rem 1rem;
+    
+    background-color: var(--color03);
+    color: var(--colorwhite);
+}
+
+.header__Title {
+    font-weight: 700;
+    transform: scale(1.4) translate(10px, 5px);
+}
+
+.header__Nav {
+    display: flex;
+    gap: .5rem;
+}
+
+.header__ButtonSection {
+    text-decoration: none;
+    content: "";
+    
+    font-size: 1.5rem;
+    color: var(--colorwhite);
+}
+
+@media screen and (min-width: 1080px) {
+    .fa-user::after {
+        content: "Sobre mim";
+    }
+    .fa-file::after {
+        content: "Projetos";
+    }
+    .fa-star::after {
+        content: "Habilidades";
+    }
+    .fa-phone::after {
+        content: "Contato";
+    }
+}
 
 /* ABOUT ME */
+.aboutMe__Text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutMe__Text div {
+    display: flex;
+    justify-content: center;
+}
+
+.aboutMe__Links {
+    text-decoration: none;
+    
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    font-size: 2rem;
+}
+
+.aboutMe__SocialMedia {
+    text-decoration: none;
+
+    color: var(--color04);
+}
+
 .aboutMe__myPicture {
     max-width: 100%;
 }
@@ -13,18 +95,36 @@
 }
 
 /* SKILLS */
+.section__SkillsList {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
 .skillsList__SkillIcon {
     width: 100px;
     height: 100px;
 }
 
 /* FOOTER */
+
+/* FOOTER__FORM */
 .sectionFooter__Form {
+    width: 100%;
+
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
+
+    text-align: center;
 }
 
-/* FOOTER__FORM */
-
 /* FOOTER__CONTACTS */
+.sectionFooter__Contacts {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.sectionFooter__Contacts p {
+    font-size: .9rem;
+}
