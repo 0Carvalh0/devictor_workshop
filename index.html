@@ -25,8 +25,6 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
     <!-- MAIN CONTENT -->
     <link rel="stylesheet" href="./src/styles/main-Content.css" />
-    <!-- FOOTER -->
-    <link rel="stylesheet" href="./src/styles/footer.css" />
 
     <!-- SCRIPTS -->
     <script src="./src/scripts/general.js" defer></script>
@@ -39,31 +37,32 @@
   </head>
 
   <body>
-    <section class="sideBar">
-      <span class="fa-solid fa-bars" id="sideBar__MenuHamburguer"></span>
-      <main class="sideBar__Main">
-          <h1 class="sideBar__Title">João Victor</h1>
-          <nav class="sideBar__Nav">
-            <a href="#section__AboutMe" class="sideBar__ButtonSection"
+    <!-- Navigation -->
+    <header class="header">
+      <span class="fa-solid fa-bars" id="header__MenuHamburguer"></span>
+      <main class="header__Main">
+          <h1 class="header__Title">João Victor</h1>
+          <nav class="header__Nav">
+            <a href="#section__AboutMe" class="header__ButtonSection"
               ><i class="fa-solid fa-user"></i>Sobre mim</a
             >
-            <a href="#section__Projects" class="sideBar__ButtonSection"
+            <a href="#section__Projects" class="header__ButtonSection"
               ><i class="fa-solid fa-file"></i>Projetos</a
             >
-            <a href="#section__Skills" class="sideBar__ButtonSection"
+            <a href="#section__Skills" class="header__ButtonSection"
               ><i class="fa-solid fa-star"></i>Habilidades</a
             >
-            <a href="#sectionr__Footer" class="sideBar__ButtonSection"
+            <a href="#sectionr__Footer" class="header__ButtonSection"
               ><i class="fa-solid fa-phone"></i>Contatos</a
             >
           </nav>
       </main>
 
-      <footer class="sideBar__Footer">
-        <a href="https://github.com/0Carvalh0" target="_blank" class="fa-brands fa-github sideBar__SocialMedia"></a>
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/" target="_blank" class="fa-brands fa-linkedin sideBar__SocialMedia"></a>
+      <footer class="header__Footer">
+        <a href="https://github.com/0Carvalh0" target="_blank" class="fa-brands fa-github header__SocialMedia"></a>
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/" target="_blank" class="fa-brands fa-linkedin header__SocialMedia"></a>
       </footer>
-    </section>
+    </header>
     
     <!-- Main content -->
     <main class="mainContainer">
@@ -78,7 +77,7 @@
             Como desenvolvedor front-end, crio interfaces de usuário intuitivas, responsivas e acessíveis. Garantindo que seu site seja bem estruturado, bonito, interativo e funcione perfeitamente em qualquer dispositivo.
             </p>
           </section>
-          <img src="./src/assets/images/minhaft001.jpeg" class="aboutMe__myPicture" alt="Foto do João Victor"></img>
+          <img src="./src/assets/images/myPicture01.png" class="aboutMe__myPicture" alt="Foto do João Victor"></img>
       </section>
 
       <!-- Projects -->
@@ -101,40 +100,38 @@
       <footer class="mainContainer__Section" id="section__Footer">
         <form class="sectionFooter__Form" action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com" method="POST">
           <h1 class="footer__Title mainSection__Title">Fale Comigo:</h1>
-                <input
-                  type="text"
-                  name="userName"
-                  id="inputName"
-                  class="sectionFooter__Input"
-                  placeholder="Seu nome..."
-                  required
-                />
-                <input
-                  type="email"
-                  name="userEmail"
-                  id="inputEmail"
-                  class="sectionFooter__Input"
-                  placeholder="Seu E-mail..."
-                  required
-                />
-                <input
-                  type="tel"
-                  name="userPhone"
-                  id="inputPhone"
-                  class="sectionFooter__Input"
-                  placeholder="Seu telefone..."
-                  maxlength="15"
-                  required
-                />
-            <textarea
-              name="userMessage"
-              id="inputMessage"
-              class="sectionFooter__Input"
-              cols="30"
-              rows="10"
-              placeholder="Escreva sua mensagem aqui..."
-              required
-            ></textarea>
+          <input
+            type="text"
+            name="userName"
+            id="inputName"
+            class="sectionFooter__Input"
+            placeholder="Seu nome..."
+            required
+          />
+          <input
+            type="email"
+            name="userEmail"
+            id="inputEmail"
+            class="sectionFooter__Input"
+            placeholder="Seu E-mail..."
+            required
+          />
+          <input
+            type="tel"
+            name="userPhone"
+            id="inputPhone"
+            class="sectionFooter__Input"
+            placeholder="Seu telefone..."
+            maxlength="15"
+            required
+          />
+          <textarea
+            name="userMessage"
+            id="inputMessage"
+            class="sectionFooter__Input"
+            placeholder="Escreva sua mensagem aqui..."
+            required
+          ></textarea>
           <button type="submit" class="sectionFooter__Button" id="sectionFooter__SubmitButton">
             <i class="fa-solid fa-paper-plane"></i> Enviar
           </button>

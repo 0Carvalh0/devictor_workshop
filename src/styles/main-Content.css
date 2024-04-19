@@ -1,9 +1,30 @@
 /* MAIN CONTENT */
 
-/* ASIDE */
+/* SIDEBAR */
 
 /* ABOUT ME */
+.aboutMe__myPicture {
+    max-width: 100%;
+}
 
 /* PROJECTS */
+.projectsList__ProjectThumbnail {
+    max-width: 100%;
+}
 
 /* SKILLS */
+.skillsList__SkillIcon {
+    width: 100px;
+    height: 100px;
+}
+
+/* FOOTER */
+.sectionFooter__Form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+}
+
+/* FOOTER__FORM */
+
+/* FOOTER__CONTACTS */
