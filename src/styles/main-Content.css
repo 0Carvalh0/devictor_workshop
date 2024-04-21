@@ -1,130 +1,190 @@
+/* VARIABLES */
+    /* COLORS
+        --colorwhite: #F6F4F3;
+        --colorblack: #0F0F0F;
+        --color01: #008DCE;
+        --color02: #FF8B00;
+        --color03: #80D7FF;
+        --color04: #024563;
+        --color05: #FFD199;
+    */
+
 /* MAIN CONTENT */
 .mainContainer {
-    padding: 0 .5rem;
+  display: flex;
+  flex-flow: column wrap;
 
-    background: var(--colorwhite);
+  margin: 8px 0;
+  padding: 0 16px;
+  gap: 16px;
 }
 
 .mainContainer__Section {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
 }
 
 /* HEADER */
 .header {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    
-    padding: 1rem 1rem;
-    
-    background-color: var(--color03);
-    color: var(--colorwhite);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  padding: 16px;
+
+  background-color: var(--color04);
+  color: var(--colorwhite);
 }
 
 .header__Title {
-    font-weight: 700;
-    transform: scale(1.4) translate(10px, 5px);
+  font-size: 26px;
+  font-weight: 700;
 }
 
 .header__Nav {
-    display: flex;
-    gap: .5rem;
+  display: flex;
+  gap: 8px;
 }
 
 .header__ButtonSection {
-    text-decoration: none;
-    content: "";
-    
-    font-size: 1.5rem;
-    color: var(--colorwhite);
+  text-decoration: none;
+  content: "";
+
+  font-size: 24px;
+  color: var(--color02);
 }
 
 @media screen and (min-width: 1080px) {
-    .fa-user::after {
-        content: "Sobre mim";
-    }
-    .fa-file::after {
-        content: "Projetos";
-    }
-    .fa-star::after {
-        content: "Habilidades";
-    }
-    .fa-phone::after {
-        content: "Contato";
-    }
+  .fa-user::after {
+    content: "Sobre mim";
+  }
+  .fa-file::after {
+    content: "Projetos";
+  }
+  .fa-star::after {
+    content: "Habilidades";
+  }
+  .fa-phone::after {
+    content: "Contato";
+  }
 }
 
 /* ABOUT ME */
 .aboutMe__Text {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  text-align: center;
+
+  gap: 8px;
 }
 
 .aboutMe__Text div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .aboutMe__Links {
-    text-decoration: none;
-    
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
+  text-decoration: none;
 
-    font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+
+  font-size: 32px;
 }
 
 .aboutMe__SocialMedia {
-    text-decoration: none;
+  text-decoration: none;
 
-    color: var(--color04);
+  color: var(--color04);
 }
 
 .aboutMe__myPicture {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* PROJECTS */
+.section__ProjectsList {
+  display: flex;
+  flex-flow: column wrap;
+
+  gap: 8px;
+}
+
+.projectsList__Project {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  gap: 8px;
+  padding: 16px;
+
+  background: var(--color05);
+}
+
 .projectsList__ProjectThumbnail {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /* SKILLS */
 .section__SkillsList {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  gap: 8px;
+}
+
+.skillsList__Skill {
+  width: 40%;
+  max-width: 136px;
+  height: 200px;
+
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-evenly;
+
+  text-align: center;
+
+  background: var(--color04);
+  color: var(--color05);
 }
 
 .skillsList__SkillIcon {
-    width: 100px;
-    height: 100px;
+  width: 100px;
+  height: 100px;
 }
 
 /* FOOTER */
+#section__Footer {
+  gap: 8px;
+}
 
 /* FOOTER__FORM */
 .sectionFooter__Form {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
-    flex-flow: column wrap;
-    align-items: stretch;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
 
-    text-align: center;
+  gap: 8px;
+
+  text-align: center;
 }
 
 /* FOOTER__CONTACTS */
 .sectionFooter__Contacts {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  gap: 16px;
 }
 
 .sectionFooter__Contacts p {
-    font-size: .9rem;
+  font-size: 16px;
 }

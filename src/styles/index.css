@@ -2,13 +2,13 @@
 
 :root {
   /* COLORS */
-  --colorwhite: #FCFCFC;
-  --colorblack: #171614;
-  --color01: #0300E6;
-  --color02: #2624B3;
-  --color03: #343380;
-  --color04: #2E2E4C;
-  --color05: #292933;
+  --colorwhite: #f6f4f3;
+  --colorblack: #0f0f0f;
+  --color01: #008dce;
+  --color02: #ff8b00;
+  --color03: #80d7ff;
+  --color04: #024563;
+  --color05: #ffd199;
 
   /* FONTS */
   --default: "Montserrat", sans-serif;
@@ -18,17 +18,28 @@
   --defaultPadding: 1rem;
   --defaultPaddingButton: 6px 20px;
   --defaultMargin: 5px;
-  --defaultBorder: 2px solid var(--color05);
+  --defaultBorder: 2px solid var(--color03);
   --defaultBorderRadius: 10px;
   --defaultButtonBorderRadius: 5rem;
 }
 
 body,
-html {  
+html {
   font-family: var(--default);
   font-size: 20px;
 
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color03);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--title);
+  font-weight: 800;
 }
 
 .naoSelecionavel {
