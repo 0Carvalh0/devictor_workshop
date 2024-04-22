@@ -85,6 +85,11 @@
   justify-content: center;
 }
 
+.aboutMe__Text ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
 .aboutMe__Links {
   text-decoration: none;
 
@@ -156,6 +161,10 @@
 .skillsList__SkillIcon {
   width: 100px;
   height: 100px;
+}
+
+.mainSection__SkillTitle {
+  font-size: 1rem;
 }
 
 /* FOOTER */

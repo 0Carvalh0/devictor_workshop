@@ -19,3 +19,7 @@ inputPhone.addEventListener("keypress", () => {
     inputPhone.value += "-"
   }
 })
+
+// document.addEventListener("scroll", (e) => {
+  
+// })

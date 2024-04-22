@@ -39,7 +39,32 @@ h1,
 h2,
 h3 {
   font-family: var(--title);
-  font-weight: 800;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.button__ReturnTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  display: grid;
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background-color: var(--color04);
+  color: var(--color05);
+  box-shadow: 2px 2px 8px #00000070, -2px -2px 8px #ffffff70;
+
+  text-decoration: none;
 }
 
 .naoSelecionavel {
