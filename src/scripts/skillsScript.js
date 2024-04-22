@@ -26,7 +26,7 @@ const skillsList = [
   },
   {
     name: "JavaScript",
-    iconSrc: "./src/assets/icons/javascript.png",
+    iconSrc: "./src/assets/icons/JavaScript.png",
     starCount: 3,
   },
   {
