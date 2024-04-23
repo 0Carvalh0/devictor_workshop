@@ -15,12 +15,10 @@
   --title: "Cutive Mono", monospace;
 
   /* PADDING, MARGIN, BORDER, BORDER-RADIUS */
-  --defaultPadding: 1rem;
-  --defaultPaddingButton: 6px 20px;
-  --defaultMargin: 5px;
+  --defaultPadding__Button: 8px 16px;
   --defaultBorder: 2px solid var(--color03);
-  --defaultBorderRadius: 10px;
-  --defaultButtonBorderRadius: 5rem;
+  --defaultBorderRadius: 16px;
+  --defaultBorderRadius__Button: 16rem;
 }
 
 body,

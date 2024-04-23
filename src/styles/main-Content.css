@@ -118,6 +118,13 @@
   gap: 8px;
 }
 
+.mainSection__ProjectForMore {
+  display: flex;
+  flex-flow: column wrap;
+
+  gap: 8px;
+}
+
 .projectsList__Project {
   display: flex;
   flex-flow: column wrap;
@@ -133,6 +140,21 @@
   max-width: 100%;
 }
 
+.mainSection__ProjectDescription {
+  text-align: justify;
+}
+
+.mainSection__ProjectButton {
+  text-decoration: none;
+  text-wrap: nowrap;
+  text-align: center;
+
+  background: var(--color04);
+  color: var(--colorwhite);
+
+  padding: 0.5rem 1rem;
+}
+
 /* SKILLS */
 .section__SkillsList {
   display: flex;
@@ -143,8 +165,8 @@
 }
 
 .skillsList__Skill {
-  width: 40%;
-  max-width: 136px;
+  width: 45%;
+  max-width: 148px;
   height: 200px;
 
   display: flex;
@@ -183,6 +205,24 @@
   gap: 8px;
 
   text-align: center;
+}
+
+.sectionFooter__Input {
+  background: transparent;
+
+  border: none;
+  border-bottom: 2px solid var(--color04);
+
+  padding: 4px 8px;
+}
+
+.sectionFooter__Button {
+  align-self: center;
+  padding: 8px 18px;
+
+  border: 2px outset var(--color02);
+  background: var(--color04);
+  color: var(--colorwhite);
 }
 
 /* FOOTER__CONTACTS */
