@@ -19,6 +19,13 @@
   gap: 16px;
 }
 
+.mainContainer__Thank {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .mainContainer__Section {
   display: flex;
   flex-flow: column wrap;
