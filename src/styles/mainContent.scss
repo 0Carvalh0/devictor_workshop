@@ -7,7 +7,6 @@
   padding: 0 16px;
   gap: 16px;
 
-  
   .mainContainer__Section {
     display: flex;
     flex-flow: column wrap;
@@ -81,7 +80,7 @@
       display: flex;
       justify-content: center;
     }
-  
+
     ul li {
       list-style-type: disc;
       list-style-position: inside;
@@ -136,6 +135,10 @@
 
   .projectsList__ProjectThumbnail {
     max-width: 100%;
+  }
+
+  .projectsList__TechnologyIcon {
+    width: 50px;
   }
 
   .mainSection__ProjectDescription {

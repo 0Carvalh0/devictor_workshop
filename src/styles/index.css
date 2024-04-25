@@ -66,16 +66,17 @@ table {
   padding: 0 16px;
   gap: 16px;
 }
-.mainContainer .mainContainer__Thank {
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 .mainContainer .mainContainer__Section {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+}
+
+.mainContainer__Thank {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /* HEADER */
@@ -168,6 +169,9 @@ table {
 }
 .section__ProjectsList .projectsList__ProjectThumbnail {
   max-width: 100%;
+}
+.section__ProjectsList .projectsList__TechnologyIcon {
+  width: 50px;
 }
 .section__ProjectsList .mainSection__ProjectDescription {
   text-align: justify;
