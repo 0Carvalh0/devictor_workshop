@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+@import "./reset";
+@import "./variables";
+@import "./mainContent.scss";
+
+body,
+html {
+  min-height: 100vh;
+  font-family: $defaultFont;
+  font-size: 20px;
+
+  background: $color03;
+
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+  font-family: $titleFont;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.button__ReturnTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  display: grid;
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background-color: $color04;
+  color: $color05;
+  box-shadow: 2px 2px 8px #00000070, -2px -2px 8px #ffffff70;
+
+  text-decoration: none;
+}
+
+.naoSelecionavel {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  user-select: none; /* Padrão */
+}
