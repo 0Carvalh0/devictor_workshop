@@ -1,63 +1,76 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@keyframes revealUpToBottom {
+  from {
+    opacity: 0;
+    translate: 0px -50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
 }
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+@keyframes revealBottomToUp {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
 }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+@keyframes revealLeftToRight {
+  from {
+    opacity: 0;
+    translate: -50px 0px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
 }
-
-body {
-  line-height: 1;
+@keyframes revealRightToLeft {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
 }
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 /* COLORS */
 /* FONTS */
 /* PADDING, MARGIN, BORDER, BORDER-RADIUS */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background: #80d7ff;
+}
+
+.mainSection__Title {
+  font-family: "Cutive Mono", monospace;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
 /* MAIN CONTENT */
 .mainContainer {
   display: flex;
@@ -70,6 +83,7 @@ table {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  width: 90vw;
 }
 
 .mainContainer__Thank {
@@ -118,43 +132,38 @@ table {
 }
 
 /* ABOUT ME */
-.section__AboutMe .aboutMe__Text {
+#section__AboutMe .aboutMe__Text {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   text-align: center;
   gap: 8px;
 }
-.section__AboutMe .aboutMe__Text div {
+#section__AboutMe .aboutMe__Text div {
   display: flex;
   justify-content: center;
 }
-.section__AboutMe .aboutMe__Text ul li {
+#section__AboutMe .aboutMe__Text ul li {
   list-style-type: disc;
   list-style-position: inside;
 }
-.section__AboutMe .aboutMe__Links {
+#section__AboutMe .aboutMe__Links {
   text-decoration: none;
   display: flex;
   justify-content: center;
   gap: 16px;
   font-size: 32px;
 }
-.section__AboutMe .aboutMe__SocialMedia {
+#section__AboutMe .aboutMe__SocialMedia {
   text-decoration: none;
   color: #024563;
 }
-.section__AboutMe .aboutMe__myPicture {
+#section__AboutMe .aboutMe__myPicture {
   max-width: 100%;
 }
 
 /* PROJECTS */
 .section__ProjectsList {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 8px;
-}
-.section__ProjectsList .mainSection__ProjectForMore {
   display: flex;
   flex-flow: column wrap;
   gap: 8px;
@@ -175,6 +184,11 @@ table {
 }
 .section__ProjectsList .mainSection__ProjectDescription {
   text-align: justify;
+}
+.section__ProjectsList .mainSection__ProjectForMore {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
 }
 .section__ProjectsList .mainSection__ProjectButton {
   text-decoration: none;
@@ -215,10 +229,10 @@ table {
 /* FOOTER */
 #section__Footer {
   gap: 8px;
+  /* FOOTER__FORM */
+  /* FOOTER__CONTACTS */
 }
-
-/* FOOTER__FORM */
-.sectionFooter__Form {
+#section__Footer .sectionFooter__Form {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
@@ -226,50 +240,27 @@ table {
   gap: 8px;
   text-align: center;
 }
-.sectionFooter__Form .sectionFooter__Input {
+#section__Footer .sectionFooter__Form .sectionFooter__Input {
   background: transparent;
   border: none;
   border-bottom: 2px solid #024563;
   padding: 4px 8px;
 }
-.sectionFooter__Form .sectionFooter__Button {
+#section__Footer .sectionFooter__Form .sectionFooter__Button {
   align-self: center;
   padding: 8px 18px;
   border: 2px outset #ff8b00;
   background: #024563;
   color: #f6f4f3;
 }
-
-/* FOOTER__CONTACTS */
-.sectionFooter__Contacts {
+#section__Footer .sectionFooter__Contacts {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   gap: 16px;
 }
-.sectionFooter__Contacts .sectionFooter__Contacts p {
+#section__Footer .sectionFooter__Contacts p {
   font-size: 16px;
-}
-
-body,
-html {
-  min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  background: #80d7ff;
-  scroll-behavior: smooth;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Cutive Mono", monospace;
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-
-strong {
-  font-weight: bold;
 }
 
 .button__ReturnTop {

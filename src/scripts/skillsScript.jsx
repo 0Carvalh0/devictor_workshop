@@ -45,6 +45,11 @@ const skillsList = [
     starCount: 2,
   },
   {
+    name: "SASS",
+    iconSrc: "./src/assets/icons/sass.png",
+    starCount: 2,
+  },
+  {
     name: "NPM",
     iconSrc: "./src/assets/icons/npm.png",
     starCount: 2,
@@ -53,6 +58,11 @@ const skillsList = [
     name: "Gimp",
     iconSrc: "./src/assets/icons/gimp.png",
     starCount: 2,
+  },
+  {
+    name: "Bootstrap",
+    iconSrc: "./src/assets/icons/bootstrap.png",
+    starCount: 1,
   },
   {
     name: "TypeScript",
