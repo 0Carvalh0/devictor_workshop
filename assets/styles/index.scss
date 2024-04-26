@@ -12,7 +12,7 @@ body {
   font-family: $defaultFont;
   font-size: 20px;
 
-  background: $color03;
+  background: $colorwhite;
 }
 
 .mainSection__Title {
@@ -59,7 +59,7 @@ strong {
   padding: 16px;
 
   background-color: $color04;
-  color: $colorwhite;
+  color: $color03;
 
   .header__Title {
     font-size: 26px;
@@ -76,7 +76,7 @@ strong {
     content: "";
 
     font-size: 24px;
-    color: $color02;
+    color: $color03;
   }
 
   @media screen and (min-width: 1080px) {
@@ -101,6 +101,7 @@ strong {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    align-items: center;
     text-align: center;
 
     gap: 8px;
@@ -134,6 +135,7 @@ strong {
 
   .aboutMe__myPicture {
     max-width: 100%;
+    filter: drop-shadow(4px 4px 8px #00000060);
   }
 }
 
@@ -150,12 +152,16 @@ strong {
 
     gap: 8px;
     padding: 16px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px #0f0f0f60;
 
-    background: $color05;
+    background: $color04;
+    color: $colorwhite;
   }
 
   .projectsList__ProjectThumbnail {
     max-width: 100%;
+    aspect-ratio: 16 / 9;
   }
 
   .projectsList__ProjectTechnologies {
@@ -185,10 +191,18 @@ strong {
     text-wrap: nowrap;
     text-align: center;
 
-    background: $color04;
-    color: $colorwhite;
-
     padding: 0.5rem 1rem;
+    border-radius: 100rem;
+  }
+
+  .mainSection__ProjectButton:first-child {
+    background: $color02;
+    color: $colorwhite;
+  }
+
+  .mainSection__ProjectButton:last-child {
+    color: $color02;
+    border: 2px solid $color02;
   }
 }
 
@@ -212,8 +226,10 @@ strong {
 
     text-align: center;
 
+    box-shadow: 4px 4px 8px #0f0f0f60;
     background: $color04;
-    color: $color05;
+    color: $color03;
+    border-radius: 16px;
   }
 
   .skillsList__SkillIcon {
@@ -253,9 +269,15 @@ strong {
 
     .sectionFooter__Button {
       align-self: center;
-      padding: 8px 18px;
 
-      border: 2px outset $color02;
+      text-decoration: none;
+      text-wrap: nowrap;
+      text-align: center;
+
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 100rem;
+
       background: $color04;
       color: $colorwhite;
     }
@@ -268,9 +290,25 @@ strong {
     justify-content: center;
 
     gap: 16px;
-    
+
     p {
+      display: flex;
+
+      gap: 8px;
+
       font-size: 16px;
+    }
+
+    .sectionFooter__Button {
+      text-decoration: none;
+
+      display: flex;
+      gap: 8px;
+      padding: 8px 16px;
+      border-radius: 100rem;
+
+      background: $color04;
+      color: $colorwhite;
     }
   }
 }
@@ -289,7 +327,7 @@ strong {
   border-radius: 50%;
 
   background-color: $color04;
-  color: $color05;
+  color: $colorwhite;
   box-shadow: 2px 2px 8px #00000070, -2px -2px 8px #ffffff70;
 
   text-decoration: none;

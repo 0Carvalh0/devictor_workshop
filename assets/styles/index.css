@@ -58,7 +58,7 @@ body {
   min-height: 100vh;
   font-family: "Montserrat", sans-serif;
   font-size: 20px;
-  background: #80d7ff;
+  background: #f6f4f3;
 }
 
 .mainSection__Title {
@@ -100,7 +100,7 @@ strong {
   justify-content: space-between;
   padding: 16px;
   background-color: #024563;
-  color: #f6f4f3;
+  color: #80d7ff;
 }
 .header .header__Title {
   font-size: 26px;
@@ -114,7 +114,7 @@ strong {
   text-decoration: none;
   content: "";
   font-size: 24px;
-  color: #ff8b00;
+  color: #80d7ff;
 }
 @media screen and (min-width: 1080px) {
   .header .fa-user::after {
@@ -136,6 +136,7 @@ strong {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  align-items: center;
   text-align: center;
   gap: 8px;
 }
@@ -160,6 +161,7 @@ strong {
 }
 #section__AboutMe .aboutMe__myPicture {
   max-width: 100%;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3764705882));
 }
 
 /* PROJECTS */
@@ -174,10 +176,14 @@ strong {
   align-items: center;
   gap: 8px;
   padding: 16px;
-  background: #ffd199;
+  border-radius: 16px;
+  box-shadow: 4px 4px 8px rgba(15, 15, 15, 0.3764705882);
+  background: #024563;
+  color: #f6f4f3;
 }
 .section__ProjectsList .projectsList__ProjectThumbnail {
   max-width: 100%;
+  aspect-ratio: 16/9;
 }
 .section__ProjectsList .projectsList__ProjectTechnologies {
   width: 100%;
@@ -199,9 +205,16 @@ strong {
   text-decoration: none;
   text-wrap: nowrap;
   text-align: center;
-  background: #024563;
-  color: #f6f4f3;
   padding: 0.5rem 1rem;
+  border-radius: 100rem;
+}
+.section__ProjectsList .mainSection__ProjectButton:first-child {
+  background: #ff8b00;
+  color: #f6f4f3;
+}
+.section__ProjectsList .mainSection__ProjectButton:last-child {
+  color: #ff8b00;
+  border: 2px solid #ff8b00;
 }
 
 /* SKILLS */
@@ -220,8 +233,10 @@ strong {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+  box-shadow: 4px 4px 8px rgba(15, 15, 15, 0.3764705882);
   background: #024563;
-  color: #ffd199;
+  color: #80d7ff;
+  border-radius: 16px;
 }
 .section__SkillsList .skillsList__SkillIcon {
   width: 100px;
@@ -253,8 +268,12 @@ strong {
 }
 #section__Footer .sectionFooter__Form .sectionFooter__Button {
   align-self: center;
-  padding: 8px 18px;
-  border: 2px outset #ff8b00;
+  text-decoration: none;
+  text-wrap: nowrap;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 100rem;
   background: #024563;
   color: #f6f4f3;
 }
@@ -265,7 +284,18 @@ strong {
   gap: 16px;
 }
 #section__Footer .sectionFooter__Contacts p {
+  display: flex;
+  gap: 8px;
   font-size: 16px;
+}
+#section__Footer .sectionFooter__Contacts .sectionFooter__Button {
+  text-decoration: none;
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 100rem;
+  background: #024563;
+  color: #f6f4f3;
 }
 
 .button__ReturnTop {
@@ -278,7 +308,7 @@ strong {
   height: 36px;
   border-radius: 50%;
   background-color: #024563;
-  color: #ffd199;
+  color: #f6f4f3;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4392156863), -2px -2px 8px rgba(255, 255, 255, 0.4392156863);
   text-decoration: none;
 }
