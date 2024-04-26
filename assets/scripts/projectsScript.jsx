@@ -1,7 +1,7 @@
 const projectsList = [
   {
     name: "Blink",
-    thumbnailSrc: "./src/assets/images/projetos/Blink.jpg",
+    thumbnailSrc: "./assets/images/projectsThumbnail/Blink.jpg",
     description:
       "Blink é uma rede social que funciona de maneira rápida, seus posts só são visíveis para você e partir do momento em que você sai todas suas informações serão perdidas e você tera que começar tudo de novo.",
     technologies: ["React", "HTML5", "CSS3", "JavaScript"],
@@ -10,7 +10,7 @@ const projectsList = [
   },
   {
     name: "Te Salvando",
-    thumbnailSrc: "./src/assets/images/projetos/tesalvando.jpg",
+    thumbnailSrc: "./assets/images/projectsThumbnail/tesalvando.jpg",
     description:
       "Site para ajuda nos estudos para vestibulares. Com esse site você poderá: Ver conteúdos que precisam ser estudados, Ver dicas de como ir bem na prova, Ver datas de provas, Ler um jornal sobre as notícias que podem cair.",
     technologies: ["HTML5", "CSS3"],
@@ -19,7 +19,7 @@ const projectsList = [
   },
   {
     name: "CalculaJão",
-    thumbnailSrc: "./src/assets/images/projetos/calculajao.jpg",
+    thumbnailSrc: "./assets/images/projectsThumbnail/calculajao.jpg",
     description:
       "Meu primeiro projeto em desenvolvimento front-end, calculadora com diversos cálculos utilizando HTML5, CSS3 e JavaScript.",
     technologies: ["HTML5", "CSS3", "JavaScript"],
@@ -28,7 +28,7 @@ const projectsList = [
   },
   {
     name: "Spotify Clone",
-    thumbnailSrc: "./src/assets/images/projetos/spotifyclone.png",
+    thumbnailSrc: "./assets/images/projectsThumbnail/spotifyclone.png",
     description:
       "Projeto criado na imersão front-end da Alura, replicando um clone do Spotify usando o React",
     technologies: ["React", "HTML5", "CSS3", "JavaScript"],
@@ -37,7 +37,7 @@ const projectsList = [
   },
   {
     name: "Tela de Login",
-    thumbnailSrc: "./src/assets/images/projetos/telalogin.png",
+    thumbnailSrc: "./assets/images/projectsThumbnail/telalogin.png",
     description:
       "Projeto front-end criado durante o curso do Curso em Vídeo do Gustavo Guanabara para treinar responsividade.",
     technologies: ["HTML5", "CSS3"],
@@ -81,7 +81,7 @@ function automaticProjectGenerator() {
       `#projectTechnologies${indexProject}`
     );
     projectData.technologies.forEach((technology) => {
-      const technologyIcon = `<img src="./src/assets/icons/${technology}.png" class="projectsList__TechnologyIcon" alt="ícone ${technology}" />`;
+      const technologyIcon = `<img src="./assets/images/icons/${technology}.png" class="projectsList__TechnologyIcon" alt="ícone ${technology}" />`;
       projectTechnologiesSection.innerHTML += technologyIcon;
     });
   });

@@ -75,7 +75,7 @@ strong {
 .mainContainer {
   display: flex;
   flex-flow: column wrap;
-  margin: 8px 0;
+  margin: 8px 0 34px 0;
   padding: 0 16px;
   gap: 16px;
 }
@@ -178,6 +178,11 @@ strong {
 }
 .section__ProjectsList .projectsList__ProjectThumbnail {
   max-width: 100%;
+}
+.section__ProjectsList .projectsList__ProjectTechnologies {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 .section__ProjectsList .projectsList__TechnologyIcon {
   width: 50px;

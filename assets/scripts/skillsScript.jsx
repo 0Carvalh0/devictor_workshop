@@ -1,72 +1,72 @@
 const skillsList = [
   {
     name: "Windows 10/11",
-    iconSrc: "./src/assets/icons/Windows.png",
+    iconSrc: "./assets/images/icons/Windows.png",
     starCount: 5,
   },
   {
     name: "VS Code",
-    iconSrc: "./src/assets/icons/vscode.png",
+    iconSrc: "./assets/images/icons/vscode.png",
     starCount: 4,
   },
   {
     name: "HTML5",
-    iconSrc: "./src/assets/icons/HTML5.png",
+    iconSrc: "./assets/images/icons/HTML5.png",
     starCount: 4,
   },
   {
     name: "CSS3",
-    iconSrc: "./src/assets/icons/CSS3.png",
+    iconSrc: "./assets/images/icons/CSS3.png",
     starCount: 4,
   },
   {
     name: "GitHub",
-    iconSrc: "./src/assets/icons/GitHub.png",
+    iconSrc: "./assets/images/icons/GitHub.png",
     starCount: 4,
   },
   {
     name: "JavaScript",
-    iconSrc: "./src/assets/icons/JavaScript.png",
+    iconSrc: "./assets/images/icons/JavaScript.png",
     starCount: 3,
   },
   {
     name: "Git",
-    iconSrc: "./src/assets/icons/git.png",
+    iconSrc: "./assets/images/icons/git.png",
     starCount: 3,
   },
   {
     name: "Linux",
-    iconSrc: "./src/assets/icons/linux.png",
+    iconSrc: "./assets/images/icons/linux.png",
     starCount: 3,
   },
   {
     name: "React",
-    iconSrc: "./src/assets/icons/React.png",
+    iconSrc: "./assets/images/icons/React.png",
     starCount: 2,
   },
   {
     name: "SASS",
-    iconSrc: "./src/assets/icons/sass.png",
+    iconSrc: "./assets/images/icons/sass.png",
     starCount: 2,
   },
   {
     name: "NPM",
-    iconSrc: "./src/assets/icons/npm.png",
+    iconSrc: "./assets/images/icons/npm.png",
     starCount: 2,
   },
   {
     name: "Gimp",
-    iconSrc: "./src/assets/icons/gimp.png",
+    iconSrc: "./assets/images/icons/gimp.png",
     starCount: 2,
   },
   {
     name: "Bootstrap",
-    iconSrc: "./src/assets/icons/bootstrap.png",
+    iconSrc: "./assets/images/icons/bootstrap.png",
     starCount: 1,
   },
   {
     name: "TypeScript",
-    iconSrc: "./src/assets/icons/Typescript.png",
+    iconSrc: "./assets/images/icons/Typescript.png",
     starCount: 1,
   },
 ];
