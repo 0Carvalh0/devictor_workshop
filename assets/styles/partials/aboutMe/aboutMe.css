@@ -1,0 +1,95 @@
+@keyframes revealUpToBottom {
+  from {
+    opacity: 0;
+    translate: 0px -50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealBottomToUp {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealLeftToRight {
+  from {
+    opacity: 0;
+    translate: -50px 0px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealRightToLeft {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes cursorBlinking {
+  from {
+    border-right: transparent;
+  }
+}
+/* COLORS */
+/* FONTS */
+/* PADDING, MARGIN, BORDER, BORDER-RADIUS */
+/* ABOUT ME */
+#section__AboutMe .aboutMe__Text {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+}
+#section__AboutMe .aboutMe__Text div {
+  display: flex;
+  justify-content: center;
+}
+#section__AboutMe .aboutMe__Text ul li {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+#section__AboutMe .aboutMe__Title {
+  font-size: 30px;
+}
+#section__AboutMe #myNameTyping {
+  border-right: 2px solid #000;
+  animation: cursorBlinking 0.3s alternate infinite steps(22);
+}
+#section__AboutMe .aboutMe__Links {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  font-size: 32px;
+}
+#section__AboutMe .aboutMe__SocialMedia {
+  text-decoration: none;
+  color: #024563;
+}
+#section__AboutMe .aboutMe__myPicture {
+  max-width: 100%;
+  filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3764705882));
+}/*# sourceMappingURL=aboutMe.css.map */

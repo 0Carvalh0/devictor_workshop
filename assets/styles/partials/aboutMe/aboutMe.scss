@@ -1,0 +1,57 @@
+@import "../../global/animations";
+@import "../../global/variables";
+@import "../../global/functions";
+
+/* ABOUT ME */
+#section__AboutMe {
+  .aboutMe__Text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    gap: 8px;
+
+    div {
+      display: flex;
+      justify-content: center;
+    }
+
+    ul li {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+  }
+
+  .aboutMe__Title {
+    font-size: 30px;
+  }
+
+  #myNameTyping {
+    border-right: 2px solid #000;
+
+    animation: cursorBlinking .3s alternate infinite steps(22);
+  }
+
+  .aboutMe__Links {
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    font-size: 32px;
+  }
+
+  .aboutMe__SocialMedia {
+    text-decoration: none;
+
+    color: $color04;
+  }
+
+  .aboutMe__myPicture {
+    max-width: 100%;
+    filter: drop-shadow(4px 4px 8px #00000060);
+  }
+}

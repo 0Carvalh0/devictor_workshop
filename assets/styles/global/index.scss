@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import "./reset.css";
+@import "./animations";
+@import "./variables";
+@import "./functions";
+@import "../partials/header/header.css";
+@import "../partials/aboutMe/aboutMe.css";
+@import "../partials/projects/projects.css";
+@import "../partials/skills/skills.css";
+@import "../partials/footer/footer.css";
+
+// Body text: 16px or 1em
+// Display text (Heading 1): 40px or 2.5em for an <h1>
+// Functional text (captions, nav): 12px to 14px or 0.75em to 0.875em
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  font-family: $defaultFont;
+  font-size: 16px;
+
+  background: $colorwhite;
+}
+
+.mainSection__Title {
+  font-family: $titleFont;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* MAIN CONTENT */
+.mainContainer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  width: 100%;
+  max-width: 900px;
+
+  margin: 8px auto 34px auto;
+  padding: 0 16px;
+  gap: 16px;
+
+  .mainContainer__Section {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    width: 100%;
+  }
+}
+
+.mainContainer__Thank {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.button__ReturnTop {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+
+  display: grid;
+  place-items: center;
+
+  width: 36px;
+  height: 36px;
+
+  border-radius: 50%;
+
+  background-color: $color04;
+  color: $colorwhite;
+  box-shadow: 2px 2px 8px #00000070, -2px -2px 8px #ffffff70;
+
+  text-decoration: none;
+}
+
+.naoSelecionavel {
+  -webkit-touch-callout: none; /* iPhone OS, Safari */
+  -webkit-user-select: none; /* Chrome, Safari 3 */
+  -khtml-user-select: none; /* Safari 2 */
+  user-select: none; /* Padrão */
+}
+
+@media screen and (min-width: 768px) {
+  .mainSection__ProjectForMore {
+    flex-flow: row wrap !important;
+  }
+
+  .footer__SectionLinks {
+    flex-flow: row wrap !important;
+  }
+}

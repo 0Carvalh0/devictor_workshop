@@ -4,6 +4,7 @@ let typed = new Typed("#myNameTyping", {
   backSpeed: 60,
   backDelay: 1000,
   loop: true,
+  showCursor: false,
 });
 
 const inputPhone = document.querySelector("#inputPhone");

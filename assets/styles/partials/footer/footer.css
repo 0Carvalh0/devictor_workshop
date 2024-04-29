@@ -1,0 +1,112 @@
+@keyframes revealUpToBottom {
+  from {
+    opacity: 0;
+    translate: 0px -50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealBottomToUp {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealLeftToRight {
+  from {
+    opacity: 0;
+    translate: -50px 0px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealRightToLeft {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes cursorBlinking {
+  from {
+    border-right: transparent;
+  }
+}
+/* COLORS */
+/* FONTS */
+/* PADDING, MARGIN, BORDER, BORDER-RADIUS */
+/* FOOTER */
+#section__Footer {
+  gap: 8px;
+  /* FOOTER__FORM */
+  /* FOOTER__CONTACTS */
+}
+#section__Footer .sectionFooter__Form {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: stretch;
+  gap: 8px;
+  text-align: center;
+}
+#section__Footer .sectionFooter__Form .sectionFooter__Input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #024563;
+  padding: 4px 8px;
+}
+#section__Footer .sectionFooter__Form .sectionFooter__Button {
+  align-self: center;
+  text-decoration: none;
+  text-wrap: nowrap;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 100rem;
+  background: #024563;
+  color: #f6f4f3;
+}
+#section__Footer .sectionFooter__Contacts {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 16px;
+}
+#section__Footer .sectionFooter__Contacts p {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+#section__Footer .sectionFooter__Contacts .footer__SectionLinks {
+  display: flex;
+  gap: 8px;
+  flex-flow: column wrap;
+}
+#section__Footer .sectionFooter__Contacts .footer__SectionLinks .sectionFooter__Button {
+  text-decoration: none;
+  display: flex;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 100rem;
+  background: #024563;
+  color: #f6f4f3;
+}/*# sourceMappingURL=footer.css.map */

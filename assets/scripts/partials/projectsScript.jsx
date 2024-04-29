@@ -1,7 +1,7 @@
 const projectsList = [
   {
     name: "Blink",
-    thumbnailSrc: "./assets/images/projectsThumbnail/Blink.jpg",
+    thumbnailSrc: "./assets/images/projectsThumbnail/blinkSocial.jpg",
     description:
       "Blink é uma rede social que funciona de maneira rápida, seus posts só são visíveis para você e partir do momento em que você sai todas suas informações serão perdidas e você tera que começar tudo de novo.",
     technologies: ["React", "HTML5", "CSS3", "JavaScript"],
@@ -9,17 +9,8 @@ const projectsList = [
     urlRepository: "https://github.com/0Carvalh0/projeto-blink",
   },
   {
-    name: "Te Salvando",
-    thumbnailSrc: "./assets/images/projectsThumbnail/tesalvando.jpg",
-    description:
-      "Site para ajuda nos estudos para vestibulares. Com esse site você poderá: Ver conteúdos que precisam ser estudados, Ver dicas de como ir bem na prova, Ver datas de provas, Ler um jornal sobre as notícias que podem cair.",
-    technologies: ["HTML5", "CSS3"],
-    urlProject: "https://0carvalh0.github.io/projeto-te-salvando.com/",
-    urlRepository: "https://github.com/0Carvalh0/projeto-te-salvando.com",
-  },
-  {
-    name: "CalculaJão",
-    thumbnailSrc: "./assets/images/projectsThumbnail/calculajao.jpg",
+    name: "MegaCalculadora",
+    thumbnailSrc: "./assets/images/projectsThumbnail/calculator.jpg",
     description:
       "Meu primeiro projeto em desenvolvimento front-end, calculadora com diversos cálculos utilizando HTML5, CSS3 e JavaScript.",
     technologies: ["HTML5", "CSS3", "JavaScript"],
@@ -34,15 +25,6 @@ const projectsList = [
     technologies: ["React", "HTML5", "CSS3", "JavaScript"],
     urlProject: "https://spotifywithreactcarvalho.netlify.app/",
     urlRepository: "https://github.com/0Carvalh0/spotify-react",
-  },
-  {
-    name: "Tela de Login",
-    thumbnailSrc: "./assets/images/projectsThumbnail/telalogin.png",
-    description:
-      "Projeto front-end criado durante o curso do Curso em Vídeo do Gustavo Guanabara para treinar responsividade.",
-    technologies: ["HTML5", "CSS3"],
-    urlProject: "https://0carvalh0.github.io/projeto-login/",
-    urlRepository: "https://github.com/0Carvalh0/projeto-login",
   },
 ];
 

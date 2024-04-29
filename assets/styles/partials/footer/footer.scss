@@ -1,0 +1,80 @@
+@import "../../global/animations";
+@import "../../global/variables";
+@import "../../global/functions";
+
+/* FOOTER */
+#section__Footer {
+  gap: 8px;
+
+  /* FOOTER__FORM */
+  .sectionFooter__Form {
+    width: 100%;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+
+    gap: 8px;
+
+    text-align: center;
+
+    .sectionFooter__Input {
+      background: transparent;
+
+      border: none;
+      border-bottom: 2px solid $color04;
+
+      padding: 4px 8px;
+    }
+
+    .sectionFooter__Button {
+      align-self: center;
+
+      text-decoration: none;
+      text-wrap: nowrap;
+      text-align: center;
+
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 100rem;
+
+      background: $color04;
+      color: $colorwhite;
+    }
+  }
+
+  /* FOOTER__CONTACTS */
+  .sectionFooter__Contacts {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    gap: 16px;
+
+    p {
+      display: flex;
+
+      gap: 8px;
+
+      font-size: 16px;
+    }
+
+    .footer__SectionLinks {
+      display: flex;
+      gap: 8px;
+      flex-flow: column wrap;
+
+      .sectionFooter__Button {
+        text-decoration: none;
+
+        display: flex;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 100rem;
+
+        background: $color04;
+        color: $colorwhite;
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+@keyframes revealUpToBottom {
+  from {
+    opacity: 0;
+    translate: 0px -50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealBottomToUp {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealLeftToRight {
+  from {
+    opacity: 0;
+    translate: -50px 0px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes revealRightToLeft {
+  from {
+    opacity: 0;
+    translate: 0px 50px;
+    scale: 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0px 0px;
+    scale: 1;
+  }
+}
+@keyframes cursorBlinking {
+  from {
+    border-right: transparent;
+  }
+}
+/* COLORS */
+/* FONTS */
+/* PADDING, MARGIN, BORDER, BORDER-RADIUS */
+/* HEADER */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #024563;
+  color: #80d7ff;
+}
+.header .header__Title {
+  font-size: 26px;
+  font-weight: 700;
+}
+.header .header__Nav {
+  display: flex;
+  gap: 8px;
+}
+.header .header__ButtonSection {
+  text-decoration: none;
+  content: "";
+  font-size: 14px;
+  color: #80d7ff;
+}
+@media screen and (min-width: 768px) {
+  .header .fa-user::after {
+    content: "Sobre mim";
+  }
+  .header .fa-file::after {
+    content: "Projetos";
+  }
+  .header .fa-star::after {
+    content: "Habilidades";
+  }
+  .header .fa-phone::after {
+    content: "Contato";
+  }
+}/*# sourceMappingURL=header.css.map */

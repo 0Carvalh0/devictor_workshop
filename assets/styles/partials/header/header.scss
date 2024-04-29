@@ -1,0 +1,48 @@
+@import "../../global/animations";
+@import "../../global/variables";
+@import "../../global/functions";
+
+/* HEADER */
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  padding: 16px;
+
+  background-color: $color04;
+  color: $color03;
+
+  .header__Title {
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  .header__Nav {
+    display: flex;
+    gap: 8px;
+  }
+
+  .header__ButtonSection {
+    text-decoration: none;
+    content: "";
+
+    font-size: 14px;
+    color: $color03;
+  }
+
+  @media screen and (min-width: 768px) {
+    .fa-user::after {
+      content: "Sobre mim";
+    }
+    .fa-file::after {
+      content: "Projetos";
+    }
+    .fa-star::after {
+      content: "Habilidades";
+    }
+    .fa-phone::after {
+      content: "Contato";
+    }
+  }
+}

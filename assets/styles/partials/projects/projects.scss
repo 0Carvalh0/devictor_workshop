@@ -1,0 +1,70 @@
+@import "../../global/animations";
+@import "../../global/variables";
+@import "../../global/functions";
+
+/* PROJECTS */
+.section__ProjectsList {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
+
+  .projectsList__Project {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    gap: 8px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px #0f0f0f60;
+
+    background: $color04;
+    color: $colorwhite;
+  }
+
+  .projectsList__ProjectThumbnail {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .projectsList__ProjectTechnologies {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .projectsList__TechnologyIcon {
+    width: 50px;
+  }
+
+  .mainSection__ProjectDescription {
+    text-align: justify;
+  }
+
+  .mainSection__ProjectForMore {
+    display: flex;
+    flex-flow: column wrap;
+
+    gap: 8px;
+  }
+
+  .mainSection__ProjectButton {
+    text-decoration: none;
+    text-wrap: nowrap;
+    text-align: center;
+
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
+  }
+
+  .mainSection__ProjectButton:first-child {
+    background: $color02;
+    color: $colorwhite;
+  }
+
+  .mainSection__ProjectButton:last-child {
+    color: $color02;
+    border: 2px solid $color02;
+  }
+}

@@ -12,28 +12,29 @@
     <title>João Victor</title>
 
     <!-- EXTERNAL -->
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
 
     <!-- CSS -->
-    <!-- RESET CSS -->
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <!-- GENERAL DA CSS -->
-    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/global/index.css" />
 
     <!-- SCRIPTS -->
-    <script src="./assets/scripts/general.js" defer></script>
+    <!-- GLOBAL -->
+    <script src="./assets/scripts/global/general.js" defer></script>
     <!-- PROJECTS GENERATE -->
-    <script src="./assets/scripts/projectsScript.jsx" defer></script>
+    <script src="./assets/scripts/partials/projectsScript.jsx" defer></script>
     <!-- SKILLS GENERATE -->
-    <script src="./assets/scripts/skillsScript.jsx" defer></script>
+    <script src="./assets/scripts/partials/skillsScript.jsx" defer></script>
   </head>
 
   <body>
     <!-- Navigation -->
     <header class="header" id="top">
       <h1 class="header__Title">João Victor</h1>
+      
       <nav class="header__Nav">
         <a href="#section__AboutMe" class="header__ButtonSection"
           ><i class="fa-solid fa-user"></i><!--Sobre mim--></a
@@ -75,7 +76,7 @@
             <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/" target="_blank" class="fa-brands fa-linkedin aboutMe__SocialMedia"></a>
           </section>
         </section>
-        <img src="./assets/images/myPicture01.png" class="aboutMe__myPicture" alt="Foto do João Victor"></img>
+        <img src="./assets/images/img01.png" class="aboutMe__myPicture" alt="Foto do João Victor"></img>
       </section>
       
       <!-- Projects -->
@@ -142,14 +143,16 @@
         <section class="sectionFooter__Contacts">
           <h1 class="footer__Title mainSection__Title">Contato:</h1>
           <p><i class="fa-solid fa-envelope"></i>trabalho.joaovictor2004@gmail.com</p>
-          <a href="https://github.com/0Carvalh0" target="_blank" class="sectionFooter__Button"
-          ><i class="fa-brands fa-github sectionFooter__SocialMedia"></i>GitHub</a
-          >
-          <a
-          href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/"
-          target="_blank" class="sectionFooter__Button"
-          ><i class="fa-brands fa-linkedin sectionFooter__SocialMedia"></i>LinkedIn</a
-          >
+          <div class="footer__SectionLinks">
+            <a href="https://github.com/0Carvalh0" target="_blank" class="sectionFooter__Button"
+            ><i class="fa-brands fa-github sectionFooter__SocialMedia"></i>GitHub</a
+            >
+            <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/"
+            target="_blank" class="sectionFooter__Button"
+            ><i class="fa-brands fa-linkedin sectionFooter__SocialMedia"></i>LinkedIn</a
+            >
+          </div>
         </section>
       </footer>
     </main>

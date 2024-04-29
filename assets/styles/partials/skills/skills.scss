@@ -1,0 +1,39 @@
+@import "../../global/animations";
+@import "../../global/variables";
+@import "../../global/functions";
+
+/* SKILLS */
+.section__SkillsList {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  gap: 8px;
+
+  .skillsList__Skill {
+    width: 45%;
+    max-width: 148px;
+    height: 200px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    text-align: center;
+
+    box-shadow: 4px 4px 8px #0f0f0f60;
+    background: $color04;
+    color: $color03;
+    border-radius: 16px;
+  }
+
+  .skillsList__SkillIcon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .mainSection__SkillTitle {
+    font-size: 1rem;
+  }
+}

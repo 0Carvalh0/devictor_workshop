@@ -49,3 +49,9 @@
     scale: 1;
   }
 }
+
+@keyframes cursorBlinking {
+  from {
+    border-right: transparent;
+  }
+}
