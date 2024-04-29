@@ -66,12 +66,12 @@ strong {
   text-align: center;
 }
 
-.button__ReturnTop {
+#button__ReturnTop {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
 
-  display: grid;
+  display: none;
   place-items: center;
 
   width: 36px;

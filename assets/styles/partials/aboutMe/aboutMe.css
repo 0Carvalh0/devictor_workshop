@@ -76,6 +76,7 @@
 }
 #section__AboutMe #myNameTyping {
   border-right: 2px solid #000;
+  height: 30px;
   animation: cursorBlinking 0.3s alternate infinite steps(22);
 }
 #section__AboutMe .aboutMe__Links {

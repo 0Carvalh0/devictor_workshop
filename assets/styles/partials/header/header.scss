@@ -20,7 +20,9 @@
 
   .header__Nav {
     display: flex;
-    gap: 8px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 16px;
   }
 
   .header__ButtonSection {

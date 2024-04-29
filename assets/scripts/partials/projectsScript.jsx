@@ -1,5 +1,13 @@
 const projectsList = [
   {
+    name: "Portfolio",
+    thumbnailSrc: "./assets/images/projectsThumbnail/blinkSocial.jpg",
+    description: "Este portfolio foi totalmente criado por mim.",
+    technologies: ["HTML5", "CSS3", "sass", "JavaScript"],
+    urlProject: "https://0carvalh0.github.io/portfoliojoao/",
+    urlRepository: "https://github.com/0Carvalh0/portfoliojoao",
+  },
+  {
     name: "Blink",
     thumbnailSrc: "./assets/images/projectsThumbnail/blinkSocial.jpg",
     description:
@@ -13,7 +21,7 @@ const projectsList = [
     thumbnailSrc: "./assets/images/projectsThumbnail/calculator.jpg",
     description:
       "Meu primeiro projeto em desenvolvimento front-end, calculadora com diversos cálculos utilizando HTML5, CSS3 e JavaScript.",
-    technologies: ["HTML5", "CSS3", "JavaScript"],
+    technologies: ["HTML5", "CSS3", "sass", "JavaScript"],
     urlProject: "https://0carvalh0.github.io/calculajao/index.html",
     urlRepository: "https://github.com/0Carvalh0/calculajao",
   },
