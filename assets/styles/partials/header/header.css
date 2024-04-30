@@ -63,9 +63,8 @@
   background-color: #024563;
   color: #80d7ff;
 }
-.header .header__Title {
-  font-size: 26px;
-  font-weight: 700;
+.header .header__logo {
+  height: 50px;
 }
 .header .header__Nav {
   display: flex;
