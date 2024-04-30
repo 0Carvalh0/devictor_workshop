@@ -35,20 +35,16 @@
     animation: cursorBlinking .3s alternate infinite steps(22);
   }
 
-  .aboutMe__Links {
+  .aboutMe__button {
     text-decoration: none;
+    text-wrap: nowrap;
+    text-align: center;
 
-    display: flex;
-    justify-content: center;
-    gap: 16px;
+    padding: 0.5rem 1rem;
+    border-radius: 100rem;
 
-    font-size: 32px;
-  }
-
-  .aboutMe__SocialMedia {
-    text-decoration: none;
-
-    color: $color04;
+    background: $color02;
+    color: $colorwhite;
   }
 
   .aboutMe__myPicture {

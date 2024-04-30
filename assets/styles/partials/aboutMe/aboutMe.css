@@ -79,16 +79,14 @@
   height: 30px;
   animation: cursorBlinking 0.3s alternate infinite steps(22);
 }
-#section__AboutMe .aboutMe__Links {
+#section__AboutMe .aboutMe__button {
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  font-size: 32px;
-}
-#section__AboutMe .aboutMe__SocialMedia {
-  text-decoration: none;
-  color: #024563;
+  text-wrap: nowrap;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  border-radius: 100rem;
+  background: #ff8b00;
+  color: #f6f4f3;
 }
 #section__AboutMe .aboutMe__myPicture {
   max-width: 100%;

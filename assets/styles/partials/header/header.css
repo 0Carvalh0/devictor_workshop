@@ -75,21 +75,22 @@
 }
 .header .header__ButtonSection {
   text-decoration: none;
-  content: "";
+  display: flex;
+  gap: 8px;
   font-size: 14px;
   color: #80d7ff;
 }
 @media screen and (min-width: 768px) {
-  .header .fa-user::after {
+  .header .header__ButtonSection:nth-child(1):after {
     content: "Sobre mim";
   }
-  .header .fa-file::after {
+  .header .header__ButtonSection:nth-child(2)::after {
     content: "Projetos";
   }
-  .header .fa-star::after {
+  .header .header__ButtonSection:nth-child(3)::after {
     content: "Habilidades";
   }
-  .header .fa-phone::after {
+  .header .header__ButtonSection:nth-child(4)::after {
     content: "Contato";
   }
 }/*# sourceMappingURL=header.css.map */
