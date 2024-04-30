@@ -5,6 +5,7 @@
 @import "../partials/projects/projects.css";
 @import "../partials/skills/skills.css";
 @import "../partials/footer/footer.css";
+@import "../partials/thank/thank.css";
 @keyframes revealUpToBottom {
   from {
     opacity: 0;
@@ -98,13 +99,6 @@ strong {
   flex-flow: column wrap;
   align-items: center;
   width: 100%;
-}
-
-.mainContainer__Thank {
-  min-height: 100vh;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 #button__ReturnTop {

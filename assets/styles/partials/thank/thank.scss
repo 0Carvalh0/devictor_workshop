@@ -1,0 +1,35 @@
+@import "../../global/animations";
+@import "../../global/variables";
+@import "../../global/functions";
+
+.mainContainer__Thank {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  #section__Thank {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    gap: 8px;
+
+    .sectionThank__Button {
+      text-decoration: none;
+      text-wrap: nowrap;
+      text-align: center;
+
+      display: flex;
+      gap: 8px;
+
+      padding: 0.5rem 1rem;
+      border-radius: 100rem;
+
+      background: $color02;
+      color: $colorwhite;
+    }
+  }
+}

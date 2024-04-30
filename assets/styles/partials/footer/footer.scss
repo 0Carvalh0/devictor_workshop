@@ -27,6 +27,11 @@
       padding: 4px 8px;
     }
 
+    #inputMessage {
+      resize: vertical;
+      max-height: 100px;
+    }
+
     .sectionFooter__Button {
       align-self: center;
 
