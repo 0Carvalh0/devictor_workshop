@@ -17,6 +17,14 @@
 
     gap: 8px;
 
+    .mainSection__Title {
+      padding: 4px;
+
+      border: 2px solid transparent;
+      border-bottom-color: $color04;
+      border-left-color: $color04;
+    }
+
     .sectionThank__Button {
       text-decoration: none;
       text-wrap: nowrap;
@@ -25,11 +33,11 @@
       display: flex;
       gap: 8px;
 
-      padding: 0.5rem 1rem;
+      padding: 8px 16px;
       border-radius: 100rem;
 
-      background: $color02;
-      color: $colorwhite;
+      background: $color04;
+      color: $color01;
     }
   }
 }

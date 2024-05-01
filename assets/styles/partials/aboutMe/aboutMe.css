@@ -91,4 +91,13 @@
 #section__AboutMe .aboutMe__myPicture {
   max-width: 100%;
   filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.2509803922));
+}
+
+@media screen and (min-width: 912px) {
+  #section__AboutMe {
+    flex-flow: row wrap;
+  }
+  #section__AboutMe .aboutMe__Text {
+    width: 42%;
+  }
 }/*# sourceMappingURL=aboutMe.css.map */

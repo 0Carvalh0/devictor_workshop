@@ -52,3 +52,13 @@
     filter: drop-shadow(4px 4px 12px #00000040);
   }
 }
+
+@media screen and (min-width: 912px) {
+  #section__AboutMe {
+    flex-flow: row wrap;
+
+    .aboutMe__Text {
+      width: 42%;
+    }
+  }
+}
