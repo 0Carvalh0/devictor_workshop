@@ -70,15 +70,16 @@
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  box-shadow: 4px 4px 8px rgba(15, 15, 15, 0.3764705882);
-  background: #024563;
-  color: #80d7ff;
+  box-shadow: 4px 4px 8px #415A77;
+  background: #1B263B;
+  color: #778DA9;
   border-radius: 16px;
 }
 .section__SkillsList .skillsList__SkillIcon {
   width: 100px;
   height: 100px;
+  aspect-ratio: 4/3;
 }
 .section__SkillsList .mainSection__SkillTitle {
-  font-size: 1rem;
+  font-size: 16px;
 }/*# sourceMappingURL=skills.css.map */

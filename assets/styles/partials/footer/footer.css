@@ -71,7 +71,7 @@
 #section__Footer .sectionFooter__Form .sectionFooter__Input {
   background: transparent;
   border: none;
-  border-bottom: 2px solid #024563;
+  border-bottom: 2px solid #1B263B;
   padding: 4px 8px;
 }
 #section__Footer .sectionFooter__Form #inputMessage {
@@ -83,11 +83,12 @@
   text-decoration: none;
   text-wrap: nowrap;
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   border: none;
   border-radius: 100rem;
-  background: #024563;
-  color: #f6f4f3;
+  background: #1B263B;
+  color: #E0E1DD;
+  cursor: pointer;
 }
 #section__Footer .sectionFooter__Contacts {
   display: flex;
@@ -111,6 +112,6 @@
   gap: 8px;
   padding: 8px 16px;
   border-radius: 100rem;
-  background: #024563;
-  color: #f6f4f3;
+  background: #1B263B;
+  color: #E0E1DD;
 }/*# sourceMappingURL=footer.css.map */

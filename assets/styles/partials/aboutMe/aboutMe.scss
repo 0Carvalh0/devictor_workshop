@@ -43,12 +43,12 @@
     padding: 0.5rem 1rem;
     border-radius: 100rem;
 
-    background: $color02;
-    color: $colorwhite;
+    background: $color04;
+    color: $color01;
   }
 
   .aboutMe__myPicture {
     max-width: 100%;
-    filter: drop-shadow(4px 4px 8px #00000060);
+    filter: drop-shadow(4px 4px 12px #00000040);
   }
 }

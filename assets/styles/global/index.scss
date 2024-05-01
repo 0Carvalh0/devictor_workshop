@@ -68,14 +68,14 @@ strong {
   display: none;
   place-items: center;
 
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
 
   border-radius: 50%;
 
   background-color: $color04;
-  color: $colorwhite;
-  box-shadow: 2px 2px 8px #00000070, -2px -2px 8px #ffffff70;
+  color: $color01;
+  box-shadow: $defaultBoxShadow;
 
   text-decoration: none;
 }

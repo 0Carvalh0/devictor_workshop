@@ -22,18 +22,19 @@
 
     text-align: center;
 
-    box-shadow: 4px 4px 8px #0f0f0f60;
+    box-shadow: 4px 4px 8px $color03;
     background: $color04;
-    color: $color03;
+    color: $color02;
     border-radius: 16px;
   }
 
   .skillsList__SkillIcon {
     width: 100px;
     height: 100px;
+    aspect-ratio: 4/3;
   }
 
   .mainSection__SkillTitle {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }

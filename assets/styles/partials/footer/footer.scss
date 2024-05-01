@@ -39,12 +39,14 @@
       text-wrap: nowrap;
       text-align: center;
 
-      padding: 0.5rem 1rem;
+      padding: 8px 16px;
       border: none;
       border-radius: 100rem;
 
       background: $color04;
-      color: $colorwhite;
+      color: $color01;
+
+      cursor: pointer;
     }
   }
 
@@ -78,7 +80,7 @@
         border-radius: 100rem;
 
         background: $color04;
-        color: $colorwhite;
+        color: $color01;
       }
     }
   }

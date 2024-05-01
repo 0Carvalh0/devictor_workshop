@@ -10,28 +10,26 @@
 
   padding: 16px;
 
-  background-color: $color04;
-  color: $color03;
+  background-color: $color05;
 
   .header__logo {
-    height: 50px;
+    height: 40px;
   }
 
   .header__Nav {
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     gap: 16px;
-  }
 
-  .header__ButtonSection {
-    text-decoration: none;
+    .header__ButtonSection {
+      text-decoration: none;
 
-    display: flex;
-    gap: 8px;
+      display: flex;
+      gap: 8px;
 
-    font-size: 14px;
-    color: $color03;
+      font-size: 14px;
+      color: $color01;
+    }
   }
 
   @media screen and (min-width: 768px) {

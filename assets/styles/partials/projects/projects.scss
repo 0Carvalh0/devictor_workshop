@@ -16,10 +16,10 @@
     gap: 8px;
     padding: 16px;
     border-radius: 16px;
-    box-shadow: 4px 4px 8px #0f0f0f60;
+    box-shadow: 4px 4px 8px $color03;
 
     background: $color04;
-    color: $colorwhite;
+    color: $color01;
   }
 
   .projectsList__ProjectThumbnail {
@@ -60,7 +60,7 @@
 
   .mainSection__ProjectButton:first-child {
     background: $color02;
-    color: $colorwhite;
+    color: $color05;
   }
 
   .mainSection__ProjectButton:last-child {
