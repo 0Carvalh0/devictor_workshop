@@ -59,21 +59,35 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   padding: 16px;
   background-color: #0D1B2A;
 }
 .header .header__logo {
   height: 40px;
 }
-.header .header__Nav {
+.header #header__ButtonHamburguer {
   display: flex;
+  font-size: 14px;
+  color: #E0E1DD;
+}
+.header #header__Nav {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  z-index: 999;
+  min-height: 500px;
+  min-width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
   align-items: center;
   gap: 16px;
+  background: #0D1B2A;
 }
-.header .header__Nav .header__ButtonSection {
+.header #header__Nav .header__ButtonSection {
   text-decoration: none;
   display: flex;
-  gap: 8px;
   font-size: 14px;
   color: #E0E1DD;
 }

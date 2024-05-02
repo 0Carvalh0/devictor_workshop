@@ -24,7 +24,9 @@
     <!-- SCRIPTS -->
     <!-- GLOBAL -->
     <script src="./assets/scripts/global/global.js" defer></script>
-    <script src="./assets/scripts/partials/scrollEvents.js"></script>
+    <script src="./assets/scripts/global/hamburguerMenu.js" defer></script>
+    <!-- PARTIALS -->
+    <script src="./assets/scripts/partials/scrollEvents.js" defer></script>
     <!-- PROJECTS GENERATE -->
     <script src="./assets/scripts/partials/projectsScript.jsx" defer></script>
     <!-- SKILLS GENERATE -->
@@ -36,18 +38,21 @@
     <header class="header" id="top">
       <img src="./assets/images/logo01.png" class="header__logo" alt="Logo do João Victor" />
       
-      <nav class="header__Nav">
+      <i class="fa-solid fa-bars" id="header__ButtonHamburguer"></i>
+      <nav id="header__Nav">
+        <i class="fa-solid fa-xmark" id="header__ButtonHamburguerClose"></i>
+
         <a href="#section__AboutMe" class="header__ButtonSection"
-          ><i class="fa-solid fa-user"></i><!--Sobre mim--></a
+          ><i class="fa-solid fa-user"></i>Sobre mim</a
         >
         <a href="#section__Projects" class="header__ButtonSection"
-          ><i class="fa-solid fa-file"></i><!--Projetos--></a
+          ><i class="fa-solid fa-file"></i>Projetos</a
         >
         <a href="#section__Skills" class="header__ButtonSection"
-          ><i class="fa-solid fa-star"></i><!--Habilidades--></a
+          ><i class="fa-solid fa-star"></i>Habilidades</a
         >
         <a href="#section__Footer" class="header__ButtonSection"
-          ><i class="fa-solid fa-phone"></i><!--Contatos--></a
+          ><i class="fa-solid fa-phone"></i>Contatos</a
         >
       </nav>
     </header>
