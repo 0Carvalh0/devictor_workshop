@@ -67,6 +67,7 @@
   height: 40px;
 }
 .header #header__ButtonHamburguer {
+  z-index: 999;
   display: flex;
   font-size: 14px;
   color: #E0E1DD;
@@ -75,7 +76,7 @@
   position: fixed;
   top: -100vh;
   left: 0;
-  z-index: 999;
+  z-index: 998;
   min-height: 500px;
   min-width: 100vw;
   display: flex;
@@ -88,6 +89,7 @@
 .header #header__Nav .header__ButtonSection {
   text-decoration: none;
   display: flex;
+  gap: 8px;
   font-size: 14px;
   color: #E0E1DD;
 }
