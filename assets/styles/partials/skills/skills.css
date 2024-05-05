@@ -70,7 +70,7 @@
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
-  box-shadow: 4px 4px 8px #415A77;
+  box-shadow: 0px 4px 12px rgba(27, 38, 59, 0.4);
   background: #1B263B;
   color: #E0E1DD;
   border-radius: 16px;

@@ -114,7 +114,7 @@ strong {
   border-radius: 50%;
   background-color: #1B263B;
   color: #E0E1DD;
-  box-shadow: -4px -4px 6px #E0E1DD, 4px 4px 6px #0D1B2A;
+  box-shadow: -4px -4px 12px rgba(224, 225, 221, 0.2), 4px 4px 12px rgba(27, 38, 59, 0.2);
   text-decoration: none;
 }
 

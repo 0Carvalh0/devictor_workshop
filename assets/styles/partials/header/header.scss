@@ -42,29 +42,23 @@
 
     background: $color05;
 
+    transition: all .2s ease;
+
     .header__ButtonSection {
       text-decoration: none;
 
       display: flex;
       gap: 8px;
+      padding: 8px;
 
       font-size: 14px;
       color: $color01;
     }
-  }
 
-  @media screen and (min-width: 768px) {
-    .header__ButtonSection:nth-child(1):after {
-      content: "Sobre mim";
-    }
-    .header__ButtonSection:nth-child(2)::after {
-      content: "Projetos";
-    }
-    .header__ButtonSection:nth-child(3)::after {
-      content: "Habilidades";
-    }
-    .header__ButtonSection:nth-child(4)::after {
-      content: "Contato";
+    .container__DarkMode {
+      display: flex;
+      gap: 8px;
+      color: $color01;
     }
   }
 }

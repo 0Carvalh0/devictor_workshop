@@ -85,25 +85,18 @@
   align-items: center;
   gap: 16px;
   background: #0D1B2A;
+  transition: all 0.2s ease;
 }
 .header #header__Nav .header__ButtonSection {
   text-decoration: none;
   display: flex;
   gap: 8px;
+  padding: 8px;
   font-size: 14px;
   color: #E0E1DD;
 }
-@media screen and (min-width: 768px) {
-  .header .header__ButtonSection:nth-child(1):after {
-    content: "Sobre mim";
-  }
-  .header .header__ButtonSection:nth-child(2)::after {
-    content: "Projetos";
-  }
-  .header .header__ButtonSection:nth-child(3)::after {
-    content: "Habilidades";
-  }
-  .header .header__ButtonSection:nth-child(4)::after {
-    content: "Contato";
-  }
+.header #header__Nav .container__DarkMode {
+  display: flex;
+  gap: 8px;
+  color: #E0E1DD;
 }/*# sourceMappingURL=header.css.map */
