@@ -125,6 +125,16 @@ strong {
        user-select: none; /* Padrão */
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #E0E1DD;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0D1B2A;
+  border-radius: 10rem;
+}
+
 @media screen and (min-width: 768px) {
   .mainSection__ProjectForMore {
     flex-flow: row wrap !important;

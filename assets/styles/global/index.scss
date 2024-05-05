@@ -90,6 +90,16 @@ strong {
   user-select: none; /* Padrão */
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: $color01;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $color05;
+  border-radius: 10rem;
+}
+
 @media screen and (min-width: 768px) {
   .mainSection__ProjectForMore {
     flex-flow: row wrap !important;

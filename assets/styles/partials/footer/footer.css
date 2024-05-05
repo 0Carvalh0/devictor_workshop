@@ -75,8 +75,8 @@
   padding: 4px 8px;
 }
 #section__Footer .sectionFooter__Form #inputMessage {
-  resize: vertical;
-  max-height: 100px;
+  resize: none;
+  height: 100px;
 }
 #section__Footer .sectionFooter__Form .sectionFooter__Button {
   align-self: center;
