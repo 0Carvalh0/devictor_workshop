@@ -13,7 +13,7 @@ const projectsList = [
     description:
       "Blink é uma rede social que funciona de maneira rápida, seus posts só são visíveis para você e partir do momento em que você sai todas suas informações serão perdidas e você tera que começar tudo de novo.",
     technologies: ["React", "HTML5", "CSS3", "JavaScript"],
-    urlProject: "https://blink-social.netlify.app/",
+    urlProject: "https://projeto-blink.vercel.app/",
     urlRepository: "https://github.com/0Carvalh0/projeto-blink",
   },
   {

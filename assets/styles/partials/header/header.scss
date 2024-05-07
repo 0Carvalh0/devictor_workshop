@@ -18,11 +18,18 @@
   }
 
   #header__ButtonHamburguer {
+    position: fixed;
+    right: 1rem;
     z-index: 999;
+
     display: flex;
 
-    font-size: 14px;
+    padding: 8px;
+    border-radius: 50rem;
+
+    font-size: 20px;
     color: $color01;
+    background-color: $color05;
   }
 
   #header__Nav {

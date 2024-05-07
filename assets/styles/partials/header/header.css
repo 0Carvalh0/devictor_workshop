@@ -67,10 +67,15 @@
   height: 40px;
 }
 .header #header__ButtonHamburguer {
+  position: fixed;
+  right: 1rem;
   z-index: 999;
   display: flex;
-  font-size: 14px;
+  padding: 8px;
+  border-radius: 50rem;
+  font-size: 20px;
   color: #E0E1DD;
+  background-color: #0D1B2A;
 }
 .header #header__Nav {
   position: fixed;
