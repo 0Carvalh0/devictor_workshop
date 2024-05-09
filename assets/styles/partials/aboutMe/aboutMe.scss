@@ -60,5 +60,13 @@
     .aboutMe__Text {
       width: 42%;
     }
+    
+    .aboutMe__button:hover {
+      transition: all .2s ease;
+
+      background-color: $color02;
+      color: $color04;
+      transform: scale(1.05);
+    }
   }
 }
