@@ -105,4 +105,19 @@
 .section__ProjectsList .mainSection__ProjectButton:last-child {
   color: #778DA9;
   border: 2px solid #778DA9;
+}
+
+@media screen and (min-width: 912px) {
+  .mainSection__ProjectButton:hover {
+    transition: all ease 0.2s;
+    transform: scale(1.05);
+  }
+  .mainSection__ProjectButton:first-child:hover {
+    background: #415A77;
+    color: #778DA9;
+  }
+  .mainSection__ProjectButton:last-child:hover {
+    background: #415A77;
+    border-color: transparent;
+  }
 }/*# sourceMappingURL=projects.css.map */

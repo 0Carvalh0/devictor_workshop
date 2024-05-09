@@ -68,3 +68,20 @@
     border: 2px solid $color02;
   }
 }
+
+@media screen and (min-width: 912px) {
+  .mainSection__ProjectButton:hover {
+    transition: all ease .2s;
+    transform: scale(1.05);
+  }
+
+  .mainSection__ProjectButton:first-child:hover {
+    background: $color03;
+    color: $color02;
+  }
+
+  .mainSection__ProjectButton:last-child:hover {
+    background: $color03;
+    border-color: transparent;
+  }
+}
