@@ -57,15 +57,16 @@
 /* ABOUT ME */
 #section__AboutMe .aboutMe__Text {
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
   text-align: center;
   gap: 8px;
 }
 #section__AboutMe .aboutMe__Text div {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 #section__AboutMe .aboutMe__Text ul li {
   list-style-type: disc;

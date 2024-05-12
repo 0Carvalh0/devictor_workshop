@@ -86,8 +86,9 @@ strong {
 /* MAIN CONTENT */
 .mainContainer {
   display: flex;
-  flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
   width: 100%;
   max-width: 900px;
   margin: 8px auto 34px auto;
@@ -96,9 +97,9 @@ strong {
 }
 .mainContainer .mainContainer__Section {
   display: flex;
-  flex-flow: column wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
   width: 100%;
   min-height: 100vh;
 }

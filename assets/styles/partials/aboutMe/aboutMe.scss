@@ -5,17 +5,14 @@
 /* ABOUT ME */
 #section__AboutMe {
   .aboutMe__Text {
-    display: flex;
+    @include flexCenter;
     flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
     text-align: center;
 
     gap: 8px;
 
     div {
-      display: flex;
-      justify-content: center;
+      @include flexCenter;
     }
 
     ul li {

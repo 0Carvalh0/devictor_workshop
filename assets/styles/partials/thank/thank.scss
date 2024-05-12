@@ -5,9 +5,7 @@
 .mainContainer__Thank {
   min-height: 100vh;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flexCenter;
   text-align: center;
 
   #section__Thank {

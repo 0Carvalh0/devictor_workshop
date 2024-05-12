@@ -62,8 +62,9 @@
 }
 .section__ProjectsList .projectsList__Project {
   display: flex;
-  flex-flow: column wrap;
+  justify-content: center;
   align-items: center;
+  flex-flow: column wrap;
   gap: 8px;
   padding: 16px;
   border-radius: 16px;

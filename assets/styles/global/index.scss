@@ -41,9 +41,8 @@ strong {
 
 /* MAIN CONTENT */
 .mainContainer {
-  display: flex;
+  @include flexCenter;
   flex-flow: column wrap;
-  align-items: center;
 
   width: 100%;
   max-width: 900px;
@@ -53,10 +52,8 @@ strong {
   gap: 16px;
 
   .mainContainer__Section {
-    display: flex;
+    @include flexCenter;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
 
     width: 100%;
     min-height: 100vh;

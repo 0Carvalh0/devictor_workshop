@@ -9,9 +9,8 @@
   gap: 8px;
 
   .projectsList__Project {
-    display: flex;
+    @include flexCenter;
     flex-flow: column wrap;
-    align-items: center;
 
     gap: 8px;
     padding: 16px;
