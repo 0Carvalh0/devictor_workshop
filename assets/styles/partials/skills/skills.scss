@@ -27,8 +27,9 @@
     color: $color01;
     border-radius: 16px;
   }
-
+  
   .skillsList__SkillIcon {
+    transition: all ease .2s;
     width: 100px;
     height: 100px;
     aspect-ratio: 4/3;
@@ -37,4 +38,10 @@
   .mainSection__SkillTitle {
     font-size: 16px;
   }
+}
+
+@media screen and (min-width: 1000px) {
+  .skillsList__Skill:hover > .skillsList__SkillIcon {
+      transform: scale(1.2) translateY(-10px) rotateZ(-10deg);
+    }
 }
