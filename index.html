@@ -12,11 +12,16 @@
     <title>João Victor</title>
 
     <!-- EXTERNAL -->
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9bfb2428d0.js" crossorigin="anonymous" defer></script>
+    <!-- TYPING ANIMATION -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer></script>
+    <!-- CARROUSEL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/styles/global/index.css" />
@@ -87,7 +92,12 @@
       <!-- Projects -->
       <section class="mainContainer__Section" id="section__Projects">
         <h1 class="projects__Title mainSection__Title">&lt;Projetos&gt;</h1>
-        <section class="section__ProjectsList" id="section__InsertProjects">
+        <section class="swiper">
+          <section class="section__ProjectsList swiper-wrapper" id="section__InsertProjects">
+          </section>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </section>
         <h1 class="projects__Title mainSection__Title">&lt;/Projetos&gt;</h1>
       </section>

@@ -54,10 +54,15 @@
 /* COLORS */
 /* FONTS */
 /* PADDING, MARGIN, BORDER, BORDER-RADIUS */
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 /* PROJECTS */
 .section__ProjectsList {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   gap: 8px;
 }
 .section__ProjectsList .projectsList__Project {
@@ -65,6 +70,7 @@
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  max-width: 500px;
   gap: 8px;
   padding: 16px;
   border-radius: 16px;

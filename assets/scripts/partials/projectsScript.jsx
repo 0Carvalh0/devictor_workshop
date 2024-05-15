@@ -41,7 +41,7 @@ function automaticProjectGenerator() {
 
   projectsList.forEach((projectData, indexProject) => {
     const projectStructure = `
-    <section class="projectsList__Project projectCard" id="project${
+    <section class="projectsList__Project projectCard swiper-slide" id="project${
       indexProject + 1
     }">
     <img

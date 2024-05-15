@@ -2,15 +2,22 @@
 @import "../../global/variables";
 @import "../../global/functions";
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 /* PROJECTS */
 .section__ProjectsList {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   gap: 8px;
 
   .projectsList__Project {
     @include flexCenter;
     flex-flow: column wrap;
+
+    max-width: 500px;
 
     gap: 8px;
     padding: 16px;

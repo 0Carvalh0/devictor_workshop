@@ -1,3 +1,5 @@
+// TYPING ANIMATION
+
 let typed = new Typed("#myNameTyping", {
   strings: ["João Victor", "Carvalho de Souza"],
   typeSpeed: 80,
@@ -6,6 +8,8 @@ let typed = new Typed("#myNameTyping", {
   loop: true,
   showCursor: false,
 });
+
+// PHONE MASK
 
 const inputPhone = document.querySelector("#inputPhone");
 
@@ -19,4 +23,23 @@ inputPhone.addEventListener("keypress", () => {
   } else if (inputPhoneLenght === 10) {
     inputPhone.value += "-";
   }
+});
+
+// CARROUSEL CONFIG
+
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
