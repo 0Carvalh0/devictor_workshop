@@ -62,8 +62,10 @@
 
 /* PROJECTS */
 .section__ProjectsList {
+  height: 532px;
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   gap: 8px;
 }
 .section__ProjectsList .projectsList__Project {
@@ -71,7 +73,10 @@
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
+  justify-content: space-between;
   max-width: 500px;
+  height: 500px;
+  overflow: hidden;
   gap: 8px;
   padding: 16px;
   border-radius: 16px;
@@ -80,7 +85,8 @@
   color: #E0E1DD;
 }
 .section__ProjectsList .projectsList__ProjectThumbnail {
-  max-width: 100%;
+  margin: -16px -16px 0px -16px;
+  max-width: calc(100% + 32px);
   aspect-ratio: 16/9;
 }
 .section__ProjectsList .projectsList__ProjectTechnologies {

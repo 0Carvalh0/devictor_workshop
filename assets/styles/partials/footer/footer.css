@@ -90,6 +90,10 @@
   color: #E0E1DD;
   cursor: pointer;
 }
+#section__Footer .sectionFooter__Form .sectionFooter__Button:hover {
+  background: #415A77;
+  color: #E0E1DD;
+}
 #section__Footer .sectionFooter__Contacts {
   display: flex;
   justify-content: center;
@@ -114,5 +118,9 @@
   padding: 8px 16px;
   border-radius: 100rem;
   background: #1B263B;
+  color: #E0E1DD;
+}
+#section__Footer .sectionFooter__Contacts .footer__SectionLinks .sectionFooter__Button:hover {
+  background: #415A77;
   color: #E0E1DD;
 }/*# sourceMappingURL=footer.css.map */

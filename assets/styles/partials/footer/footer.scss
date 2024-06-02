@@ -47,6 +47,11 @@
       color: $color01;
 
       cursor: pointer;
+
+      &:hover {
+        background: $color03;
+        color: $color01;
+      }
     }
   }
 
@@ -80,6 +85,11 @@
 
         background: $color04;
         color: $color01;
+
+        &:hover {
+          background: $color03;
+          color: $color01;
+        }
       }
     }
   }

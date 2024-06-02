@@ -9,15 +9,21 @@
 
 /* PROJECTS */
 .section__ProjectsList {
+  height: 532px;
+
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   gap: 8px;
 
   .projectsList__Project {
     @include flexCenter;
     flex-flow: column wrap;
-
+    justify-content: space-between;
+    
     max-width: 500px;
+    height: 500px;
+    overflow: hidden;
 
     gap: 8px;
     padding: 16px;
@@ -29,7 +35,8 @@
   }
 
   .projectsList__ProjectThumbnail {
-    max-width: 100%;
+    margin: -16px -16px 0px -16px;
+    max-width: calc(100% + 32px);
     aspect-ratio: 16 / 9;
   }
 
