@@ -56,43 +56,40 @@
 /* PADDING, MARGIN, BORDER, BORDER-RADIUS */
 .swiper {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
 }
 
 /* PROJECTS */
 .section__ProjectsList {
-  height: 532px;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  gap: 8px;
+  position: relative;
 }
 .section__ProjectsList .projectsList__Project {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column wrap;
-  justify-content: space-between;
-  max-width: 500px;
-  height: 500px;
-  overflow: hidden;
-  gap: 8px;
+  width: 100%;
+  gap: 16px;
   padding: 16px;
-  border-radius: 16px;
-  box-shadow: 0px 4px 12px rgba(27, 38, 59, 0.4);
+  border-radius: 12px;
+  box-shadow: -4px 4px 12px rgba(27, 38, 59, 0.4);
   background: #1B263B;
   color: #E0E1DD;
+  cursor: grab;
+}
+.section__ProjectsList .projectsList__Project:active {
+  cursor: grabbing;
 }
 .section__ProjectsList .projectsList__ProjectThumbnail {
-  margin: -16px -16px 0px -16px;
-  max-width: calc(100% + 32px);
+  width: 100%;
   aspect-ratio: 16/9;
 }
 .section__ProjectsList .projectsList__ProjectTechnologies {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 16px;
 }
 .section__ProjectsList .projectsList__TechnologyIcon {
   width: 50px;
