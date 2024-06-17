@@ -5,17 +5,21 @@
 .swiper {
   width: 100%;
   height: 100%;
+  padding: 30px;
 }
 
 /* PROJECTS */
 .section__ProjectsList {
   position: relative;
+
   .projectsList__Project {
     position: relative;
     @include flexCenter;
     flex-flow: column wrap;
+    overflow: hidden;
 
     width: 100%;
+    height: 680px;
 
     gap: 16px;
     padding: 16px;
@@ -33,6 +37,10 @@
   }
 
   .projectsList__ProjectThumbnail {
+    position: relative;
+    left: 0;
+    top: 0;
+
     width: 100%;
     aspect-ratio: 16 / 9;
   }
