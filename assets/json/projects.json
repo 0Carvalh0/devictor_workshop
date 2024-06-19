@@ -1,7 +1,7 @@
 [
   {
     "name": "Portfolio",
-    "thumbnailSrc": "./assets/images/projectsThumbnail/blinkSocial.jpg",
+    "thumbnailSrc": "./assets/images/projectsThumbnail/portfolio.png",
     "description": "Este portfolio foi totalmente criado por mim.",
     "technologies": ["HTML5", "CSS3", "sass", "JavaScript"],
     "urlProject": "https://0carvalh0.github.io/portfoliojoao/",
