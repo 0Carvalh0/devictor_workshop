@@ -14,13 +14,13 @@ let typed = new Typed("#myNameTyping", {
 const inputPhone = document.querySelector("#inputPhone");
 
 inputPhone.addEventListener("keypress", () => {
-  let inputPhoneLenght = inputPhone.value.length;
+  let inputPhoneLength = inputPhone.value.length;
 
-  if (inputPhoneLenght === 0) {
+  if (inputPhoneLength === 0) {
     inputPhone.value += "(";
-  } else if (inputPhoneLenght === 3) {
+  } else if (inputPhoneLength === 3) {
     inputPhone.value += ") ";
-  } else if (inputPhoneLenght === 10) {
+  } else if (inputPhoneLength === 10) {
     inputPhone.value += "-";
   }
 });
@@ -34,3 +34,7 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+// SCROLL REVEAL
+
+window.sr = ScrollReveal({reset:true})
