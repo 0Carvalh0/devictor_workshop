@@ -87,6 +87,10 @@ strong {
   user-select: none; /* Padrão */
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
   background-color: $color01;

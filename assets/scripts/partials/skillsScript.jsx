@@ -7,7 +7,7 @@ async function fetchData() {
   
     skillsList.forEach((skillData, indexSkill) => {
       const skillStructure = `
-      <section class="skillsList__Skill skillCard" id="skill${indexSkill + 1}">
+      <section class="skillsList__Skill skillCard hidden" id="skill${indexSkill + 1}">
         <img
           src=${skillData.iconSrc}
           class="skillsList__SkillIcon"
