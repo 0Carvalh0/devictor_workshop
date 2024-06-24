@@ -25,6 +25,8 @@ inputPhone.addEventListener("keypress", () => {
   }
 });
 
+// CARROUSEL
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 20,
@@ -36,7 +38,6 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 // SCROLL REVEAL
-
 
 window.sr = ScrollReveal({ reset: true });
 
