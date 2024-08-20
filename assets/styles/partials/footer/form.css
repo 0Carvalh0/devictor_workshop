@@ -1,29 +1,31 @@
 .contact__form {
-    display: flex;
-    flex-flow: column wrap;
+  display: flex;
+  flex-flow: column wrap;
 
-    gap: 8px;
+  gap: 8px;
 }
 
 .contact__input {
-    all: unset;
+  all: unset;
 
-    padding: 8px 14px;
-    border-radius: 25px;
-    border: 2px solid var(--primary-color);
+  padding: 8px 14px;
+  border-radius: 25px;
+
+  background: var(--card-background);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 #inputMessage {
-    height: 200px;
+  height: 200px;
 }
 
 .contact__button {
-    all: unset;
-    align-self: center;
+  all: unset;
+  align-self: center;
 
-    padding: 0.8rem 1.5rem;
-    border-radius: 25px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
 
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
