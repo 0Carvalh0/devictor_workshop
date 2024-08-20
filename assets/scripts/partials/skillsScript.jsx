@@ -7,20 +7,10 @@ async function fetchData() {
 
     skillsList.forEach((skillData, indexSkill) => {
       const skillStructure = `
-      <section class="skillsList__Skill skillCard" id="skill${
-        indexSkill + 1
-      }">
-        <img
-          src=${skillData.iconSrc}
-          class="skillsList__SkillIcon"
-          alt="Ícone da habilidade"
-        />
-        <h2 class="mainSection__SkillTitle">${skillData.name}</h2>
-        <section class="mainSection__SkillRating" id="section__InsertSkillRating">
-          ${countStars(skillData.starCount)}
-        </section>
-      </section>
-      `;
+    <div class="skill" id="skill${indexSkill + 1}"><img src=${
+        skillData.iconSrc
+      } class="skill__icon" alt="Icon HTML">${skillData.name}</div>
+    `;
 
       sectionInsert.innerHTML += skillStructure;
     });

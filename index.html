@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/public/favicon.ico"
+      type="image/x-icon"
+    />
     <title>João Victor</title>
 
-    <link rel="stylesheet" href="./assets/styles/global/index.css" />
     <link rel="stylesheet" href="./assets/styles/global/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/global/_variables.css" />
+    <link rel="stylesheet" href="./assets/styles/global/index.css" />
 
+    <link rel="stylesheet" href="./assets/styles/partials/responsive.css" />
+
+    <script src="./assets/scripts/global/global.js" defer></script>
     <script src="./assets/scripts/partials/projectsScript.jsx" defer></script>
     <script src="./assets/scripts/partials/skillsScript.jsx" defer></script>
   </head>
   <body>
     <header class="header">
       <h1 class="header__title">João Victor</h1>
+      <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
