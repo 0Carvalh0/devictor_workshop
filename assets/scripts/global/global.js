@@ -4,19 +4,19 @@ function toggleTheme() {
 
 // PHONE MASK
 
-// const inputPhone = document.querySelector("#inputPhone");
+const inputPhone = document.querySelector("#inputPhone");
 
-// inputPhone.addEventListener("keypress", () => {
-//   let inputPhoneLength = inputPhone.value.length;
+inputPhone.addEventListener("keypress", () => {
+  let inputPhoneLength = inputPhone.value.length;
 
-//   if (inputPhoneLength === 0) {
-//     inputPhone.value += "(";
-//   } else if (inputPhoneLength === 3) {
-//     inputPhone.value += ") ";
-//   } else if (inputPhoneLength === 10) {
-//     inputPhone.value += "-";
-//   }
-// });
+  if (inputPhoneLength === 0) {
+    inputPhone.value += "(";
+  } else if (inputPhoneLength === 3) {
+    inputPhone.value += ") ";
+  } else if (inputPhoneLength === 10) {
+    inputPhone.value += "-";
+  }
+});
 
 // SCROLL REVEAL
 
