@@ -1,5 +1,8 @@
 @charset "UTF-8";
 
+@import url("./reset.css");
+@import url("./_variables.css");
+
 html {
   scroll-behavior: smooth;
 }
@@ -143,15 +146,27 @@ body {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
   text-decoration: none;
   border-radius: 25px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, opacity 0.3s;
 }
 
-.project__button:hover {
+.project__button:first-of-type {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.project__button:first-of-type:hover {
   background-color: var(--hover-color);
+}
+
+.project__button:last-of-type {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.project__button:last-of-type:hover {
+  opacity: 0.6;
 }
 
 .skills__list {
