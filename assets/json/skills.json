@@ -25,6 +25,11 @@
     "starCount": 4
   },
   {
+    "name": "Responsive Design",
+    "iconSrc": "./assets/images/icons/responsivewebdesign.png",
+    "starCount": 4
+  },
+  {
     "name": "JavaScript",
     "iconSrc": "./assets/images/icons/JavaScript.png",
     "starCount": 3

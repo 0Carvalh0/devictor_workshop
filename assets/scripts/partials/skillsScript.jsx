@@ -3,7 +3,7 @@ async function fetchData() {
   const skillsList = await res.json();
 
   function automaticSkillGenerator() {
-    const sectionInsert = document.querySelector("#section__InsertSkills");
+    const sectionInsert = document.querySelector(".skills__list");
 
     skillsList.forEach((skillData, indexSkill) => {
       const skillStructure = `
