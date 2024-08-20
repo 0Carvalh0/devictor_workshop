@@ -1,0 +1,21 @@
+@import url("./form.css");
+
+h3.section__title {
+  font-size: 1.5rem;
+}
+
+.contact__description {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.footer {
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--secondary-color);
+  color: #666;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

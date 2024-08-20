@@ -1,0 +1,51 @@
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.project {
+  background: var(--card-background);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  width: 100%;
+}
+
+.project__title {
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.project__description {
+  color: var(--text-color);
+}
+
+.project__button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+.project__button:first-of-type {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.project__button:first-of-type:hover {
+  background-color: var(--hover-color);
+}
+
+.project__button:last-of-type {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.project__button:last-of-type:hover {
+  opacity: 0.6;
+}

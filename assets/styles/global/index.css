@@ -3,6 +3,12 @@
 @import url("./reset.css");
 @import url("./_variables.css");
 
+@import url("../partials/header/header.css");
+@import url("../partials/aboutme/aboutme.css");
+@import url("../partials/projects/projects.css");
+@import url("../partials/skills/skills.css");
+@import url("../partials/footer/footer.css");
+
 html {
   scroll-behavior: smooth;
 }
@@ -15,67 +21,6 @@ body {
   font-size: 16px;
   overflow-x: hidden;
   transition: background-color 0.3s, color 0.3s;
-}
-
-.header {
-  padding: 1.5rem;
-  text-align: center;
-  background: var(--secondary-color);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
-  position: relative;
-}
-
-.header__title {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  text-align: center;
-}
-
-.nav__item {
-  margin: 0;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: var(--text-color);
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.nav__link:hover {
-  color: var(--primary-color);
-}
-
-.theme-toggle {
-  display: none;
-
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.theme-toggle:hover {
-  background-color: var(--hover-color);
 }
 
 .section {
@@ -92,122 +37,4 @@ body {
   border-bottom: 2px solid var(--primary-color);
   display: inline-block;
   padding-bottom: 0.5rem;
-}
-
-.about__description {
-  margin-top: 1rem;
-  font-size: 1rem;
-  line-height: 1.8;
-  color: var(--text-color);
-  text-align: center;
-}
-
-.curriculum__link {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-  text-decoration: none;
-  border-radius: 25px;
-  transition: background-color 0.3s;
-}
-
-.curriculum__link:hover {
-  background-color: var(--hover-color);
-}
-
-.projects__list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  align-items: center;
-}
-
-.project {
-  background: var(--card-background);
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-  width: 100%;
-}
-
-.project__title {
-  margin-bottom: 1rem;
-  color: var(--primary-color);
-}
-
-.project__description {
-  color: var(--text-color);
-}
-
-.project__button {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  text-decoration: none;
-  border-radius: 25px;
-  transition: background-color 0.3s, opacity 0.3s;
-}
-
-.project__button:first-of-type {
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
-}
-
-.project__button:first-of-type:hover {
-  background-color: var(--hover-color);
-}
-
-.project__button:last-of-type {
-  border: 2px solid var(--primary-color);
-  color: var(--primary-color);
-}
-
-.project__button:last-of-type:hover {
-  opacity: 0.6;
-}
-
-.skills__list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
-.skill {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-
-  max-width: 118px;
-
-  text-align: center;
-  background: var(--card-background);
-  padding: 0.8rem 1.5rem;
-  border-radius: 20px;
-  font-size: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-.skill__icon {
-  width: 70px;
-}
-
-.contact__description {
-  margin: 1rem 0;
-  font-size: 1rem;
-  color: var(--text-color);
-  text-align: center;
-}
-
-.footer {
-  padding: 1.5rem;
-  text-align: center;
-  background: var(--secondary-color);
-  color: #666;
-  margin-top: 2rem;
-  font-size: 0.9rem;
 }

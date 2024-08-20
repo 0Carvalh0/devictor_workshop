@@ -1,0 +1,22 @@
+.about__description {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.curriculum__link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s;
+}
+
+.curriculum__link:hover {
+  background-color: var(--hover-color);
+}

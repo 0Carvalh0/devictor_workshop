@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="./assets/styles/global/index.css" />
     <link rel="stylesheet" href="./assets/styles/partials/responsive.css" />
 
+    <script
+      src="https://kit.fontawesome.com/9bfb2428d0.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
     <script src="./assets/scripts/global/global.js" defer></script>
     <script src="./assets/scripts/partials/projectsScript.jsx" defer></script>
     <script src="./assets/scripts/partials/skillsScript.jsx" defer></script>
@@ -73,7 +79,62 @@
         Estou disponível para projetos freelancers e oportunidades de
         colaboração. Entre em contato comigo para discutirmos como posso ajudar!
       </p>
-      <!-- ADICIONAR FORMULÁRIO -->
+
+      <h3 class="section__title">Fale Comigo:</h3>
+      <form
+        class="contact__form"
+        action="https://formsubmit.co/trabalho.joaovictor2004@gmail.com"
+        method="POST"
+      >
+        <input
+          type="text"
+          name="userName"
+          id="inputName"
+          class="contact__input hidden"
+          placeholder="Seu nome..."
+          required
+        />
+        <input
+          type="email"
+          name="userEmail"
+          id="inputEmail"
+          class="contact__input hidden"
+          placeholder="Seu E-mail..."
+          required
+        />
+        <input
+          type="tel"
+          name="userPhone"
+          id="inputPhone"
+          class="contact__input hidden"
+          placeholder="Seu telefone..."
+          maxlength="15"
+          required
+        />
+        <textarea
+          name="userMessage"
+          id="inputMessage"
+          class="contact__input hidden"
+          placeholder="Escreva sua mensagem aqui..."
+          required
+        ></textarea>
+        <button
+          type="submit"
+          class="contact__button"
+          id="contact__submitButton"
+        >
+          <i class="fa-solid fa-paper-plane"></i> Enviar
+        </button>
+
+        <input
+          type="hidden"
+          name="_next"
+          value="https://0carvalh0.github.io/portfoliojoao/thank.html"
+        />
+        <input type="hidden" name="c" value="Alguém entrou em contato!" />
+        <input type="hidden" name="_honey" style="display: none" />
+        <input type="hidden" name="_captcha" value="false" />
+      </form>
     </section>
 
     <footer class="footer">
