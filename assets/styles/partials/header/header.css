@@ -40,7 +40,7 @@
   color: var(--primary-color);
 }
 
-.theme-toggle {
+.theme-toggle__rail {
   display: none;
   justify-content: flex-start;
   align-items: center;
@@ -58,7 +58,7 @@
   transition: 0.3s;
 }
 
-.indicator {
+.theme-toggle__indicator {
   position: absolute;
   left: 0;
   
@@ -71,10 +71,10 @@
   transition: 0.3s;
 }
 
-.theme-toggle.light-theme .indicator {
+.theme-toggle__rail.light-theme .theme-toggle__indicator {
   left: 16px;
 }
 
-.theme-toggle:hover {
+.theme-toggle__rail:hover {
   background-color: var(--hover-color);
 }

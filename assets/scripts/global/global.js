@@ -1,4 +1,4 @@
-const toggleThemeButton = document.querySelector(".theme-toggle");
+const toggleThemeButton = document.querySelector(".theme-toggle__rail");
 
 toggleThemeButton.addEventListener("click", () => {
   const body = document.body;

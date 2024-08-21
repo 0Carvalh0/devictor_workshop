@@ -1,6 +1,6 @@
 /* Tablet Styles */
 @media (min-width: 600px) {
-  .theme-toggle {
+  .theme-toggle__rail {
     display: flex;
   }
 
