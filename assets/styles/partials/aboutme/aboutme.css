@@ -7,7 +7,7 @@
 }
 
 .about__left {
-  display: flex;  
+  display: flex;
   flex-flow: column wrap;
   align-items: flex-start;
 }
@@ -42,4 +42,7 @@
   height: 20rem;
 
   border-radius: 50%;
+  /* clip-path: polygon(78% 1%, 0 28%, 72% 100%); */
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
