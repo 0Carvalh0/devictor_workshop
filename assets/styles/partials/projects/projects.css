@@ -6,12 +6,17 @@
 }
 
 .project {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+
   background: var(--card-background);
   padding: 1.5rem;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
   width: 100%;
+  min-height: 432px;
 }
 
 .project__title {
@@ -21,6 +26,11 @@
 
 .project__description {
   color: var(--text-color);
+}
+
+.project div {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 .project__button {

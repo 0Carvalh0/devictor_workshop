@@ -12,12 +12,14 @@ async function fetchData() {
           <p class="project__description">
             ${projectData.description}
           </p>
-          <a href=${
-            projectData.urlProject
-          } target="_blank" class="project__button">Ver Projeto</a>
-        <a href=${
-          projectData.urlRepository
-        } target="_blank" class="project__button">Ver Repositório</a>
+          <div>
+            <a href=${
+              projectData.urlProject
+            } target="_blank" class="project__button">Ver Projeto</a>
+            <a href=${
+              projectData.urlRepository
+            } target="_blank" class="project__button">Ver Repositório</a>
+          </div>
         </div>
     `;
 
