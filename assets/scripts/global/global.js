@@ -1,7 +1,10 @@
-function toggleTheme() {
+const toggleThemeButton = document.querySelector(".theme-toggle");
+
+toggleThemeButton.addEventListener("click", () => {
   const body = document.body;
   body.classList.toggle("light-theme");
-
+  toggleThemeButton.classList.toggle("light-theme");
+  
   if (body.classList.contains("light-theme")) {
     document.querySelector(
       "img[src = './assets/images/icons/GitHub.png']"
@@ -11,8 +14,7 @@ function toggleTheme() {
       "img[src = './assets/images/icons/GitHub.png']"
     ).style.filter = "invert(0)";
   }
-
-}
+})
 
 // PHONE MASK
 

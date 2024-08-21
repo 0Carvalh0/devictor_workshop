@@ -1,7 +1,7 @@
 /* Tablet Styles */
 @media (min-width: 600px) {
   .theme-toggle {
-    display: block;
+    display: flex;
   }
 
   .nav__list {
