@@ -1,3 +1,17 @@
+.section.about {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.about__left {
+  display: flex;  
+  flex-flow: column wrap;
+  align-items: flex-start;
+}
+
 .about__description {
   margin-top: 1rem;
   font-size: 1rem;
@@ -7,6 +21,8 @@
 }
 
 .curriculum__link {
+  align-self: center;
+
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
@@ -19,4 +35,11 @@
 
 .curriculum__link:hover {
   background-color: var(--hover-color);
+}
+
+.about__picture {
+  width: 20rem;
+  height: 20rem;
+
+  border-radius: 50%;
 }

@@ -33,6 +33,10 @@
     font-size: 2.2rem;
   }
 
+  .section.about {
+    flex-flow: row nowrap;
+  }
+
   .projects__list {
     justify-content: space-between;
   }

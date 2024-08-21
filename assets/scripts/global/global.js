@@ -1,20 +1,25 @@
+const body = document.body;
 const toggleThemeButton = document.querySelector(".theme-toggle__rail");
+const indicator__icon = document.querySelector(".indicator__icon");
 
 toggleThemeButton.addEventListener("click", () => {
-  const body = document.body;
   body.classList.toggle("light-theme");
   toggleThemeButton.classList.toggle("light-theme");
-  
+
   if (body.classList.contains("light-theme")) {
     document.querySelector(
       "img[src = './assets/images/icons/GitHub.png']"
     ).style.filter = "invert(1)";
+
+    indicator__icon.classList.replace("fa-moon", "fa-sun");
   } else {
     document.querySelector(
       "img[src = './assets/images/icons/GitHub.png']"
     ).style.filter = "invert(0)";
+
+    indicator__icon.classList.replace("fa-sun", "fa-moon");
   }
-})
+});
 
 // PHONE MASK
 
