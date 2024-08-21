@@ -1,5 +1,17 @@
 function toggleTheme() {
-  document.querySelector("body").classList.toggle("light-theme");
+  const body = document.body;
+  body.classList.toggle("light-theme");
+
+  if (body.classList.contains("light-theme")) {
+    document.querySelector(
+      "img[src = './assets/images/icons/GitHub.png']"
+    ).style.filter = "invert(1)";
+  } else {
+    document.querySelector(
+      "img[src = './assets/images/icons/GitHub.png']"
+    ).style.filter = "invert(0)";
+  }
+
 }
 
 // PHONE MASK
