@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @import url("./reset.css");
-@import url("./_variables.css");
+@import url("./variables.css");
 
 @import url("../partials/header/header.css");
 @import url("../partials/aboutme/aboutme.css");
