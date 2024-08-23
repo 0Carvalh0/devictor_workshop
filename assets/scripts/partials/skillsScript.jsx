@@ -1,37 +1,37 @@
 async function fetchData() {
-  const res = await fetch("./assets/json/skills.json");
-  const skillsList = await res.json();
+  try {
+    const res = await fetch("./assets/json/skills.json");
+    if (!res.ok) {
+      throw new Error(`Erro ao carregar JSON: ${res.statusText}`);
+    }
+    const skillsList = await res.json();
+    automaticSkillGenerator(skillsList);
+  } catch (error) {
+    console.error("Erro ao buscar dados:", error);
+  }
+}
 
-  function automaticSkillGenerator() {
-    const sectionInsert = document.querySelector(".skills__list");
+function automaticSkillGenerator(skillsList) {
+  const sectionInsert = document.querySelector(".skills__list");
+  let sectionCategory = "";
 
-    skillsList.forEach((skillData, indexSkill) => {
-      const skillStructure = `
-    <div class="skill" id="skill${indexSkill + 1}"><img src=${
+  Object.keys(skillsList).forEach((category) => {
+    sectionCategory += `<h3 class="section__title">${category}</h3><section id="category__${category.replace(
+      /\s+/g,
+      "-"
+    )}" class="skills__category">`;
+
+    skillsList[category].forEach((skillData, indexSkill) => {
+      sectionCategory += `
+        <div class="skill" id="skill${indexSkill + 1}"><img src=${
         skillData.iconSrc
       } class="skill__icon" alt="Icon HTML">${skillData.name}</div>
-    `;
-
-      sectionInsert.innerHTML += skillStructure;
+        `;
     });
-  }
 
-  function countStars(numberOfStars) {
-    let starsInHtml = "";
-    const restOfTheStars = 5 - numberOfStars;
-
-    for (let i = 0; i < numberOfStars; i++) {
-      starsInHtml += '<i class="fa-solid fa-star"></i>';
-    }
-
-    for (let j = 0; j < restOfTheStars; j++) {
-      starsInHtml += '<i class="fa-regular fa-star"></i>';
-    }
-
-    return starsInHtml;
-  }
-
-  automaticSkillGenerator();
+    sectionCategory += "</section>";
+  });
+  sectionInsert.innerHTML += sectionCategory;
 }
 
 fetchData();

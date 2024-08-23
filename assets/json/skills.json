@@ -1,69 +1,74 @@
-[
-  {
-    "name": "Windows 10/11",
-    "iconSrc": "./assets/images/icons/Windows.png",
-    "starCount": 5
-  },
-  {
-    "name": "VS Code",
-    "iconSrc": "./assets/images/icons/vscode.png",
-    "starCount": 4
-  },
-  {
-    "name": "HTML5",
-    "iconSrc": "./assets/images/icons/HTML5.png",
-    "starCount": 4
-  },
-  {
-    "name": "CSS3",
-    "iconSrc": "./assets/images/icons/CSS3.png",
-    "starCount": 4
-  },
-  {
-    "name": "GitHub",
-    "iconSrc": "./assets/images/icons/GitHub.png",
-    "starCount": 4
-  },
-  {
-    "name": "Responsive Design",
-    "iconSrc": "./assets/images/icons/responsivewebdesign.png",
-    "starCount": 4
-  },
-  {
-    "name": "JavaScript",
-    "iconSrc": "./assets/images/icons/JavaScript.png",
-    "starCount": 3
-  },
-  { "name": "Git", "iconSrc": "./assets/images/icons/git.png", "starCount": 3 },
-  {
-    "name": "Linux",
-    "iconSrc": "./assets/images/icons/linux.png",
-    "starCount": 3
-  },
-  {
-    "name": "React",
-    "iconSrc": "./assets/images/icons/React.png",
-    "starCount": 2
-  },
-  {
-    "name": "SASS",
-    "iconSrc": "./assets/images/icons/sass.png",
-    "starCount": 2
-  },
-  { "name": "NPM", "iconSrc": "./assets/images/icons/npm.png", "starCount": 2 },
-  {
-    "name": "Gimp",
-    "iconSrc": "./assets/images/icons/gimp.png",
-    "starCount": 2
-  },
-  {
-    "name": "Bootstrap",
-    "iconSrc": "./assets/images/icons/bootstrap.png",
-    "starCount": 1
-  },
-  {
-    "name": "TypeScript",
-    "iconSrc": "./assets/images/icons/Typescript.png",
-    "starCount": 1
-  }
-]
+{
+  "Operating Systems": [
+    {
+      "name": "Windows 10/11",
+      "iconSrc": "./assets/images/icons/Windows.png"
+    },
+    {
+      "name": "Linux",
+      "iconSrc": "./assets/images/icons/linux.png"
+    }
+  ],
+  "Development Tools": [
+    {
+      "name": "VS Code",
+      "iconSrc": "./assets/images/icons/vscode.png"
+    },
+    {
+      "name": "GitHub",
+      "iconSrc": "./assets/images/icons/GitHub.png"
+    },
+    {
+      "name": "Git",
+      "iconSrc": "./assets/images/icons/git.png"
+    },
+    {
+      "name": "NPM",
+      "iconSrc": "./assets/images/icons/npm.png"
+    }
+  ],
+  "Web Development": [
+    {
+      "name": "HTML5",
+      "iconSrc": "./assets/images/icons/HTML5.png"
+    },
+    {
+      "name": "CSS3",
+      "iconSrc": "./assets/images/icons/CSS3.png"
+    },
+    {
+      "name": "Responsive Design",
+      "iconSrc": "./assets/images/icons/responsivewebdesign.png"
+    },
+    {
+      "name": "JavaScript",
+      "iconSrc": "./assets/images/icons/JavaScript.png"
+    },
+    {
+      "name": "React",
+      "iconSrc": "./assets/images/icons/React.png"
+    },
+    {
+      "name": "TypeScript",
+      "iconSrc": "./assets/images/icons/Typescript.png"
+    },
+    {
+      "name": "SASS",
+      "iconSrc": "./assets/images/icons/sass.png"
+    },
+    {
+      "name": "Bootstrap",
+      "iconSrc": "./assets/images/icons/bootstrap.png"
+    }
+  ],
+  "Design & Graphics": [
+    {
+      "name": "Gimp",
+      "iconSrc": "./assets/images/icons/gimp.png"
+    },
+    {
+      "name": "Figma",
+      "iconSrc": "./assets/images/icons/figma.png"
+    }
+  ]
+}
