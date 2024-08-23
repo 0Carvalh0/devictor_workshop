@@ -16,7 +16,7 @@ function automaticSkillGenerator(skillsList) {
   let sectionCategory = "";
 
   Object.keys(skillsList).forEach((category) => {
-    sectionCategory += `<h3 class="section__title">${category}</h3><section id="category__${category.replace(
+    sectionCategory += `<h3 class="section__subtitle">${category}</h3><section id="category__${category.replace(
       /\s+/g,
       "-"
     )}" class="skills__category">`;

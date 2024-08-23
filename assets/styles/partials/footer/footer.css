@@ -11,6 +11,18 @@ h3.section__title {
   text-align: center;
 }
 
+.contact__socialButtons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact__button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
 .footer {
   padding: 1.5rem;
   text-align: center;
