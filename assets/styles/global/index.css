@@ -8,6 +8,7 @@
 @import url("../partials/projects/projects.css");
 @import url("../partials/skills/skills.css");
 @import url("../partials/footer/footer.css");
+@import url("../partials/thanks/thank.css");
 
 html {
   scroll-behavior: smooth;
@@ -44,5 +45,4 @@ body {
   font-size: 1.6rem;
   text-align: start;
   color: var(--primary-color);
-  
 }
