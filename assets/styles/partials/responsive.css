@@ -21,6 +21,10 @@
   .project {
     width: 45%;
   }
+
+  .skills__category {
+    justify-content: flex-start;
+  }
 }
 
 /* Desktop Styles */
