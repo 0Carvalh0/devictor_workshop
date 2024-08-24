@@ -12,7 +12,7 @@
   border-radius: 25px;
 
   background: var(--card-background);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--box-shadow);
 }
 
 #inputMessage {

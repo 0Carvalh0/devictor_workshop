@@ -5,6 +5,7 @@
   --secondary-color: #141414;
   --card-background: #292929;
   --hover-color: #007a80;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 /* Light Theme Variables */
@@ -15,4 +16,5 @@ body.light-theme {
   --secondary-color: #ffffff;
   --card-background: #eaeaea;
   --hover-color: #005b66;
+  --box-shadow: 0 4px 10px rgba(200, 200, 200, 1);
 }
