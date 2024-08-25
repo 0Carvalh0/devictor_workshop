@@ -10,12 +10,16 @@ toggleThemeButton.addEventListener("click", () => {
     document.querySelector(
       "img[src = './assets/images/icons/GitHub.png']"
     ).style.filter = "invert(1)";
+    document.querySelector(".header__title").src =
+      "./assets/images/Devictor_LogoPreta.png";
 
     indicator__icon.classList.replace("fa-moon", "fa-sun");
   } else {
     document.querySelector(
       "img[src = './assets/images/icons/GitHub.png']"
     ).style.filter = "invert(0)";
+    document.querySelector(".header__title").src =
+      "./assets/images/Devictor_LogoBranca.png";
 
     indicator__icon.classList.replace("fa-sun", "fa-moon");
   }

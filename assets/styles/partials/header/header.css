@@ -7,9 +7,9 @@
 }
 
 .header__title {
-  font-size: 2rem;
   margin-bottom: 1rem;
-  color: var(--primary-color);
+
+  width: 300px;
 }
 
 .nav {
