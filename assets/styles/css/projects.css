@@ -9,7 +9,6 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
-
   background: var(--card-background);
   padding: 1.5rem;
   border-radius: 8px;
@@ -18,21 +17,17 @@
   width: 100%;
   min-height: 432px;
 }
-
 .project__title {
   margin-bottom: 1rem;
   color: var(--primary-color);
 }
-
 .project__description {
   color: var(--text-color);
 }
-
 .project div {
   display: flex;
   flex-flow: column nowrap;
 }
-
 .project__button {
   display: inline-block;
   margin-top: 1rem;
@@ -41,21 +36,17 @@
   border-radius: 25px;
   transition: background-color 0.3s, opacity 0.3s;
 }
-
 .project__button:first-of-type {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
-
 .project__button:first-of-type:hover {
   background-color: var(--hover-color);
 }
-
 .project__button:last-of-type {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
 }
-
 .project__button:last-of-type:hover {
   opacity: 0.6;
-}
+}/*# sourceMappingURL=projects.css.map */

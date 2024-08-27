@@ -1,0 +1,39 @@
+// Definição de Variáveis Padrão
+$background-color: #1c1c1c;
+$text-color: #f5f5f5;
+$primary-color: #00adb5;
+$secondary-color: #141414;
+$card-background: #292929;
+$hover-color: #007a80;
+$box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+
+// Definição de Variáveis para o Tema Claro
+$light-theme-background-color: #f5f5f5;
+$light-theme-text-color: #1c1c1c;
+$light-theme-primary-color: #007a80;
+$light-theme-secondary-color: #ededed;
+$light-theme-card-background: #eaeaea;
+$light-theme-hover-color: #005b66;
+$light-theme-box-shadow: 0 4px 10px rgba(200, 200, 200, 1);
+
+// Estilo Padrão Usando Variáveis
+:root {
+  --background-color: #{$background-color};
+  --text-color: #{$text-color};
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --card-background: #{$card-background};
+  --hover-color: #{$hover-color};
+  --box-shadow: #{$box-shadow};
+}
+
+// Tema Claro
+body.light-theme {
+  --background-color: #{$light-theme-background-color};
+  --text-color: #{$light-theme-text-color};
+  --primary-color: #{$light-theme-primary-color};
+  --secondary-color: #{$light-theme-secondary-color};
+  --card-background: #{$light-theme-card-background};
+  --hover-color: #{$light-theme-hover-color};
+  --box-shadow: #{$light-theme-box-shadow};
+}

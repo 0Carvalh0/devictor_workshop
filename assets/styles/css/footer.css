@@ -1,4 +1,29 @@
-@import url("./form.css");
+.contact__form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 8px;
+}
+
+.contact__input {
+  all: unset;
+  padding: 8px 14px;
+  border-radius: 25px;
+  background: var(--card-background);
+  box-shadow: var(--box-shadow);
+}
+
+#inputMessage {
+  height: 200px;
+}
+
+.contact__button {
+  all: unset;
+  align-self: center;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
 
 h3.section__title {
   font-size: 1.5rem;
@@ -22,11 +47,9 @@ h3.section__title {
   display: flex;
   align-items: center;
   gap: 8px;
-
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
 }
-
 .contact__button:hover {
   background-color: var(--hover-color);
 }
@@ -38,4 +61,4 @@ h3.section__title {
   color: #666;
   margin-top: 2rem;
   font-size: 0.9rem;
-}
+}/*# sourceMappingURL=footer.css.map */

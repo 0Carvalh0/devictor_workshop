@@ -16,12 +16,10 @@
 .skill {
   width: 130px;
   height: 160px;
-
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-
   text-align: center;
   background: var(--card-background);
   padding: 0.8rem 1.5rem;
@@ -29,7 +27,6 @@
   font-size: 1rem;
   box-shadow: var(--box-shadow);
 }
-
 .skill__icon {
   width: 70px;
-}
+}/*# sourceMappingURL=skills.css.map */

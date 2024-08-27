@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-
   gap: 1rem;
 }
 
@@ -22,7 +21,6 @@
 
 .curriculum__link {
   align-self: center;
-
   display: inline-block;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
@@ -32,7 +30,6 @@
   border-radius: 25px;
   transition: background-color 0.3s;
 }
-
 .curriculum__link:hover {
   background-color: var(--hover-color);
 }
@@ -42,9 +39,7 @@
   max-width: 20rem;
   height: 100%;
   max-height: 20rem;
-
   border-radius: 50%;
   /* clip-path: polygon(78% 1%, 0 28%, 72% 100%); */
-
   box-shadow: var(--box-shadow);
-}
+}/*# sourceMappingURL=aboutme.css.map */
