@@ -29,33 +29,14 @@ toggleThemeButton.addEventListener("click", () => {
 
 const inputPhone = document.querySelector("#inputPhone");
 
-inputPhone.addEventListener("keypress", () => {
-  let inputPhoneLength = inputPhone.value.length;
+inputPhone.addEventListener("input", () => {
+  let value = inputPhone.value.replace(/\D/g, "");
 
-  if (inputPhoneLength === 0) {
-    inputPhone.value += "(";
-  } else if (inputPhoneLength === 3) {
-    inputPhone.value += ") ";
-  } else if (inputPhoneLength === 10) {
-    inputPhone.value += "-";
+  if (value.length <= 11) {
+    value = value.replace(/(\d{2})(\d)/, "($1) $2");
+    value = value.replace(/(\d{5})(\d)/, "$1-$2");
   }
+
+  inputPhone.value = value;
 });
 
-// SCROLL REVEAL
-
-// window.sr = ScrollReveal({ reset: true });
-
-// // ABOUT ME
-
-// sr.reveal(".aboutMe__myPicture", {
-//   origin: "right",
-//   distance: "30px",
-//   duration: 2000,
-// });
-
-// // SKILLS
-
-// sr.reveal("#skill1", {
-//   distance: "30px",
-//   duration: 2000,
-// });
