@@ -40,3 +40,5 @@ inputPhone.addEventListener("input", () => {
   inputPhone.value = value;
 });
 
+// fetchDataProjects();
+// fetchDataSkills();

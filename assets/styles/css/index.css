@@ -137,8 +137,8 @@ body.light-theme {
   max-width: 20rem;
   height: 100%;
   max-height: 20rem;
-  border-radius: 50%;
-  /* clip-path: polygon(78% 1%, 0 28%, 72% 100%); */
+  -webkit-clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
+          clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%, 25% 0%);
   box-shadow: var(--box-shadow);
 }
 
