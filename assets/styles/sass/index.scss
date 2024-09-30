@@ -1,18 +1,16 @@
 @charset "UTF-8";
 
-// Importação de arquivos CSS e SCSS
-@import url("./reset.css");
+@import "reset";
 @import "variables";
 
-@import "../partials/header/header.scss";
-@import "../partials/aboutme/aboutme.scss";
-@import "../partials/projects/projects.scss";
-@import "../partials/skills/skills.scss";
-@import "../partials/footer/footer.scss";
-@import "../partials/footer/form.scss";
-@import "../partials/responsive.scss";
+@import "./partials/header";
+@import "./partials/aboutme";
+@import "./partials/projects";
+@import "./partials/skills";
+@import "./partials/footer";
+@import "./partials/thank";
+@import "./partials/responsive";
 
-// Estilos globais
 html {
   scroll-behavior: smooth;
 }

@@ -2,7 +2,7 @@
   "Operating Systems": [
     {
       "name": "Windows 10/11",
-      "iconSrc": "./assets/images/icons/Windows.png"
+      "iconSrc": "./assets/images/icons/windows.png"
     },
     {
       "name": "Linux",
@@ -16,41 +16,29 @@
     },
     {
       "name": "GitHub",
-      "iconSrc": "./assets/images/icons/GitHub.png"
+      "iconSrc": "./assets/images/icons/github.png"
     },
     {
       "name": "Git",
       "iconSrc": "./assets/images/icons/git.png"
-    },
-    {
-      "name": "NPM",
-      "iconSrc": "./assets/images/icons/npm.png"
     }
   ],
   "Web Development": [
     {
       "name": "HTML5",
-      "iconSrc": "./assets/images/icons/HTML5.png"
+      "iconSrc": "./assets/images/icons/html.png"
     },
     {
       "name": "CSS3",
-      "iconSrc": "./assets/images/icons/CSS3.png"
-    },
-    {
-      "name": "Responsive Design",
-      "iconSrc": "./assets/images/icons/responsivewebdesign.png"
+      "iconSrc": "./assets/images/icons/css.png"
     },
     {
       "name": "JavaScript",
-      "iconSrc": "./assets/images/icons/JavaScript.png"
+      "iconSrc": "./assets/images/icons/javascript.png"
     },
     {
       "name": "React",
-      "iconSrc": "./assets/images/icons/React.png"
-    },
-    {
-      "name": "TypeScript",
-      "iconSrc": "./assets/images/icons/Typescript.png"
+      "iconSrc": "./assets/images/icons/reactjs.png"
     },
     {
       "name": "SASS",
@@ -59,6 +47,14 @@
     {
       "name": "Bootstrap",
       "iconSrc": "./assets/images/icons/bootstrap.png"
+    },
+    {
+      "name": "Responsive Design",
+      "iconSrc": "./assets/images/icons/responsivewebdesign.png"
+    },
+    {
+      "name": "TypeScript",
+      "iconSrc": "./assets/images/icons/typescript.png"
     }
   ],
   "Design & Graphics": [
