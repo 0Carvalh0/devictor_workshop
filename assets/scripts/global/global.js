@@ -8,7 +8,7 @@ toggleThemeButton.addEventListener("click", () => {
 
   if (body.classList.contains("light-theme")) {
     document.querySelector(
-      "img[src = './assets/images/icons/GitHub.png']"
+      "img[src = './assets/images/icons/github.png']"
     ).style.filter = "invert(1)";
     document.querySelector(".header__title").src =
       "./assets/images/Devictor_LogoPreta.png";
@@ -16,7 +16,7 @@ toggleThemeButton.addEventListener("click", () => {
     indicator__icon.classList.replace("fa-moon", "fa-sun");
   } else {
     document.querySelector(
-      "img[src = './assets/images/icons/GitHub.png']"
+      "img[src = './assets/images/icons/github.png']"
     ).style.filter = "invert(0)";
     document.querySelector(".header__title").src =
       "./assets/images/Devictor_LogoBranca.png";
@@ -39,6 +39,3 @@ inputPhone.addEventListener("input", () => {
 
   inputPhone.value = value;
 });
-
-// fetchDataProjects();
-// fetchDataSkills();

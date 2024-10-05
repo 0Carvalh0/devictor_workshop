@@ -25,6 +25,10 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 .section {
   padding: 2rem 1.5rem;
   max-width: 1100px;
