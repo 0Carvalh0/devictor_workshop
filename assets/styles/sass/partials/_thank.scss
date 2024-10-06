@@ -1,26 +1,61 @@
-.mainContainer__Thank {
-  max-width: 100vw;
-  min-height: 100vh;
+// Estilos da Página de Agradecimento
+.thank-you {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;
-}
+  min-height: calc(100vh - 16rem); // Considerando header e footer
+  padding: 2rem;
 
-.section__Thank {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1rem;
-}
+  &__container {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
-.thank__returnButton {
-  all: unset;
-  align-self: center;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+  &__title {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+
+    @include respond-to(small) {
+      font-size: 2rem;
+    }
+  }
+
+  &__message {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+
+    @include respond-to(small) {
+      font-size: 1rem;
+    }
+  }
+
+  &__icon {
+    font-size: 4rem;
+    color: $primary-color;
+    margin-bottom: 2rem;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s, transform 0.5s;
+
+    &.animate {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: $primary-color;
+    color: $background-color;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $hover-color;
+    }
+  }
 }
