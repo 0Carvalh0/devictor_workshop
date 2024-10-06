@@ -15,165 +15,280 @@
     <link rel="stylesheet" href="./assets/styles/css/style.css" />
 
     <!-- BIBLIOTECAS -->
-    <script
-      src="https://kit.fontawesome.com/9bfb2428d0.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
 
     <!-- JAVASCRIPT -->
     <script src="./assets/scripts/global/global.js" defer></script>
-    <script src="./assets/scripts/partials/projectsScript.jsx" defer></script>
-    <script src="./assets/scripts/partials/skillsScript.jsx" defer></script>
   </head>
 
-  <body>
+  <body class="page">
     <header class="header">
-      <img
-        src="./assets/images/Devictor_LogoBranca.png"
-        alt="Logo Devictor"
-        class="header__title"
-      />
-      <div class="theme-toggle__rail">
-        <div class="theme-toggle__indicator">
-          <i class="indicator__icon fa-solid fa-moon"></i>
-        </div>
-      </div>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="#about">Sobre mim</a>
+      <nav class="header__nav">
+        <img
+          src="./assets/images/Devictor_LogoBranca.png"
+          alt="Logo Devictor"
+          class="header__logo"
+        />
+        <ul class="header__menu">
+          <li class="header__menu-item">
+            <a href="#inicio" class="header__menu-link">Início</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#projects">Projetos</a>
+          <li class="header__menu-item">
+            <a href="#sobre" class="header__menu-link">Sobre</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#skills">Habilidades</a>
+          <li class="header__menu-item">
+            <a href="#projetos" class="header__menu-link">Projetos</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#contact">Contato</a>
+          <li class="header__menu-item">
+            <a href="#habilidades" class="header__menu-link">Habilidades</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#contato" class="header__menu-link">Contato</a>
           </li>
         </ul>
+        <button class="header__theme-toggle" aria-label="Alternar tema">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
       </nav>
     </header>
 
-    <section id="about" class="section about">
-      <div class="about__left">
-        <h2 class="section__title">Sobre mim</h2>
-        <p class="about__description">
-          Sou um desenvolvedor front-end apaixonado por criar interfaces
-          modernas, funcionais e esteticamente agradáveis. Tenho experiência em
-          trabalhar com diversas tecnologias e estou sempre em busca de
-          aprimorar minhas habilidades para entregar a melhor experiência ao
-          usuário.
-        </p>
-        <a
-          class="curriculum__link"
-          download
-          href="./assets/docs/CVJoao_Carvalho.pdf"
-          >Currículo</a
+    <main class="main">
+      <section id="inicio" class="hero">
+        <h1 class="hero__title">João Victor Carvalho</h1>
+        <h2 class="hero__subtitle">Desenvolvedor Front-end</h2>
+        <div class="hero__typing">
+          <span id="typing-text" class="hero__typing-text"></span
+          ><span class="hero__typing-cursor">|</span>
+        </div>
+        <a href="#contato" class="hero__cta-button">Entre em Contato</a>
+      </section>
+
+      <section id="sobre" class="about">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about__content">
+          <div class="about__image-container">
+            <div class="about__image-container--brackets">
+              <img
+                class="about__image"
+                src="./assets/images/img01.jpeg"
+                alt="João Victor"
+              />
+              <div class="about__image-overlay"></div>
+            </div>
+          </div>
+          <div class="about__text">
+            <p class="about__description">
+              Sou um desenvolvedor front-end apaixonado por criar interfaces
+              modernas, funcionais e esteticamente agradáveis.
+            </p>
+            <p class="about__description">
+              Tenho experiência em trabalhar com diversas tecnologias e estou
+              sempre em busca de aprimorar minhas habilidades para entregar a
+              melhor experiência ao usuário.
+            </p>
+            <a
+              href="./assets/docs/CVJoao_Carvalho.pdf"
+              download
+              class="about__cv-button"
+              >Download CV <i class="fas fa-download"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="projetos" class="projects">
+        <h2 class="section-title">Meus Projetos</h2>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__image-container">
+              <img
+                src="./assets/images/quicktaskImg.png"
+                alt="To Do list"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay">
+                <a
+                  href="https://quicktask-two.vercel.app/"
+                  class="project-card__link"
+                  ><i class="fas fa-eye"></i> Ver Projeto</a
+                >
+                <a
+                  href="https://github.com/0Carvalh0/quicktask"
+                  class="project-card__link"
+                  ><i class="fab fa-github"></i> Ver Código</a
+                >
+              </div>
+            </div>
+            <h3 class="project-card__title">QuickTask</h3>
+            <p class="project-card__description">
+              Uma aplicação simples e eficiente para gerenciar tarefas diárias.
+              Permite adicionar, editar, marcar como concluída e excluir
+              tarefas, com dados armazenados no navegador para fácil
+              persistência.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">HTML5</span>
+              <span class="project-card__tag">CSS3</span>
+              <span class="project-card__tag">JavaScript</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-card__image-container">
+              <img
+                src="./assets/images/multicalcImg.png"
+                alt="Calculadora"
+                class="project-card__image"
+              />
+              <div class="project-card__overlay">
+                <a href="#" class="project-card__link"
+                  ><i class="fas fa-eye"></i> Ver Projeto</a
+                >
+                <a href="#" class="project-card__link"
+                  ><i class="fab fa-github"></i> Ver Código</a
+                >
+              </div>
+            </div>
+            <h3 class="project-card__title">MultiCalc</h3>
+            <p class="project-card__description">
+              Uma calculadora versátil e poderosa que realiza diversos tipos de
+              cálculos, incluindo matemáticos, financeiros e científicos.
+              Interface simples, fácil de usar e ideal para diferentes
+              finalidades.
+            </p>
+            <div class="project-card__tags">
+              <span class="project-card__tag">HTML5</span>
+              <span class="project-card__tag">CSS3</span>
+              <span class="project-card__tag">JavaScript</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="habilidades" class="skills">
+        <h2 class="section-title">Minhas Habilidades</h2>
+        <div class="skills__container">
+          <div class="skill-category">
+            <h3 class="skill-category__title">Front-end</h3>
+            <ul class="skill-category__list">
+              <li class="skill-category__item">
+                <i class="fab fa-html5"></i> HTML5
+              </li>
+              <li class="skill-category__item">
+                <i class="fab fa-css3-alt"></i> CSS3 / SASS
+              </li>
+              <li class="skill-category__item">
+                <i class="fab fa-js"></i> JavaScript
+              </li>
+              <li class="skill-category__item">
+                <i class="fab fa-react"></i> React
+              </li>
+              <li class="skill-category__item">
+                <i class="fab fa-bootstrap"></i> Bootstrap
+              </li>
+            </ul>
+          </div>
+          <div class="skill-category">
+            <h3 class="skill-category__title">Ferramentas</h3>
+            <ul class="skill-category__list">
+              <li class="skill-category__item">
+                <i class="fab fa-git-alt"></i> Git
+              </li>
+              <li class="skill-category__item">
+                <i class="fab fa-github"></i> GitHub
+              </li>
+              <li class="skill-category__item">
+                <i class="fab fa-webpack"></i> Webpack
+              </li>
+              <li class="skill-category__item">
+                <i class="fab fa-figma"></i> Figma
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <h2 class="section-title">Entre em Contato</h2>
+        <form
+          id="contact-form"
+          class="contact__form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
         >
-      </div>
+          <div class="contact__form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact__form-input"
+              required
+            />
+            <label for="name" class="contact__form-label">Seu Nome</label>
+          </div>
+          <div class="contact__form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact__form-input"
+              required
+            />
+            <label for="email" class="contact__form-label">Seu E-mail</label>
+          </div>
+          <div class="contact__form-group">
+            <textarea
+              id="message"
+              name="message"
+              class="contact__form-input contact__form-textarea"
+              required
+            ></textarea>
+            <label for="message" class="contact__form-label"
+              >Sua Mensagem</label
+            >
+          </div>
+          <button type="submit" class="contact__form-submit">
+            Enviar Mensagem
+          </button>
 
-      <div class="about__picture-container">
-        <img
-          class="about__picture"
-          src="./assets/images/img01.jpeg"
-          alt="João Victor Picture"
-        />
-      </div>
-    </section>
+          <input
+            type="checkbox"
+            name="botcheck"
+            class="hidden"
+            style="display: none"
+          />
+          <input
+            type="hidden"
+            name="access_key"
+            value="05c51542-5a57-45f4-8402-43b8f0dc0e5d"
+          />
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://portfoliojoaocarvalho-eight.vercel.app/thank.html"
+          />
+        </form>
+      </section>
+    </main>
 
-    <section id="projects" class="section projects">
-      <h2 class="section__title">Projetos</h2>
-      <div class="projects__list"></div>
-    </section>
-
-    <section id="skills" class="section skills">
-      <h2 class="section__title">Habilidades</h2>
-      <div class="skills__list"></div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <h2 class="section__title">Contato</h2>
-      <p class="contact__description">
-        Estou disponível para projetos freelancers e oportunidades de
-        colaboração. Entre em contato comigo para discutirmos como posso ajudar!
-      </p>
-      <div class="contact__socialButtons">
+    <footer class="footer">
+      <div class="footer__social-links">
         <a
           href="https://github.com/0Carvalh0"
           target="_blank"
-          class="contact__button"
-          ><i class="fa-brands fa-github sectionFooter__SocialMedia"></i
-          >GitHub</a
-        >
+          class="footer__social-link"
+          ><i class="fab fa-github"></i
+        ></a>
         <a
-          href="https://www.linkedin.com/in/jo%C3%A3o-victor-carvalho-de-souza-806347244/"
+          href="https://www.linkedin.com/in/devjoaocarvalho/"
           target="_blank"
-          class="contact__button"
-          ><i class="fa-brands fa-linkedin sectionFooter__SocialMedia"></i
-          >LinkedIn</a
-        >
+          class="footer__social-link"
+          ><i class="fab fa-linkedin"></i
+        ></a>
       </div>
-
-      <h3 class="section__subtitle">Fale Comigo:</h3>
-      <form
-        class="contact__form"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-      >
-        <input
-          type="text"
-          name="userName"
-          id="inputName"
-          class="contact__input hidden"
-          placeholder="Seu nome..."
-          required
-        />
-
-        <input
-          type="email"
-          name="userEmail"
-          id="inputEmail"
-          class="contact__input hidden"
-          placeholder="Seu E-mail..."
-          required
-        />
-
-        <input
-          type="tel"
-          name="userPhone"
-          id="inputPhone"
-          class="contact__input hidden"
-          placeholder="Seu telefone..."
-          maxlength="15"
-          required
-        />
-
-        <textarea
-          name="userMessage"
-          id="inputMessage"
-          class="contact__input hidden"
-          placeholder="Escreva sua mensagem aqui..."
-          required
-        ></textarea>
-        <button
-          type="submit"
-          class="contact__button"
-          id="contact__submitButton"
-        >
-          <i class="fa-solid fa-paper-plane"></i> Enviar
-        </button>
-
-        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-        <input type="hidden" name="access_key" value="05c51542-5a57-45f4-8402-43b8f0dc0e5d">
-        <input type="hidden" name="redirect" value="https://portfoliojoaocarvalho-eight.vercel.app/thank.html">
-      </form>
-    </section>
-
-    <footer class="footer">
-      <p>&copy; 2024 João Victor. Todos os direitos reservados.</p>
+      <p class="footer__copyright">
+        &copy; 2024 João Victor Carvalho. Todos os direitos reservados.
+      </p>
     </footer>
   </body>
 </html>

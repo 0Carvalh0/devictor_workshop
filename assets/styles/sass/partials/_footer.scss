@@ -1,40 +1,49 @@
-@import "form";
-
-h3.section__title {
-  font-size: 1.5rem;
-}
-
-.contact__description {
-  margin: 1rem 0;
-  font-size: 1rem;
-  color: var(--text-color);
+// Estilos do Footer
+.footer {
+  background-color: $secondary-color;
+  color: $text-color;
   text-align: center;
-}
+  padding: 2rem 0;
 
-.contact__socialButtons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
+  &__social-links {
+    margin-bottom: 1rem;
+  }
 
-.contact__button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  transition: 0.3s;
+  &__social-link {
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    color: $text-color;
+    transition: color 0.3s;
 
-  &:hover {
-    background-color: var(--hover-color);
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
 
-.footer {
-  padding: 1.5rem;
-  text-align: center;
-  background: var(--secondary-color);
-  color: #666;
-  margin-top: 2rem;
-  font-size: 0.9rem;
+.page--light-theme {
+  .footer {
+    background-color: $light-theme-secondary-color;
+    color: $light-theme-text-color;
+
+    &__social-link {
+      color: $light-theme-text-color;
+
+      &:hover {
+        color: $light-theme-primary-color;
+      }
+    }
+  }
+}
+
+// Animações
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

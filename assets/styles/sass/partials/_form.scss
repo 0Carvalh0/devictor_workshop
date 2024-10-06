@@ -1,26 +1,105 @@
-.contact__form {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 8px;
+// Seção Contato
+.contact {
+  &__form {
+    max-width: 600px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: stretch;
+
+    margin: 0 auto;
+  }
+
+  &__form-group {
+    display: flex;
+    position: relative;
+    margin-bottom: 1.5rem;
+  }
+
+  &__form-input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-bottom: 2px solid $text-color;
+    background-color: transparent;
+    color: $text-color;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+
+    &:focus + .contact__form-label,
+    &:not(:placeholder-shown) + .contact__form-label {
+      transform: translateY(-20px);
+      font-size: 0.8rem;
+      color: $primary-color;
+    }
+  }
+
+  &__form-textarea {
+    min-height: 150px;
+    resize: none;
+  }
+
+  &__form-label {
+    position: absolute;
+    left: 0;
+    top: 0.8rem;
+    color: $text-color;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+
+  &__form-submit {
+    align-self: center;
+    padding: 1rem;
+    background-color: $primary-color;
+    color: $background-color;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $hover-color;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
 }
 
-.contact__input {
-  all: unset;
-  padding: 8px 14px;
-  border-radius: 25px;
-  background: var(--card-background);
-  box-shadow: var(--box-shadow);
-}
+.page--light-theme {
+  .contact {
+    &__form-input {
+      border-bottom-color: $light-theme-text-color;
+      color: $light-theme-text-color;
 
-#inputMessage {
-  height: 200px;
-}
+      &:focus {
+        border-color: $light-theme-primary-color;
+      }
 
-.contact__button {
-  all: unset;
-  align-self: center;
-  padding: 0.8rem 1.5rem;
-  border-radius: 25px;
-  background-color: var(--primary-color);
-  color: var(--secondary-color);
+      &:focus + .contact__form-label,
+      &:not(:placeholder-shown) + .contact__form-label {
+        color: $light-theme-primary-color;
+      }
+    }
+
+    &__form-label {
+      color: $light-theme-text-color;
+    }
+
+    &__form-submit {
+      background-color: $light-theme-primary-color;
+      color: $light-theme-background-color;
+
+      &:hover {
+        background-color: $light-theme-hover-color;
+      }
+    }
+  }
 }

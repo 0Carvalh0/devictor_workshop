@@ -1,0 +1,20 @@
+{
+  "name": "devictor_workshop",
+  "version": "1.0.0",
+  "description": "Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para exibir minhas habilidades, experiências e projetos no campo do desenvolvimento front-end. Com um design moderno e responsivo, este site serve como uma vitrine para meu trabalho e crescimento como desenvolvedor.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass assets/styles/sass/index.scss assets/styles/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0Carvalh0/devictor_workshop.git"
+  },
+  "author": "João Victor Carvalho de Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0Carvalh0/devictor_workshop/issues"
+  },
+  "homepage": "https://github.com/0Carvalh0/devictor_workshop#readme"
+}

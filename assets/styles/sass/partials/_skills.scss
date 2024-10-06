@@ -1,33 +1,62 @@
-.skills__list {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 1rem;
-  align-items: flex-start;
+// Seção Habilidades
+.skills {
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+
+    @include respond-to($breakpoint-md) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond-to($breakpoint-lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
 
-.skills__category {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  gap: 16px;
+.skill-category {
+  background-color: $card-background;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__item {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: 0.5rem;
+      color: $primary-color;
+    }
+  }
 }
 
-.skill {
-  width: 130px;
-  height: 160px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: var(--card-background);
-  padding: 0.8rem 1.5rem;
-  border-radius: 20px;
-  font-size: 1rem;
-  box-shadow: var(--box-shadow);
+.page--light-theme {
+  .skill-category {
+    background-color: $light-theme-card-background;
 
-  &__icon {
-    width: 70px;
+    &__title {
+      color: $light-theme-primary-color;
+    }
+
+    &__item {
+      i {
+        color: $light-theme-primary-color;
+      }
+    }
   }
 }
