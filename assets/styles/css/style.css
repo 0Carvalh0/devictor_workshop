@@ -10,6 +10,10 @@ a {
   all: unset;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 html,
 body,
 div,
@@ -356,7 +360,6 @@ table {
   transition: all 0.3s;
 }
 .about__cv-button:hover {
-  background-color: #007a80;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -526,6 +529,8 @@ table {
   margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
 }
 .skill-category__item i {
   margin-right: 0.5rem;

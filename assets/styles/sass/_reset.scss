@@ -10,6 +10,10 @@ a {
   all: unset;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 html,
 body,
 div,
