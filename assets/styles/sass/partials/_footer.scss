@@ -5,9 +5,10 @@
   align-items: center;
 
   background-color: $secondary-color;
+  text-align: center;
   color: $text-color;
   margin-top: 2rem;
-  padding: 2rem 0;
+  padding: 2rem;
 
   &__social-links {
     display: flex;
@@ -23,6 +24,12 @@
       color: $primary-color;
     }
   }
+}
+
+.page--thank-you .footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 .page--light-theme {
