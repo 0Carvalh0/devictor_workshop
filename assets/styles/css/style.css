@@ -360,6 +360,8 @@ table {
   transition: all 0.3s;
 }
 .about__cv-button:hover {
+  color: #0a192f;
+  background-color: #007a80;
   transform: translateY(-3px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
@@ -673,7 +675,7 @@ table {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 16rem);
+  min-height: calc(100vh - 82px);
   padding: 2rem;
 }
 .thank-you__container {
@@ -704,13 +706,6 @@ table {
   font-size: 4rem;
   color: #00adb5;
   margin-bottom: 2rem;
-  opacity: 0;
-  transform: scale(0.5);
-  transition: opacity 0.5s, transform 0.5s;
-}
-.thank-you__icon.animate {
-  opacity: 1;
-  transform: scale(1);
 }
 .thank-you__button {
   display: inline-block;
@@ -719,10 +714,17 @@ table {
   color: #0a192f;
   border-radius: 5px;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 .thank-you__button:hover {
+  color: #0a192f;
   background-color: #007a80;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  scroll-padding-top: 82px; /* Ajuste este valor para a altura do seu header */
 }
 
 .page {
