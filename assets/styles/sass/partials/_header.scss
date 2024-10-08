@@ -2,7 +2,7 @@
 .header {
   background-color: rgba($secondary-color, 0.8);
   backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  padding: 1rem;
   position: fixed;
   width: 100%;
   top: 0;
@@ -14,7 +14,6 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 1rem;
   }
 
   &__logo {
@@ -24,16 +23,11 @@
   &__menu {
     display: none;
     list-style: none;
-    margin: 0;
-    padding: 0;
 
     @include respond-to($breakpoint-md) {
       display: flex;
+      gap: 1rem;
     }
-  }
-
-  &__menu-item {
-    margin-left: 1rem;
   }
 
   &__menu-link {
@@ -44,7 +38,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: 3px;
       bottom: -5px;
       left: 0;
       background-color: $primary-color;
@@ -61,10 +55,14 @@
 
   &__theme-toggle {
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background: none;
     border: none;
     color: $text-color;
+
+    &:hover {
+      color: $primary-color;
+    }
 
     .fa-sun {
       display: none;

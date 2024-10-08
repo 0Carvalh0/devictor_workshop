@@ -32,9 +32,6 @@ html {
   color: $text-color;
   line-height: 1.6;
   transition: background-color 0.3s, color 0.3s;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 
   &--light-theme {
     background-color: $light-theme-background-color;
@@ -66,7 +63,6 @@ a {
 .main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
   padding-top: 80px; // Considerando o header fixo
 }
 

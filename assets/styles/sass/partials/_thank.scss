@@ -3,42 +3,45 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 82px); // Considerando header e footer
-  padding: 2rem;
+  min-height: calc(100vh - 82px - 170px);
+  
+  @include respond-to($breakpoint-sm) {
+    min-height: calc(100vh - 82px - 144px);
+  }
 
   &__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
   }
 
   &__title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: $primary-color;
-    margin-bottom: 1rem;
-
-    @include respond-to(small) {
-      font-size: 2rem;
+    
+    @include respond-to($breakpoint-sm) {
+      font-size: 2.5rem;
     }
   }
 
   &__message {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-
-    @include respond-to(small) {
-      font-size: 1rem;
+    font-size: 1rem;
+    
+    @include respond-to($breakpoint-sm) {
+      font-size: 1.2rem;
     }
   }
 
   &__icon {
-    font-size: 4rem;
+    font-size: 2rem;
     color: $primary-color;
-    margin-bottom: 2rem;
   }
 
   &__button {
-    display: inline-block;
     padding: 0.8rem 1.5rem;
     background-color: $primary-color;
     color: $background-color;
@@ -53,4 +56,10 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
   }
+}
+
+.page--thank-you .footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
