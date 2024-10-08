@@ -6,6 +6,7 @@
     display: flex;
     flex-flow: column wrap;
     align-items: stretch;
+    gap: 1rem;
 
     margin: 0 auto;
   }
@@ -14,11 +15,10 @@
     display: flex;
     flex-flow: column wrap;
     position: relative;
-    margin-bottom: 1.5rem;
   }
 
   &__form-input {
-    padding: 0.8rem;
+    padding: 0.2rem 0.8rem;
     border: none;
     border-bottom: 2px solid $text-color;
     background-color: transparent;
@@ -46,7 +46,6 @@
 
   &__form-label {
     color: $text-color;
-    pointer-events: none;
     transition: all 0.3s;
   }
 

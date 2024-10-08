@@ -1,17 +1,21 @@
 // Estilos do Footer
 .footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+
   background-color: $secondary-color;
   color: $text-color;
-  text-align: center;
+  margin-top: 2rem;
   padding: 2rem 0;
 
   &__social-links {
-    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
   }
 
   &__social-link {
     font-size: 1.5rem;
-    margin: 0 0.5rem;
     color: $text-color;
     transition: color 0.3s;
 

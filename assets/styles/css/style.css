@@ -643,16 +643,16 @@ table {
   display: flex;
   flex-flow: column wrap;
   align-items: stretch;
+  gap: 1rem;
   margin: 0 auto;
 }
 .contact__form-group {
   display: flex;
   flex-flow: column wrap;
   position: relative;
-  margin-bottom: 1.5rem;
 }
 .contact__form-input {
-  padding: 0.8rem;
+  padding: 0.2rem 0.8rem;
   border: none;
   border-bottom: 2px solid #8892b0;
   background-color: transparent;
@@ -675,7 +675,6 @@ table {
 }
 .contact__form-label {
   color: #8892b0;
-  pointer-events: none;
   transition: all 0.3s;
 }
 .contact__form-submit {
@@ -718,17 +717,20 @@ table {
 }
 
 .footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
   background-color: #112240;
   color: #8892b0;
-  text-align: center;
+  margin-top: 2rem;
   padding: 2rem 0;
 }
 .footer__social-links {
-  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 .footer__social-link {
   font-size: 1.5rem;
-  margin: 0 0.5rem;
   color: #8892b0;
   transition: color 0.3s;
 }
@@ -863,7 +865,7 @@ a:hover {
 
 .section-title {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   color: #00adb5;
   text-align: center;
   position: relative;
