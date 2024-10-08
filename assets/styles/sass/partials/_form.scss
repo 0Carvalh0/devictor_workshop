@@ -12,6 +12,7 @@
 
   &__form-group {
     display: flex;
+    flex-flow: column wrap;
     position: relative;
     margin-bottom: 1.5rem;
   }
@@ -45,9 +46,6 @@
   }
 
   &__form-label {
-    position: absolute;
-    left: 0;
-    top: 0.8rem;
     color: $text-color;
     pointer-events: none;
     transition: all 0.3s;
