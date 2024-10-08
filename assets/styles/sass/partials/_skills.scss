@@ -29,19 +29,18 @@
   }
 
   &__list {
-    list-style-type: none;
-    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 1rem;
   }
 
   &__item {
-    margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
     font-size: 1.2rem;
-    
+
     i {
-      margin-right: 0.5rem;
       color: $primary-color;
     }
   }
