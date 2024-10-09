@@ -1,15 +1,29 @@
 // Estilos da Página de Agradecimento
-.thank-you {
-  display: flex;
+.thank-youModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+
+  width: 100dvw;
+  height: 100dvh;
+
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 82px - 170px);
-  
-  @include respond-to($breakpoint-sm) {
-    min-height: calc(100vh - 82px - 144px);
-  }
+
+  background: rgba(#000000, 0.8);
 
   &__container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+    background-color: $background-color;
+    color: $text-color;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -22,7 +36,7 @@
   &__title {
     font-size: 2rem;
     color: $primary-color;
-    
+
     @include respond-to($breakpoint-sm) {
       font-size: 2.5rem;
     }
@@ -30,7 +44,7 @@
 
   &__message {
     font-size: 1rem;
-    
+
     @include respond-to($breakpoint-sm) {
       font-size: 1.2rem;
     }
@@ -54,6 +68,15 @@
       background-color: $hover-color;
       transform: translateY(-3px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.page--light-theme {
+  .thank-youModal {
+    &__container {
+      background-color: $light-theme-background-color;
+      color: $light-theme-text-color;
     }
   }
 }

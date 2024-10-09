@@ -238,7 +238,8 @@
           </div>
           <div class="contact__form-group">
             <label for="message" class="contact__form-label"
-            >Sua Mensagem</label>
+              >Sua Mensagem</label
+            >
             <textarea
               id="message"
               name="message"
@@ -264,11 +265,25 @@
           <input
             type="hidden"
             name="redirect"
-            value="https://portfoliojoaocarvalho-eight.vercel.app/thank.html"
+            value="https://portfoliojoaocarvalho-eight.vercel.app"
           />
         </form>
       </section>
     </main>
+
+    <dialog class="thank-youModal">
+      <div class="thank-youModal__container">
+        <h1 class="thank-youModal__title">Obrigado pelo seu contato!</h1>
+        <p class="thank-youModal__message">
+          Sua mensagem foi recebida com sucesso. Entrarei em contato o mais
+          breve possível.
+        </p>
+        <div class="thank-youModal__icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <button class="thank-youModal__button">OK</button>
+      </div>
+    </dialog>
 
     <footer class="footer">
       <div class="footer__social-links">
@@ -286,8 +301,8 @@
         ></a>
       </div>
       <p class="footer__copyright">
-        &copy; 2024 Devictor. Todos os direitos reservados - João Victor Carvalho de
-        Souza
+        &copy; 2024 Devictor. Todos os direitos reservados - João Victor
+        Carvalho de Souza
       </p>
     </footer>
   </body>
