@@ -21,6 +21,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
+  animation: fadeInUp both;
+  animation-timeline: view(70% 5%);
+
   &__title {
     color: $primary-color;
     margin-bottom: 1rem;

@@ -186,14 +186,14 @@ table {
     opacity: 0;
   }
 }
-@keyframes fadeIn {
+@keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px) scale(0.7);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 .header {
@@ -355,6 +355,8 @@ table {
   width: 250px;
   height: 250px;
   z-index: 0;
+  animation: fadeInUp both;
+  animation-timeline: view(100% 5%);
 }
 @media (min-width: 768px) {
   .about__image-container {
@@ -437,6 +439,8 @@ table {
   flex-flow: column wrap;
   align-items: center;
   gap: 1rem;
+  animation: fadeInUp both;
+  animation-timeline: view(70% 5%);
 }
 .about__description {
   text-align: justify;
@@ -493,6 +497,8 @@ table {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: justify;
   transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeInUp both;
+  animation-timeline: view(70% 5%);
 }
 .project-card:hover {
   transform: translateY(-5px);
@@ -606,6 +612,8 @@ table {
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp both;
+  animation-timeline: view(70% 5%);
 }
 .skill-category__title {
   color: #00adb5;
@@ -650,6 +658,8 @@ table {
   display: flex;
   flex-flow: column wrap;
   position: relative;
+  animation: fadeInUp both;
+  animation-timeline: view(70% 5%);
 }
 .contact__form-input {
   padding: 0.2rem 0.8rem;
@@ -884,6 +894,8 @@ a:hover {
   color: #00adb5;
   text-align: center;
   position: relative;
+  animation: fadeInUp both;
+  animation-timeline: view(70% 5%);
 }
 .section-title::after {
   content: "";
@@ -895,7 +907,7 @@ a:hover {
 }
 
 .main > section {
-  animation: fadeIn 1s ease-out;
+  animation: fadeInUp 1s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

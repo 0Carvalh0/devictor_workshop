@@ -22,6 +22,9 @@
       @include imageSize(300px);
     }
 
+    animation: fadeInUp both;
+    animation-timeline: view(100% 5%);
+
     &--brackets {
       position: relative;
       display: flex;
@@ -102,6 +105,9 @@
     flex-flow: column wrap;
     align-items: center;
     gap: 1rem;
+
+    animation: fadeInUp both;
+    animation-timeline: view(70% 5%);
   }
 
   &__description {

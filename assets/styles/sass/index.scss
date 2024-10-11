@@ -81,6 +81,9 @@ a {
   text-align: center;
   position: relative;
 
+  animation: fadeInUp both;
+  animation-timeline: view(70% 5%);
+
   &::after {
     content: "";
     display: block;
@@ -92,5 +95,5 @@ a {
 }
 
 .main > section {
-  animation: fadeIn 1s ease-out;
+  animation: fadeInUp 1s ease-out;
 }
