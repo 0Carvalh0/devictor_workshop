@@ -134,4 +134,23 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const form = document.querySelector("#contact-form");
+  const showModal = sessionStorage.getItem("showThankYouModal");
+  const closeButton = document.querySelector(".thank-youModal__button");
+
+  form.addEventListener("submit", () => {
+    sessionStorage.setItem("showThankYouModal", "true");
+  });
+
+  if (showModal === "true") {
+    const modal = document.querySelector(".thank-youModal");
+    modal.showModal();
+    sessionStorage.removeItem("showThankYouModal");
+  }
+
+  closeButton.addEventListener("click", () => {
+    const modal = document.querySelector(".thank-youModal");
+    modal.close();
+  });
 });
