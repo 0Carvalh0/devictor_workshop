@@ -15,7 +15,8 @@
 @import "./partials/thank";
 
 html {
-  scroll-padding-top: 82px; /* Ajuste este valor para a altura do seu header */
+  scroll-behavior: smooth;
+  scroll-padding-top: 82px;
 }
 
 ::-webkit-scrollbar {

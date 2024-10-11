@@ -27,25 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
       moonIcon.style.display = "none";
 
       document.querySelector(".header__logo").src =
-        "./assets/images/Devictor_LogoPreta.png";
+        "./assets/images/logos/Devictor_LogoPreta.png";
     } else {
       sunIcon.style.display = "none";
       moonIcon.style.display = "inline-block";
 
       document.querySelector(".header__logo").src =
-        "./assets/images/Devictor_LogoBranca.png";
+        "./assets/images/logos/Devictor_LogoBranca.png";
     }
   }
-
-  // Rolagem suave para links de navegação
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
-      });
-    });
-  });
 
   // Efeito de digitação na seção hero
   const typingText = document.getElementById("typing-text");
@@ -83,58 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   typeEffect();
 
-  // Animação de habilidades
-  const skillLists = document.querySelectorAll(".skill-category__list");
-  skillLists.forEach((list) => {
-    list.querySelectorAll(".skill-category__item").forEach((skill, index) => {
-      skill.style.opacity = "0";
-      skill.style.transform = "translateY(20px)";
-      skill.style.transition = `opacity 0.5s ease, transform 0.5s ease ${
-        index * 0.1
-      }s`;
-    });
-  });
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target
-            .querySelectorAll(".skill-category__item")
-            .forEach((skill) => {
-              skill.style.opacity = "1";
-              skill.style.transform = "translateY(0)";
-            });
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
-
-  skillLists.forEach((list) => observer.observe(list));
-
-  // Animação de rolagem para seções
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".header__menu-link");
-
-  window.addEventListener("scroll", () => {
-    let current = "";
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      const sectionHeight = section.clientHeight;
-      if (pageYOffset >= sectionTop - sectionHeight / 3) {
-        current = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href").slice(1) === current) {
-        link.classList.add("active");
-      }
-    });
-  });
-
+  // Modal de agradecimento
   const form = document.querySelector("#contact-form");
   const showModal = sessionStorage.getItem("showThankYouModal");
   const closeButton = document.querySelector(".thank-youModal__button");
