@@ -38,40 +38,19 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Efeito de digitação na seção hero
-  const typingText = document.getElementById("typing-text");
-  const phrases = [
-    "Desenvolvedor Front-end",
-    "Especialista em UI/UX",
-    "Entusiasta de JavaScript",
-  ];
-  let phraseIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
+  let options = {
+    strings: [
+      "Desenvolvedor Front-end",
+      "Especialista em UI/UX",
+      "Entusiasta de JavaScript",
+    ],
+    typeSpeed: 100,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true,
+  };
 
-  function typeEffect() {
-    const currentPhrase = phrases[phraseIndex];
-
-    if (isDeleting) {
-      typingText.textContent = currentPhrase.substring(0, charIndex - 1);
-      charIndex--;
-    } else {
-      typingText.textContent = currentPhrase.substring(0, charIndex + 1);
-      charIndex++;
-    }
-
-    if (!isDeleting && charIndex === currentPhrase.length) {
-      isDeleting = true;
-      setTimeout(typeEffect, 1500);
-    } else if (isDeleting && charIndex === 0) {
-      isDeleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-      setTimeout(typeEffect, 500);
-    } else {
-      setTimeout(typeEffect, isDeleting ? 50 : 100);
-    }
-  }
-
-  typeEffect();
+  let typed = new Typed("#typing-text", options);
 
   // Modal de agradecimento
   const form = document.querySelector("#contact-form");
