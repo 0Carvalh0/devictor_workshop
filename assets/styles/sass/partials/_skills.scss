@@ -47,6 +47,11 @@
       color: $primary-color;
     }
   }
+
+  &__icon {
+    color: $text-color;
+    @include imageSize(18px);
+  }
 }
 
 .page--light-theme {
