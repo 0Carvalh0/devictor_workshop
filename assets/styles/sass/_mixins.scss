@@ -1,11 +1,11 @@
 // Mixins
 @mixin respond-to($breakpoint) {
-  @media (min-width: $breakpoint) {
-    @content;
-  }
+    @media (min-width: $breakpoint) {
+        @content;
+    }
 }
 
 @mixin imageSize($size) {
-  width: $size;
-  height: $size;
+    width: $size;
+    height: $size;
 }
